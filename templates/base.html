@@ -33,15 +33,15 @@
       <ul class="nav navbar-nav navbar-right">
       
             {% if user.is_authenticated %}
-                <li><a href="{% url 'profile' %}"><i class="fa fa-user"></i>Profile</a></li>
-                <li><a href="{% url 'logout' %}"><i class="fa-fa-sign-out"></i>Logout</a></li>
+                <li><a href="{% url 'profile' %}"><i class="fas fa-user"></i>Profile</a></li>
+                <li><a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
             {% else %}
-                <li><a href="{% url 'login' %}"><i class="fa-fa-sign-in"></i>Login</a></li>
-                <li><a href="{% url 'registration' %}"><i class="fa-fa-user-plus"></i>Register</a></li>
+                <li><a href="{% url 'login' %}"><i class="fas fa-sign-in-alt"></i>Login</a></li>
+                <li><a href="{% url 'registration' %}"><i class="fas-fa-user-plus"></i>Register</a></li>
             {% endif %}
             <li>
                 <a href="{% url 'view_cart' %}">
-                    <i class="fa fa-shipping-cart"></i> Cart
+                    <i class="fas fa-shopping-cart"></i> Cart
                     {% if product_count > 0 %}
                     <label class="badge badge-warning">{{ product_count }}</label>
                     {% endif %}
