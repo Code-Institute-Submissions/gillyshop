@@ -1,4 +1,4 @@
-
+[![Build Status](https://travis-ci.org/oheag2/gillyshop.svg?branch=master)](https://travis-ci.org/oheag2/gillyshop)
      ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
     '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
     |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
