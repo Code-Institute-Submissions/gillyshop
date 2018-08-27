@@ -1,12 +1,12 @@
 from django.contrib import admin
-from products.models import Product, Picture
+from products.models import Product, PostPicture
 
 # Register your models here.
-class PictureInline(admin.TabularInline):
-    model = Picture
+class PostPictureInline(admin.TabularInline):
+    model = PostPicture
     fields = ['picture',]
     
 class ProductAdmin(admin.ModelAdmin):
-    inlines = [PictureInline,]
+    inlines = [PostPictureInline,]
     
 admin.site.register(Product, ProductAdmin)
