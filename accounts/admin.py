@@ -9,4 +9,4 @@ class PostPictureInline(admin.TabularInline):
 class ProductAdmin(admin.ModelAdmin):
     inlines = [PostPictureInline,]
     
-admin.site.register(Product, ProductAdmin)
+admin.site.register(ProductAdmin)
