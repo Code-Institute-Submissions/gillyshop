@@ -20,7 +20,7 @@ class Product(models.Model):
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
     # userid = models.ForeignKey(admin, related_name='userblogpost')
-    Picture = None
+    # Picture = None
 
 
 
