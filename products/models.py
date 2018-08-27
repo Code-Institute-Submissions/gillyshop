@@ -12,7 +12,7 @@ from django.db import models
     
     
 class PostPicture(models.Model):
-    picture = models.ImageField(upload_to='images')
+    image = models.ImageField(upload_to='images')
     productid = models.ForeignKey('Product')
     
 class Product(models.Model):
