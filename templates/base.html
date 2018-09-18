@@ -33,7 +33,7 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
       
-      <button class="btn btn-default dropdown-toggle">Products</button>
+      
       <ul class="dropdown-menu">
       <li><a href="{% url 'products' %}"><i class="fas fa-images"></i> Products</a></li>
       <li><a href="{% url 'products' %}"><i class="fas fa-images"></i> Products</a></li>
@@ -49,7 +49,7 @@
                 <li><a href="{% url 'profile' %}"><i class="fas fa-user"></i> Profile</a></li>
                 <li><a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
             {% else %}
-                <li><a href="{% url 'login' %}"><i class="fas fa-sign-user"></i> Sign In</a></li>
+                <li><a href="{% url 'login' %}"><i class="fas fa-user"></i> Sign In</a></li>
                 <!--<li><a href="{% url 'registration' %}"><i class="fas fa-user-plus"></i> Register</a></li>-->
             {% endif %}
             <li><a href="{% url 'products' %}"><i class="fas fa-info"></i> About Us</a></li>
