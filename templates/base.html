@@ -34,7 +34,7 @@
       <ul class="nav navbar-nav navbar-right">
       
       <li><a href="{% url 'products' %}"><i class="fas fa-images"></i> Products</a></li>
-      <li><a href="{% url 'shipping' %}"><i class="fas fa-shipping-fast"></i> Shipping</a></li>
+      <li><a href="{% url 'products' %}"><i class="fas fa-shipping-fast"></i> Shipping</a></li>
     
      
             {% if user.is_authenticated %}
@@ -44,8 +44,8 @@
                 <li><a href="{% url 'login' %}"><i class="fas fa-sign-user"></i> Sign In</a></li>
                 <!--<li><a href="{% url 'registration' %}"><i class="fas fa-user-plus"></i> Register</a></li>-->
             {% endif %}
-            <li><a href="{% url 'about' %}"><i class="fas fa-info"></i> About Us</a></li>
-            <li><a href="{% url 'contact' %}"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="{% url 'products' %}"><i class="fas fa-info"></i> About Us</a></li>
+            <li><a href="{% url 'products' %}"><i class="fas fa-envelope"></i> Contact</a></li>
             <li>
                 <a href="{% url 'view_cart' %}">
                     <i class="fas fa-shopping-cart"></i> Cart
