@@ -29,15 +29,19 @@
                 <a class="navbar-brand nav-title" href="/">STARRY NIGHT</a>
                 
             </div>
- <div class="display">
-            <form action="{% url 'search' %}" method="get">
-                <input type="text" name="q">
-                <button type="submit">Search</button>
-            </form>
-        </div>
+ <!--<div class="display">-->
+ <!--           <form action="{% url 'search' %}" method="get">-->
+ <!--               <input type="text" name="q">-->
+ <!--               <button type="submit">Search</button>-->
+ <!--           </form>-->
+ <!--       </div>-->
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
+          <form action="{% url 'search' %}" method="get">
+                <input type="text" name="q">
+                <button type="submit">Search</button>
+            </form>
           
       
       <li class="dropdown">
