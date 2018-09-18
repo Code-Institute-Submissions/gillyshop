@@ -33,6 +33,7 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
       
+      <li><a href="{% url 'products' %}"><i class="fas fa-images"></i> Products</a></li>
             {% if user.is_authenticated %}
                 <li><a href="{% url 'profile' %}"><i class="fas fa-user"></i> Profile</a></li>
                 <li><a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
