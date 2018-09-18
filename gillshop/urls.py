@@ -20,7 +20,7 @@ from products import urls as urls_products
 from cart import urls as urls_cart
 from search import urls as urls_search
 from checkout import urls as urls_checkout
-# added home url
+# changed homepage to index.html
 from home.views import index
 # from products.views import all_products
 from django.views import static
@@ -28,7 +28,7 @@ from .settings import MEDIA_ROOT
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    # added home url
+    # changed homepage to index
     url(r'^$', index, name='index'),
     # url(r'^$', all_products, name='index'),
     url(r'^accounts/', include(urls_accounts)),
