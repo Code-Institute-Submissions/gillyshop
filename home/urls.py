@@ -1,5 +1,5 @@
 from django.conf.urls import url, include
-from .views import index
+from home.views import index
 
 # define url for homepage
 
