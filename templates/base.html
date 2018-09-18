@@ -60,8 +60,7 @@
                 {% endfor %}
             </div>
         </div>
-    {% endif %}     
-    {% block content %} {% endblock %}
+    {% endif %}
     <div class="container">
         <div class="display">
             <form action="{% url 'search' %}" method="get">
@@ -69,7 +68,7 @@
                 <button type="submit">Search</button>
             </form>
         </div>
-   
+        {% block content %} {% endblock %}
     </div>
 
 </body>
