@@ -34,7 +34,7 @@
       <ul class="nav navbar-nav navbar-right">
       
       <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >Products<i class="fas fa-caret-down"></i></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >Products <i class="fas fa-caret-down"></i></a>
           <ul class="dropdown-menu">
       <li><a href="{% url 'products' %}"><i class="fas fa-images"></i> Products</a></li>
       <li><a href="{% url 'products' %}"><i class="fas fa-images"></i> Products</a></li>
@@ -43,8 +43,9 @@
       
       
       
-      <li><a href="{% url 'products' %}"><i class="fas fa-shipping-fast"></i> Shipping</a></li>
-    
+      <li><a href="{% url 'products' %}"></a>Shipping</a></li>
+     <li><a href="{% url 'products' %}">About Us</a></li>
+            <li><a href="{% url 'products' %}">Contact</a></li>
      
             {% if user.is_authenticated %}
                 <li><a href="{% url 'profile' %}"><i class="fas fa-user"></i> Profile</a></li>
@@ -53,8 +54,7 @@
                 <li><a href="{% url 'login' %}"><i class="fas fa-user"></i> Sign In</a></li>
                 <!--<li><a href="{% url 'registration' %}"><i class="fas fa-user-plus"></i> Register</a></li>-->
             {% endif %}
-            <li><a href="{% url 'products' %}"><i class="fas fa-info"></i> About Us</a></li>
-            <li><a href="{% url 'products' %}"><i class="fas fa-envelope"></i> Contact</a></li>
+           
             <li>
                 <a href="{% url 'view_cart' %}">
                     <i class="fas fa-shopping-cart"></i> Cart
