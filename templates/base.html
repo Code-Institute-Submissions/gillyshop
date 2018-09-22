@@ -17,23 +17,23 @@
     {% endblock head_js %}
 </head>
 <body>
-    <div class="topheader">
+ <!--   <div class="topheader">-->
         
-			<ul class="nav navbar-nav navbar-right">
-	<li><a href="{% url 'login' %}"><i class="fas fa-user"></i> Sign In</a></li>
-				  <li>
-                <a href="{% url 'view_cart' %}">
-                    <i class="fas fa-shopping-cart"></i> Cart
-                    {% if product_count > 0 %}
-                    <label class="badge badge-warning">{{ product_count }}</label>
-                    {% endif %}
-                </a>
-            </li>
+	<!--		<ul class="nav navbar-nav navbar-right">-->
+	<!--<li><a href="{% url 'login' %}"><i class="fas fa-user"></i> Sign In</a></li>-->
+	<!--			  <li>-->
+ <!--               <a href="{% url 'view_cart' %}">-->
+ <!--                   <i class="fas fa-shopping-cart"></i> Cart-->
+ <!--                   {% if product_count > 0 %}-->
+ <!--                   <label class="badge badge-warning">{{ product_count }}</label>-->
+ <!--                   {% endif %}-->
+ <!--               </a>-->
+ <!--           </li>-->
             
   
 			
-			</ul>
-		</div>
+	<!--		</ul>-->
+	<!--	</div>-->
 
         
       
@@ -64,7 +64,7 @@
 			<ul class="nav navbar-nav navbar-center">
 
 	<li class="dropmenu">
-	<a class="prodbutton">Products</a>
+	<a class="prodbutton">New In</a>
 	<ul class="prodcontent">
 
     <a href="{% url 'products' %}">Products</a>
