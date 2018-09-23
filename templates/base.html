@@ -38,10 +38,10 @@
 			<div class="subhead">
 			           
 			<ul class="navcart align-items-right">
-	<li><a href="{% url 'login' %}"><i class="fas fa-user"></i> Sign In</a></li>
+	<li><a href="{% url 'login' %}"><i class="fas fa-user"></i></a></li>
 				  <li>
                 <a href="{% url 'view_cart' %}">
-                    <i class="fas fa-shopping-cart"></i> Cart
+                    <i class="fas fa-shopping-cart"></i>
                     {% if product_count > 0 %}
                     <label class="badge badge-warning">{{ product_count }}</label>
                     {% endif %}
@@ -186,6 +186,26 @@
         </div>
         {% block content %} {% endblock %}
     </div>
+
+<div id="cardcontainer">
+	<div class="card menucarousel">
+		<div class="w3-content w3-section foodpics" style="max-width:400px">
+			<img class="myPics" src="images/avo.jpg" style="width:100%">
+			<img class="myPics" src="images/coffee.jpg" style="width:100%">
+			<img class="myPics" src="images/bowl.jpg" style="width:100%">
+			<img class="myPics" src="images/cake.jpg" style="width:100%">
+			<img class="myPics" src="images/sandwich.jpg" style="width:100%">
+			<img class="myPics" src="images/pancakes.jpg" style="width:100%">
+			<img class="myPics" src="images/eggs.jpg" style="width:100%">
+			<img class="myPics" src="images/soup.jpg" style="width:100%">
+			<img class="myPics" src="images/chips.jpg" style="width:100%">
+			<img class="myPics" src="images/pizza.jpg" style="width:100%">
+		</div>
+	</div>
+	</div>
+	
+
+
 
 </body>
 </html>
