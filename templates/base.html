@@ -63,15 +63,15 @@
 		<div class="collapse navbar-collapse" id="myCollapseList">
 			<ul class="nav navbar-nav navbar-center">
 
-	<li class="dropmenu">
-	<a class="prodbutton">New In</a>
-	<ul class="prodcontent">
+<!--	<li class="dropmenu">-->
+<!--	<a class="prodbutton">New In</a>-->
+<!--	<ul class="prodcontent">-->
 
-    <a href="{% url 'products' %}">Products</a>
-      <a href="{% url 'products' %}">Products</a>
-      <a href="{% url 'products' %}">Products</a>
-</ul>
-</li>
+<!--    <a href="{% url 'products' %}">Products</a>-->
+<!--      <a href="{% url 'products' %}">Products</a>-->
+<!--      <a href="{% url 'products' %}">Products</a>-->
+<!--</ul>-->
+<!--</li>-->
 
         	
 				  
@@ -83,7 +83,16 @@
      <!--   <li><a href="{% url 'products' %}">New 3</a></li>-->
      <!-- </div></div>		  -->
 				  
-				      
+    <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >New In <i class="fas fa-caret-down"></i></a>
+          <ul class="dropdown-menu">
+      <li><a href="{% url 'products' %}">Dinosaurs</a></li>
+      <li><a href="{% url 'products' %}">Mermaidss</a></li>
+      <li><a href="{% url 'products' %}">Diamonds</a></li>
+      </ul></li>		
+		
+		
+		      
       <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >Products <i class="fas fa-caret-down"></i></a>
           <ul class="dropdown-menu">
@@ -185,7 +194,21 @@
         </div>
         {% block content %} {% endblock %}
     </div>
+<div id="cardcontainer">
+	<div class="card menucarousel">
+		<div class="w3-content w3-section foodpics" style="max-width:400px">
+			<img class="myPics" src="{% static 'images/1.jpg' %}" style="width:100%">
+			<img class="myPics" src="{% static 'images/2.jpg' %}" style="width:100%">
+			<img class="myPics" src="{% static 'images/3.jpg' %}" style="width:100%">
+			<img class="myPics" src="{% static 'images/4.jpg' %}" style="width:100%">
+		</div>
+	</div>
 
+
+
+<script src="{% static 'js/script.js' %}"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
      
