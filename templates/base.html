@@ -111,6 +111,12 @@
       </ul></li>
   
    <li class="contactmenu"><a href="{% url 'products' %}">Contact</a></li>
+   
+   <li class="search">
+       <form action="{% url 'search' %}" method="get">
+                <input type="text" name="q">
+                <button type="submit">Search</button>
+            </form></li>
 			
 			</ul>
 		</div>
