@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'django_forms_bootstrap',
     'taggit',
     'accounts',
-    'products',
+    # 'products',
     'cart',
     'home',
     'checkout',
