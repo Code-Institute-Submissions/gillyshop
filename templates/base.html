@@ -18,13 +18,13 @@
 </head>
 <body>
 
-    	<div id="header">
-		<div class="container">  
-			<div class="row align-items-center">
-				<h1 class="header">MILLENIAL PINK</h1>
-			</div>
+<div id="header">
+	<div class="container">  
+		<div class="row align-items-center">
+			<h1 class="header">MILLENIAL PINK</h1>
 		</div>
 	</div>
+</div>
 
 <div>
 	<nav class="navbar navbar-default">
@@ -34,21 +34,46 @@
 			<span class="icon-bar"></span>
 		</button>
 	
+	<div class="collapse navbar-collapse" id="myCollapseList">
+	    <div>
+		<li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >Products <i class="fas fa-caret-down"></i></a>
+              <ul class="dropdown-menu">
+                  <li><a href="{% url 'products' %}">Products</a></li>
+                  <li><a href="{% url 'products' %}">Products</a></li>
+                  <li><a href="{% url 'products' %}">Products</a></li>
+              </ul>
+        </li>
+      
+        <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >About <i class="fas fa-caret-down"></i></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="{% url 'products' %}">About us</a></li>
+                    <li><a href="{% url 'products' %}">Shipping</a></li>
+                  </ul>
+        </li>
+  
+        <li class="contactmenu"><a href="{% url 'products' %}">Contact</a></li>
+        </div>
+
 	
+		
+	<div class="navbar-icons">
+		<ul class="subhead">
+	        <li><a href="{% url 'login' %}"><i class="fas fa-user"></i></a></li>
+	        <li><a href="{% url 'view_cart' %}">
+            <i class="fas fa-shopping-cart"></i>
+                {% if product_count > 0 %}
+            <label class="badge badge-warning">{{ product_count }}</label>
+                {% endif %}
+                </a>
+            </li> 
+        </ul>
+	</div>
+	</div>
 	
-		<div class="collapse navbar-collapse" id="myCollapseList">
-			<ul class="nav navbar-nav navbar-center">
-
-	<li class="dropmenu">
-	<a class="prodbutton">New In</a>
-	<ul class="prodcontent">
-
-    <a href="{% url 'products' %}">Products</a>
-      <a href="{% url 'products' %}">Products</a>
-      <a href="{% url 'products' %}">Products</a>
-</ul>
-</li>
-
+	</nav>
+</div>
         	
 				  
 		   <!--<div class="dropmenu">-->
@@ -58,43 +83,10 @@
      <!-- <li><a href="{% url 'products' %}">New 2</a></li>-->
      <!--   <li><a href="{% url 'products' %}">New 3</a></li>-->
      <!-- </div></div>		  -->
-				  
-				      
-      <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >Products <i class="fas fa-caret-down"></i></a>
-          <ul class="dropdown-menu">
-      <li><a href="{% url 'products' %}">Products</a></li>
-      <li><a href="{% url 'products' %}">Products</a></li>
-      <li><a href="{% url 'products' %}">Products</a></li>
-      </ul></li>
-      
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >About <i class="fas fa-caret-down"></i></a>
-          <ul class="dropdown-menu">
-      <li><a href="{% url 'products' %}">About us</a></li>
-      <li><a href="{% url 'products' %}">Shipping</a></li>
-      </ul></li>
-  
-   <li class="contactmenu"><a href="{% url 'products' %}">Contact</a></li>
-			
-			</ul>
-		</div>
-		<div class="navbar-icons">
-		    			<ul class="subhead">
-	<li><a href="{% url 'login' %}"><i class="fas fa-user"></i></a></li>
-	<li><a href="{% url 'view_cart' %}">
-            <i class="fas fa-shopping-cart"></i>
-                {% if product_count > 0 %}
-            <label class="badge badge-warning">{{ product_count }}</label>
-                {% endif %}
-        </a>
-    </li> 
-            </ul>
-		</div>
-	</nav>
-</div>
+	
 
-	<h2 class="subhead">~ A curated art collection for the millenial in your life ~</h2>
+
+	<!--<h2 class="subhead">~ A curated art collection for the millenial in your life ~</h2>-->
     
     
    <!-- Fixed masthead -->
@@ -196,4 +188,13 @@
 
 </body>
 </html>
-     
+     		<ul class="nav navbar-nav navbar-center">
+            <li class="dropmenu">
+	            <a class="prodbutton">New In</a>
+	   <ul class="prodcontent">
+
+    <a href="{% url 'products' %}">Products</a>
+      <a href="{% url 'products' %}">Products</a>
+      <a href="{% url 'products' %}">Products</a>
+</ul>
+</li>
