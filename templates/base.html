@@ -79,8 +79,8 @@
                 <button type="submit" class="searchbut"><i class="fas fa-search"></i></button>
             </form></li>
             
-    <li><a href="{% url 'login' %}"><i class="fas fa-user"></i></a></li> 
-    <li>
+    <li class="profile"><a href="{% url 'login' %}"><i class="fas fa-user"></i></a></li> 
+    <li class="shop">
                <a href="{% url 'view_cart' %}">
                     <i class="fas fa-shopping-cart"></i>
                  {% if product_count > 0 %}
