@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="{% static 'css/custom.css' %}">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="{% static 'js/script.js' %}"></script>
+
     {% block head_js %}
     {% endblock head_js %}
 </head>
@@ -195,9 +195,9 @@
         </div>
         {% block content %} {% endblock %}
     </div>
-<div id="cardcontainer">
-	<div class="card menucarousel">
-		<div class="w3-content w3-section foodpics" style="max-width:400px">
+<div id="container">
+	<div class="menucarousel">
+		<div class="w3-content w3-section foodpics">
 			<img class="myPics" src="{% static 'images/1.jpg' %}" style="width:100%">
 			<img class="myPics" src="{% static 'images/2.jpg' %}" style="width:100%">
 			<img class="myPics" src="{% static 'images/3.jpg' %}" style="width:100%">
@@ -207,7 +207,7 @@
 
 
 
-
+  <script src="{% static 'js/script.js' %}"></script>
 
 </body>
 </html>
