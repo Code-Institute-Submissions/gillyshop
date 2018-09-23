@@ -73,12 +73,7 @@
   
    <li class="contactmenu"><a href="{% url 'products' %}">Contact</a></li>
    
-   <li class="search">
-       <form action="{% url 'search' %}" method="get">
-                <input type="text" placeholder="Search" name="q">
-                <button type="submit" class="searchbut"><i class="fas fa-search"></i></button>
-            </form></li>
-            
+  
     <li class="profile"><a href="{% url 'login' %}"><i class="fas fa-user"></i></a></li> 
     <li class="shop">
                <a href="{% url 'view_cart' %}">
@@ -88,6 +83,13 @@
                     {% endif %}
                 </a>
            </li>
+           
+            <li class="search">
+       <form action="{% url 'search' %}" method="get">
+                <input type="text" placeholder="Search" name="q">
+                <button type="submit" class="searchbut"><i class="fas fa-search"></i></button>
+            </form></li>
+            
 			
 			</ul>
 		</div>
