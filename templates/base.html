@@ -18,28 +18,7 @@
     {% endblock head_js %}
 </head>
 <body>
- <!--   <div class="topheader">-->
-        
-	<!--		<ul class="nav navbar-nav navbar-right">-->
-	<!--<li><a href="{% url 'login' %}"><i class="fas fa-user"></i> Sign In</a></li>-->
-	<!--			  <li>-->
- <!--               <a href="{% url 'view_cart' %}">-->
- <!--                   <i class="fas fa-shopping-cart"></i> Cart-->
- <!--                   {% if product_count > 0 %}-->
- <!--                   <label class="badge badge-warning">{{ product_count }}</label>-->
- <!--                   {% endif %}-->
- <!--               </a>-->
- <!--           </li>-->
-            
-  
-			
-	<!--		</ul>-->
-	<!--	</div>-->
 
-        
-      
-     
-    
     
     	<div id="header">
 		<div class="container">  
@@ -65,25 +44,7 @@
 		<div class="collapse navbar-collapse" id="myCollapseList">
 			<ul class="nav navbar-nav navbar-center">
 
-<!--	<li class="dropmenu">-->
-<!--	<a class="prodbutton">New In</a>-->
-<!--	<ul class="prodcontent">-->
 
-<!--    <a href="{% url 'products' %}">Products</a>-->
-<!--      <a href="{% url 'products' %}">Products</a>-->
-<!--      <a href="{% url 'products' %}">Products</a>-->
-<!--</ul>-->
-<!--</li>-->
-
-        	
-				  
-		   <!--<div class="dropmenu">-->
-     <!--     <div class="prodcontent">-->
-     <!--         <a class ="prodbutton" href="#">Products</a>-->
-     <!-- <li><a href="{% url 'products' %}">New 1</a></li>-->
-     <!-- <li><a href="{% url 'products' %}">New 2</a></li>-->
-     <!--   <li><a href="{% url 'products' %}">New 3</a></li>-->
-     <!-- </div></div>		  -->
 				  
     <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >New In <i class="fas fa-caret-down"></i></a>
@@ -126,64 +87,7 @@
 	
     
     
-   <!-- Fixed masthead -->
- <!--   <nav class="navbar navbar-masthead navbar-default navbar-fixed-top">-->
- <!--       <div class="container">-->
- <!--           <div class="navbar-header">-->
- <!--               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">-->
- <!--                   <span class="sr-only">Toggle navigation</span>-->
- <!--                   <span class="icon-bar"></span>-->
- <!--                   <span class="icon-bar"></span>-->
- <!--                   <span class="icon-bar"></span>-->
- <!--               </button>-->
- <!--               <a class="navbar-brand nav-title" href="/">STARRY NIGHT</a>-->
-                
- <!--           </div>-->
- <!--<div class="display">-->
- <!--           <form action="{% url 'search' %}" method="get">-->
- <!--               <input type="text" name="q">-->
- <!--               <button type="submit">Search</button>-->
- <!--           </form>-->
- <!--       </div>-->
 
- <!--   <div id="navbar" class="navbar-collapse collapse">-->
- <!--     <ul class="nav navbar-nav navbar-right">-->
-          
-      
-      <!--<li class="dropdown">-->
-      <!--    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >Products <i class="fas fa-caret-down"></i></a>-->
-      <!--    <ul class="dropdown-menu">-->
-      <!--<li><a href="{% url 'products' %}"><i class="fas fa-images"></i> Products</a></li>-->
-      <!--<li><a href="{% url 'products' %}"><i class="fas fa-images"></i> Products</a></li>-->
-      <!--<li><a href="{% url 'products' %}"><i class="fas fa-images"></i> Products</a></li>-->
-      <!--</ul></li>-->
-      
-      
-      
- <!--     <li><a href="{% url 'products' %}">Shipping</a></li>-->
- <!--    <li><a href="{% url 'products' %}">About Us</a></li>-->
- <!--           <li><a href="{% url 'products' %}">Contact</a></li>-->
-     
- <!--           {% if user.is_authenticated %}-->
- <!--               <li><a href="{% url 'profile' %}"><i class="fas fa-user"></i> Profile</a></li>-->
- <!--               <li><a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i> Logout</a></li>-->
- <!--           {% else %}-->
- <!--               <li><a href="{% url 'login' %}"><i class="fas fa-user"></i> Sign In</a></li>-->
-                <!--<li><a href="{% url 'registration' %}"><i class="fas fa-user-plus"></i> Register</a></li>-->
- <!--           {% endif %}-->
-           
- <!--           <li>-->
- <!--               <a href="{% url 'view_cart' %}">-->
- <!--                   <i class="fas fa-shopping-cart"></i> Cart-->
- <!--                   {% if product_count > 0 %}-->
- <!--                   <label class="badge badge-warning">{{ product_count }}</label>-->
- <!--                   {% endif %}-->
- <!--               </a>-->
- <!--           </li>-->
- <!--       </ul>-->
-        
- <!--       </div>-->
- <!--   </nav>-->
     {% if messages %}
         <div class="alert alert-success">
             <div class="messages">
@@ -193,13 +97,7 @@
             </div>
         </div>
     {% endif %}
-    <!--<div class="container">-->
-    <!--    <div class="display">-->
-    <!--        <form action="{% url 'search' %}" method="get">-->
-    <!--            <input type="text" name="q">-->
-    <!--            <button type="submit">Search</button>-->
-    <!--        </form>-->
-    <!--    </div>-->
+
         {% block content %} {% endblock %}
     </div>
 
