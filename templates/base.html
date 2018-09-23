@@ -18,17 +18,7 @@
 </head>
 <body>
  <!--   <div class="topheader">-->
-        
-	<!--		<ul class="nav navbar-nav navbar-right">-->
-	<!--<li><a href="{% url 'login' %}"><i class="fas fa-user"></i> Sign In</a></li>-->
-	<!--			  <li>-->
- <!--               <a href="{% url 'view_cart' %}">-->
- <!--                   <i class="fas fa-shopping-cart"></i> Cart-->
- <!--                   {% if product_count > 0 %}-->
- <!--                   <label class="badge badge-warning">{{ product_count }}</label>-->
- <!--                   {% endif %}-->
- <!--               </a>-->
- <!--           </li>-->
+
             
   
 			
@@ -44,8 +34,19 @@
 		<div class="container">  
 			<div class="row align-items-center">
 				<h1 class="header">MILLENIAL PINK</h1>
-	
-		
+			</div>
+			<div class="subhead">
+			           
+			<ul class="navcart align-items-right">
+	<li><a href="{% url 'login' %}"><i class="fas fa-user"></i> Sign In</a></li>
+				  <li>
+                <a href="{% url 'view_cart' %}">
+                    <i class="fas fa-shopping-cart"></i> Cart
+                    {% if product_count > 0 %}
+                    <label class="badge badge-warning">{{ product_count }}</label>
+                    {% endif %}
+                </a>
+            </li> 
 			</div>
 		</div>
 	</div>
