@@ -1,1 +1,2 @@
-web: gunicorn gillshop.wsgi:application
+release: python manage.py migrate  
+web: gunicorn gillshop.wsgi:application 
