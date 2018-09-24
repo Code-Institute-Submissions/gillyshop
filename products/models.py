@@ -3,7 +3,7 @@ from taggit.managers import TaggableManager
 
 # Create your models here.
 
-class Product(models.Model):
+class Product(models.Manager):
     name = models.CharField(max_length=254, default='')
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
