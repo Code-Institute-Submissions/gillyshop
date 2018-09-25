@@ -73,8 +73,19 @@
   
    <li class="contactmenu"><a href="{% url 'products' %}">Contact</a></li>
    
-  
-    <li class="profile"><a href="{% url 'login' %}"><i class="fas fa-user"></i></a></li> 
+  {% if user.is_authenticated %}
+                <li><a href="{% url 'profile' %}"><i class="fa fa-user"></i>Profile</a></li>
+                <li><a href="{% url 'logout' %}"><i class="fa fa-sign-out"></i>Logout</a></li>
+            {%  else %}
+    {%  else %}
+                
+                <li><a href="{% url 'registration' %}"><i class="fa fa-user-plus"></i>Register</a></li>
+                <li><a href="{% url 'login' %}"><i class="fa fa-sign-in"></i>Login</a></li>
+            {% endif %}        
+            
+    
+    <li class="profile"><a href="{% url 'login' %}"><i class="fas fa-user"></i></a></li>
+    
     <li class="shop">
                <a href="{% url 'view_cart' %}">
                     <i class="fas fa-shopping-cart"></i>
