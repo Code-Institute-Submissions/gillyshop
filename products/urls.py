@@ -3,4 +3,5 @@ from .views import all_products
 
 urlpatterns = [
     url(r'^$', all_products, name="products"),
+    url(r'^$', new_products, name="new"),
     ]
