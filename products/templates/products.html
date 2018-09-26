@@ -7,7 +7,6 @@
     <div class="panel-body">
         <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
         
-        {{ product.objects.filter(category__name="cactus") }}
         <h3><a href="{{product.url}}">{{ product.name }}</a></h3>
         <!--<h3><a href="{{product.url}}"></h3>-->
         <p class="product-description">{{ product.description }}</p>
@@ -27,9 +26,7 @@
     </div>
     {% endfor %}
     
-     {% for URLField in products %}
-     <h3>{{ urlfield.url }}</h3>
-    {% endfor %}
+  
     
 </div>
 {% endblock %}
