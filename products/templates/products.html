@@ -12,7 +12,7 @@
         <p class="product-description">{{ product.description }}</p>
         <p>€{{ product.price }}</p>
         <!--<p class="product-tags">{{ product.tags.all }}</p>-->
-              {% for tag in product.tags.all %}<li> {{ tag.name }}</li>{% endfor %}
+              {% for tag in product.tags.all %}<li> {{ tag.name.cactus }}</li>{% endfor %}
         <form method="post" action="{% url 'add_to_cart' product.id %}">
             {% csrf_token %}
             <div class="input-group">

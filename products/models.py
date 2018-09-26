@@ -10,6 +10,7 @@ class Product(models.Model):
     image = models.ImageField(upload_to='images')
     tags = TaggableManager()
     url = models.TextField(max_length=200, default='')
+    category = models.CharField(max_length=100, default='')
 
 
     def __str__(self):
