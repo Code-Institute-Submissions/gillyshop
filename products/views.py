@@ -9,3 +9,7 @@ def all_products(request):
 
 def new(request):
     return render(request, 'new.html')
+    
+def cactus(request):
+    cactusproducts = Product.objects.filter(category__name="Cactus")
+    return render(request, "cactus.html")
