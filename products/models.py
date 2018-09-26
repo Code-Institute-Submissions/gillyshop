@@ -8,7 +8,7 @@ class Product(models.Model):
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
     image = models.ImageField(upload_to='images')
-    url = models.URLField
+    url = models.URLField()
     tags = TaggableManager()
     
     def __str__(self):
