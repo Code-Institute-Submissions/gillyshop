@@ -12,4 +12,4 @@ def new(request):
     
 def cactus(request):
     cactusproducts = Product.objects.filter(category="Cactus")
-    return render(request, "cactus.html")
+    return render(request, "cactus.html", {"products": cactusproducts})
