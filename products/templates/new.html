@@ -6,15 +6,26 @@
 
 {% block content %}
 
-<div id="container">
-	<div class="menucarousel">
-		<div class="w3-content w3-section foodpics">
-			<img class="myPics" src="{% static 'images/1.jpg' %}" style="width:100%">
-			<img class="myPics" src="{% static 'images/2.jpg' %}" style="width:100%">
-			<img class="myPics" src="{% static 'images/3.jpg' %}" style="width:100%">
-			<img class="myPics" src="{% static 'images/4.jpg' %}" style="width:100%">
-		</div>
+<div id="cardcontainer">
+	<div class="card christmas">
+		<img class="card_image"src="images/christmas.jpg">
+			<h2 class="card_head">Christmas Party Bookings</h2>
+			<p class="card_para">We are now taking bookings for Christmas parties. Please fill in the form on our <a href="contact.html">contact page</a> with all your details and we will get back to you! </p>
 	</div>
+			
+	<div class="card summer">
+		<img class="card_image "src="images/summer.jpg">	
+			<h2 class="card_head">Summer Holidays</h2>
+			<p class="card_para">We will be closed from August 22nd to September 2nd for a little summer holiday! Looking forward to seeing you all when we return.</p>
+	</div>
+
+	<div class="card class">
+		<img class="card_image "src="images/brunch.jpg">
+			<h2 class="card_head">New Brunch Menus</h2>
+			<p class="card_para">We're now serving brunch all afternoon on Saturdays & Sundays with our brand new menu available on the <a href="menus.html">menu page.</a></p>
+	</div>
+</div>
+
 
 
   <script src="{% static 'js/script.js' %}"></script>
