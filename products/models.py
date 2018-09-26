@@ -11,16 +11,7 @@ class Product(models.Model):
     tags = TaggableManager()
     path = models.TextField(max_length=200, default='')
 
-    
-class URLField(models.Model):
-    url = models.CharField(max_length=150)
 
-
-
-
-
-    
-    
     def __str__(self):
         return self.name
     
