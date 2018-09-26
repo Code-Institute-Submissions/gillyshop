@@ -11,5 +11,5 @@ def new(request):
     return render(request, 'new.html')
     
 def cactus(request):
-    cactusproducts = Product.objects.filter(category__name="Cactus")
+    cactusproducts = Product.objects.filter(category="Cactus")
     return render(request, "cactus.html")
