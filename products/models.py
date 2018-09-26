@@ -9,7 +9,7 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=6, decimal_places=2)
     image = models.ImageField(upload_to='images')
     tags = TaggableManager()
-    path = models.TextField(max_length=200, default='')
+    url = models.TextField(max_length=200, default='')
 
 
     def __str__(self):
