@@ -13,6 +13,11 @@ class Product(models.Model):
     def __str__(self):
         return self.name
     
+# class Tags(models.Model):
+#     tags = TaggableManager()
+    
+#     def __str__(self):
+#         return self.name
     
 # class PostPicture(models.Model):
 #     image = models.ImageField(upload_to='images')
