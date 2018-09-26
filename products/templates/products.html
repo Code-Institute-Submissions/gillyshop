@@ -7,12 +7,13 @@
     <div class="panel-body">
         <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
         
+        {{ product.objects.filter(category__name="cactus") }}
         <h3><a href="{{product.url}}">{{ product.name }}</a></h3>
         <!--<h3><a href="{{product.url}}"></h3>-->
         <p class="product-description">{{ product.description }}</p>
         <p>€{{ product.price }}</p>
         <!--<p class="product-tags">{{ product.tags.all }}</p>-->
-              {% for tag in product.tags.all %}<li> {{ tag.name.cactus }}</li>{% endfor %}
+              {% for tag in product.tags.all %}<li> {{ tag.name }}</li>{% endfor %}
         <form method="post" action="{% url 'add_to_cart' product.id %}">
             {% csrf_token %}
             <div class="input-group">
