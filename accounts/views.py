@@ -84,6 +84,10 @@ def user_profile(request):
     return render(request, 'profile.html', {"profile": user})
     
     
+def about(request):
+    return render(request, 'about.html')    
     
+def shipping(request):
+    return render(request, 'shipping.html')
     
     
