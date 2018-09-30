@@ -20,7 +20,7 @@ def animals(request):
     
 def flamingos(request):
     flamingoproducts = Product.objects.filter(category="Flamingo")
-    return render(request, "flamingo.html", {"products": flamingoproducts})
+    return render(request, "flamingos.html", {"products": flamingoproducts})
     
 def unicorns(request):
     unicornproducts = Product.objects.filter(category="Unicorns")
