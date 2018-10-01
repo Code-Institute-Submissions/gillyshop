@@ -25,3 +25,11 @@ def flamingos(request):
 def palm(request):
     palmproducts = Product.objects.filter(category="Palm")
     return render(request, "palmtrees.html", {"products": palmproducts})
+    
+def pink(request):
+    pinkproducts = Product.objects.filter(category="Pink")
+    return render(request, "pink.html", {"products": pinkproducts})
+    
+def deer(request):
+    deerproducts = Product.objects.filter(category="Deer")
+    return render(request, "deer.html", {"products": deerproducts})
