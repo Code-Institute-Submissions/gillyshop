@@ -22,6 +22,6 @@ def flamingos(request):
     flamingoproducts = Product.objects.filter(category="Flamingo")
     return render(request, "flamingos.html", {"products": flamingoproducts})
     
-def unicorns(request):
-    unicornproducts = Product.objects.filter(category="Unicorns")
-    return render(request, "unicorns.html", {"products": unicornproducts})
+def palm(request):
+    palmproducts = Product.objects.filter(category="Palm")
+    return render(request, "palmtrees.html", {"products": palmproducts})
