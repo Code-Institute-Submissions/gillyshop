@@ -12,5 +12,4 @@ urlpatterns = [
     url(r'^password-reset/', include(url_reset)),
     url(r'^about/$', about, name="about"),
     url(r'^shipping/$', shipping, name="shipping"),
-
 ]
