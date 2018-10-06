@@ -90,4 +90,3 @@ def about(request):
 def shipping(request):
     return render(request, 'shipping.html')
     
-    
