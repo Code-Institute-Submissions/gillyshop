@@ -33,3 +33,7 @@ def pink(request):
 def deer(request):
     deerproducts = Product.objects.filter(category="Deer")
     return render(request, "deer.html", {"products": deerproducts})
+    
+def galaxy(request):
+    galaxyproducts = Product.objects.filter(category="Galaxy")
+    return render(request, "galaxies.html", {"products": galaxyproducts})
