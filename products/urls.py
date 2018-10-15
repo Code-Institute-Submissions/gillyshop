@@ -11,10 +11,10 @@ urlpatterns = [
     url(r'^pink/$', pink, name="pink"),
     url(r'^deer/$', deer, name="deer"),
     url(r'^galaxy/$', galaxy, name="galaxy"),
-    url(r'^product_page/$', product_page, name="product_page"),
+    # url(r'^product_page/$', product_page, name="product_page"),
     # found here https://blog.muva.tech/lesson-4-defining-url-patterns-template-shop-products-django-2-0-python-3-6/
     # url(r'^(?P<id>\d+)/(?P<slug>[-\w]+)/$', product_page, name="product_page"),
-    # url('^(?P<slug>[^/]+)/$', 'product_page')
+    url('^(?P<slug>[^/]+)/$', "product_page"),
     ]
     
     
