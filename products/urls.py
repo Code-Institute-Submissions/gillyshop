@@ -15,6 +15,7 @@ urlpatterns = [
     
 class ProductPage:
     
-    urlpatterns = [
-         url('^(?P<slug>[^/]+)/$', 'product_page'),]
-         
+    urlpatterns = [('products.views', 
+         url('^(?P<slug>[^/]+)/$', 'product_page'),
+         )
+        ] 
