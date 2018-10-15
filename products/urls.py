@@ -13,9 +13,8 @@ urlpatterns = [
     url(r'^galaxy/$', galaxy, name="galaxy"),
     ]
     
+    
+    # found here https://django-fluent-pages.readthedocs.io/en/latest/newpagetypes/urls.html
 class ProductPage:
     
-    urlpatterns = [('products.views', 
-         url('^(?P<slug>[^/]+)/$', 'product_page'),
-         )
-        ] 
+    url('products.views', url('^(?P<slug>[^/]+)/$', 'product_page'),)
