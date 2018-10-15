@@ -11,4 +11,5 @@ urlpatterns = [
     url(r'^pink/$', pink, name="pink"),
     url(r'^deer/$', deer, name="deer"),
     url(r'^galaxy/$', galaxy, name="galaxy"),
+    url('^(?P<slug>[^/]+)/$', 'product_page'),
     ]
