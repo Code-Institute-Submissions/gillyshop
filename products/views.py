@@ -40,5 +40,5 @@ def galaxy(request):
     
 
 def product_page(request, slug):
-    product = get_object_or_404(Product, slug=slug)
-    return render(request, 'products/product_page.html', {'product':product})
+    products = get_object_or_404(Product, slug=slug)
+    return render(request, "products/product_page.html", {"products":products})
