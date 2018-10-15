@@ -11,10 +11,11 @@ urlpatterns = [
     url(r'^pink/$', pink, name="pink"),
     url(r'^deer/$', deer, name="deer"),
     url(r'^galaxy/$', galaxy, name="galaxy"),
+    url('^(?P<slug>[^/]+)/$', 'product_page')
     ]
     
     
-    # found here https://django-fluent-pages.readthedocs.io/en/latest/newpagetypes/urls.html
-class ProductPage:
+#     # found here https://django-fluent-pages.readthedocs.io/en/latest/newpagetypes/urls.html
+# class ProductPage:
     
-    url('products.views', url('^(?P<slug>[^/]+)/$', 'product_page'),)
+#     url('products.views', url('^(?P<slug>[^/]+)/$', 'product_page'),)
