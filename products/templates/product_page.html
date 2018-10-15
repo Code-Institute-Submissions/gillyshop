@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% load bootstrap_tags %}
+{% load staticfiles %}
+{% load appurl_tags %}
+
+
+{% block content %}
+
+
+<a href="(%appurl 'product_page' slug='myproduct' %}">A product</a>
+
+
+
+{% endblock %}
