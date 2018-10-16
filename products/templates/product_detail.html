@@ -1,28 +1,42 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
+
+{% load bootstrap_tags %}
+{% load staticfiles %}
+
+
 {% block content %}
-    <div class="row">
-        <div class="col-md-2 col-sm-3 text-center">
-            <a class="story-img" href="#">
-                <img src="/media/img/profile.jpg" class="img-circle">
-            </a>
-            <p><span class="boldtext">Author:</span> Niel</p>
-        </div>
-        <div class="col-sm-10 col-md-9">
-            {% if post.image %}
-                <img class="img-blogpost" src="/media/{{ post.image }}">
-            {% endif %}
-            <h3>{{ post.title }}</h3>
-            <div class="row">
-                <div class="col-xs-9">
-                    <p>{{ post.content }}</p>
-                    <p><span class="boldtext">Published on:</span> {{ post.published_date }} </p>
-                    <p><span class="boldtext">Views:</span> {{post.views}}</p>
-                    <p><span class="boldtext">Tag:</span> {{ post.tag }}</p>
-                    <a href="{% url 'get_posts' %}" class="btn btn-default">Back to Blog</a>
-                    <a href="{% url 'edit_post' post.id %}" class="btn btn-default">Edit Post</a>
-                    <hr>
-                </div>
+
+<div id="cardcontainer">
+    <div class="row row-flex">
+    {% for product in products %}
+        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4">
+            <div class="card">
+                <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
+        
+        <h3><a class="url" href="{{product.url}}">{{ product.name }}</a></h3>
+        <!--<h3><a href="{{product.url}}"></h3>-->
+        <p class="product-description">{{ product.description }}</p>
+        <p>€{{ product.price }}</p>
+     
+              <!--{% for tag in product.tags.all %}<li> {{ tag.name }}</li>{% endfor %}-->
+        <form method="post" action="{% url 'add_to_cart' product.id %}">
+            {% csrf_token %}
+            <div class="input-group">
+                <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity">
+                <span class="input-group-btn">
+                    <button class="btn btn-success" type="submit">Add</button>
+                </span>
             </div>
-        </div>
+        </form>
+        
     </div>
+    </div>
+    {% endfor %}
+   
+    
+</div>
+
+
+
+
 {% endblock %}
