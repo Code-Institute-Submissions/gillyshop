@@ -15,6 +15,8 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from django.views.generic import RedirectView
+from django.views.static import serve
 from accounts import urls as urls_accounts
 from products import urls as urls_products
 from cart import urls as urls_cart
