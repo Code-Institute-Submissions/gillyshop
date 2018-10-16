@@ -40,6 +40,6 @@ def galaxy(request):
     
 
 def product_page(request, slug):
-    # products = get_object_or_404(Product, slug=slug)
-    products = Product.objects.self
+    products = get_object_or_404(Product, slug=slug)
+    # products = Product.objects.self
     return render(request, "products/product_page.html", {"products":products})
