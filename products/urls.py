@@ -4,7 +4,6 @@ from .views import all_products, new, cactus, animals, flamingos, palm, pink, de
 
 urlpatterns = [
     url(r'^$', all_products, name="products"),
-    url(r'^/product_detail(?P<id>\d+)/$', product_detail, name="product_detail"),
     url(r'^new/$', new, name="new"),
     url(r'^cactus/$', cactus, name="cactus"),
     url(r'^animals/$', animals, name="animals"),
@@ -13,6 +12,7 @@ urlpatterns = [
     url(r'^pink/$', pink, name="pink"),
     url(r'^deer/$', deer, name="deer"),
     url(r'^galaxy/$', galaxy, name="galaxy"),
+    url(r'^(?P<pk>\d+)/$', product_detail, name="product_detail"),
     ]
     
     
