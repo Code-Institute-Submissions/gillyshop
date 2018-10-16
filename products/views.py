@@ -39,8 +39,8 @@ def galaxy(request):
     return render(request, "galaxies.html", {"products": galaxyproducts})
 
 
-def product_detail(request, pk):
-    productdetail = get_object_or_404(Product, pk=pk)
+def product_detail(request, id):
+    productdetail = get_object_or_404(Product, id=id)
     return render(request, "product_detail.html", {"product":productdetail})
  
     
