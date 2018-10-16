@@ -13,7 +13,6 @@ urlpatterns = [
     url(r'^deer/$', deer, name="deer"),
     url(r'^galaxy/$', galaxy, name="galaxy"),
     url(r'^(?P<pk>\d+)$', product_details, name="product_details"),
-
     ]
     
     

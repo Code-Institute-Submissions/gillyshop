@@ -40,7 +40,7 @@ def galaxy(request):
 
 
 def product_details(request, pk):
-    product = get_object_or_404(Product, pk=None)
+    product = get_object_or_404(Product, pk)
     return render(request, "product_details.html", {'product':product})
  
     
