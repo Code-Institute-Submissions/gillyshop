@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from .models import Product
 
 # Create your views here.
@@ -37,6 +37,15 @@ def deer(request):
 def galaxy(request):
     galaxyproducts = Product.objects.filter(category="Galaxy")
     return render(request, "galaxies.html", {"products": galaxyproducts})
+
+
+def product_details(request, pk):
+    product = get_object_or_404(Product, pk=pk)
+    return render(request, "product_details.html", {'product':product})
+ 
+    
+
+
     
 
 # def product_page(request, slug):
