@@ -39,7 +39,7 @@ def galaxy(request):
     return render(request, "galaxies.html", {"products": galaxyproducts})
     
 
-def product_page(request, slug):
-    products = get_object_or_404(Product, slug=slug)
-    # products = Product.objects.self
-    return render(request, "products/product_page.html", {"products":products})
+# def product_page(request, slug):
+#     products = get_object_or_404(Product, slug=slug)
+#     # products = Product.objects.self
+#     return render(request, "products/product_page.html", {"products":products})
