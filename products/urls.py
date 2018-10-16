@@ -1,5 +1,5 @@
 from django.conf.urls import url, include
-from .views import all_products, new, cactus, animals, flamingos, palm, pink, deer, galaxy, product_page
+from .views import all_products, new, cactus, animals, flamingos, palm, pink, deer, galaxy
 
 urlpatterns = [
     url(r'^$', all_products, name="products"),
