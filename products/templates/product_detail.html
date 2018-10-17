@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% load bootstrap_tags %}
+
 {% load staticfiles %}
 
 
@@ -8,12 +8,20 @@
 
 <div class="row">
      
-        
-        <div class="col-sm-10 col-md-9">
-            <h3>{{ product.name }}</h3>
-            <h3>{{ product.description }}</h3>
-            
-          </div>  
+    <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
+          <div><h3>{{ product.name }}</h3></div>
+          <div><p>{{ product.description }}</p></div>
+     
+     
+    
+     
+     
+        <!--    {% for product in products %}-->
+        <!--<div class="col-sm-10 col-md-9">-->
+        <!--    <h3>{{ product.name }}</h3>-->
+        <!--    <h3>{{ product.description }}</h3>-->
+        <!--    {% end for %}-->
+        <!--  </div>  -->
             
              <!--{% for product in products %}-->
             <!--<div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>-->
