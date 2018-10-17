@@ -11,6 +11,7 @@
             {% for productdetail in products %}
              {% if product.image %}
             <img class="img-blogpost" src="{{ product.image }}">
+            {% endif %}
             
             <h3>{{ product.description }}</h3>
             {% endfor %}
