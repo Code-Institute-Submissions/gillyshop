@@ -5,6 +5,7 @@ from .models import Product, Image
 
 def all_products(request):
     products = Product.objects.all()
+    images = Image.objects.all()
     return render(request, "products.html", {"products": products})
 
 def new(request):
