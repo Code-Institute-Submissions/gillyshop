@@ -11,7 +11,11 @@ class Product(models.Model):
     tags = TaggableManager()
     url = models.TextField(max_length=200, default='')
     category = models.CharField(max_length=100, default='')
-
+    
+    
+class Image(models.Model):
+    image = models.FileField(upload_to='images')
+    productimg = models.ForeignKey(Product, related_name='images')
 
     def __str__(self):
         return self.name
@@ -42,6 +46,3 @@ class Product(models.Model):
         
 
         
-class Image(models.Model):
-    image = models.FileField(upload_to='images')
-    productimg = models.ForeignKey(Product, related_name='images')
