@@ -8,16 +8,13 @@
         
         <div class="col-sm-10 col-md-9">
             
-            {% if product.image %}
-            <img src="/media{{ product.image }}">
-            {% endif %}
-            <h3>{{ product.name}}</h3>
-              <div class="row">
-                <div class="col-xs-9">
-                    <p>{{ product.description }}</p>
-                      <p>{{ product.price }}</p>
-                    
-                    <hr>
+            <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
+            <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.imagetwo }}')"></div>
+             <h3><a class="url" href="{% url 'product_detail' product.id %}">{{ product.name }}</a></h3>
+              <h3><a class="url" href="{% url 'product_detail' product.id %}">{{ product.description }}</a></h3>
+               <h3><a class="url" href="{% url 'product_detail' product.id %}">{{ product.name }}</a></h3>
+            
+     
                 </div>
             </div>
         </div>
