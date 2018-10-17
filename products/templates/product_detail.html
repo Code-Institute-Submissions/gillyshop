@@ -9,6 +9,9 @@
 <div class="row">
      
     <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
+    
+    {% endfor %}
+    
           <div><h3>{{ product.name }}</h3></div>
           <div><p>{{ product.description }}</p></div>
      
