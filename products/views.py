@@ -39,8 +39,8 @@ def galaxy(request):
 
 
 def product_detail(request, pk):
-    products = get_object_or_404(Product, pk=id)
-    return render(request, "product_detail.html", {"products": products})
+    productdetail = get_object_or_404(Product, pk=id)
+    return render(request, "product_detail.html", {"products": productdetail})
  
     
 
