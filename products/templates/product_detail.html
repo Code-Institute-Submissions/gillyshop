@@ -8,7 +8,10 @@
            
             <p><span class="boldtext">Author:</span> Niel</p>
             <p>test test test</p>
-            {% for product in products %}
+            {% for productdetail in products %}
+             {% if product.image %}
+            <img class="img-blogpost" src="{{ product.image }}">
+            
             <h3>{{ product.description }}</h3>
             {% endfor %}
         </div>
