@@ -43,5 +43,5 @@ class Product(models.Model):
 
         
 class Image(models.Model):
-    image = models.ImageField(upload_to='images')
-    productimg = models.ForeignKey('Product', related_name='images')
+    image = models.FileField(upload_to='images')
+    productimg = models.ForeignKey(Product, related_name='images')
