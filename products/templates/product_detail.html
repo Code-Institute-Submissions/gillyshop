@@ -60,37 +60,64 @@ body {
     cursor: pointer;
 }
 </style>
-</head>
-<body>
 
-<div style="text-align:center">
-  <h2>Tabbed Image Gallery</h2>
-  <p>Click on the images below:</p>
+<div id="outer" class="container-fluid">
+  
+	<div class="row">
+		<div class="col-md-4">						
+			<div class="row">
+				<div class="col-md-12">
+		  			<img src="{{ MEDIA_URL}}{{ product.image }}" onclick="imgFunction(this);">
+		  		</div>
+			</div>
+	
+
+			<div class="row">
+				<div class="col-md-12">
+		  			<img src="{{ MEDIA_URL}}{{ product.imagetwo }}" onclick="imgFunction(this);">
+		  		</div>
+			</div>
+		</div>
+	</div>	
+
+	<div class="container">
+  	<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  		<img id="expandedImg" style="width:100%">
+  			<div id="imgtext"></div>
+	</div>
+
+   
 </div>
+
+
+
+
+<!--<div style="text-align:center">-->
+<!--  <h2>Tabbed Image Gallery</h2>-->
+<!--  <p>Click on the images below:</p>-->
+<!--</div>-->
 
 <!-- The four columns -->
-<div class="row">
-  <div class="column">
-    <img src="{{ MEDIA_URL}}{{ product.image }}" alt="one" style="width:50%" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="{{ MEDIA_URL}}{{ product.imagetwo }}" alt ="two" style="width:50%" onclick="myFunction(this);">
-  </div>
+<!--<div class="row">-->
+<!--  <div class="column">-->
+<!--    <img src="{{ MEDIA_URL}}{{ product.image }}" alt="one" style="width:50%" onclick="myFunction(this);">-->
+<!--  </div>-->
+<!--  <div class="column">-->
+<!--    <img src="{{ MEDIA_URL}}{{ product.imagetwo }}" alt ="two" style="width:50%" onclick="myFunction(this);">-->
+<!--  </div>-->
   
-</div>
+<!--</div>-->
 
-<div class="container">
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <img id="expandedImg" style="width:100%">
-  <div id="imgtext"></div>
-</div>
+<!--<div class="container">-->
+<!--  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>-->
+<!--  <img id="expandedImg" style="width:100%">-->
+<!--  <div id="imgtext"></div>-->
+<!--</div>-->
 
 <script>
-function myFunction(imgs) {
+function imgFunction(imgs) {
     var expandImg = document.getElementById("expandedImg");
-    var imgText = document.getElementById("imgtext");
     expandImg.src = imgs.src;
-    imgText.innerHTML = imgs.alt;
     expandImg.parentElement.style.display = "block";
 }
 </script>
