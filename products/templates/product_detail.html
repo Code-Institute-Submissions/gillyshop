@@ -34,24 +34,35 @@ body {
 		<div class="col-md-4">						
 			<div class="row">
 				<div class="col-md-12">
-		  			<img src="{{ MEDIA_URL}}{{ product.image }}" width="25%" onclick="imgFunction(this);">
+		  			<img src="{{ MEDIA_URL}}{{ product.image }}" width="50%" onclick="imgFunction(this);">
 		  		</div>
 			</div>
 	
 
 			<div class="row">
 				<div class="col-md-12">
-		  			<img src="{{ MEDIA_URL}}{{ product.imagetwo }}" width="25%" onclick="imgFunction(this);">
+		  			<img src="{{ MEDIA_URL}}{{ product.imagetwo }}" width="50%" onclick="imgFunction(this);">
 		  		</div>
 			</div>
 		</div>
 	
 	
-		<div class="col-md-8">-->
+		<div class="col-md-8">
   			<img id="expandedImg" style="width:60%">
   		</div>
 	
 	</div>
+
+<script>
+function imgFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    expandImg.src = imgs.src;
+    expandImg.parentElement.style.display = "block";
+}
+</script>
+
+    
+{% endblock %}
 
 
 	<!--<div class="container">-->
@@ -88,13 +99,13 @@ body {
 <!--  <div id="imgtext"></div>-->
 <!--</div>-->
 
-<script>
-function imgFunction(imgs) {
-    var expandImg = document.getElementById("expandedImg");
-    expandImg.src = imgs.src;
-    expandImg.parentElement.style.display = "block";
-}
-</script>
+// <script>
+// function imgFunction(imgs) {
+//     var expandImg = document.getElementById("expandedImg");
+//     expandImg.src = imgs.src;
+//     expandImg.parentElement.style.display = "block";
+// }
+// </script>
 
 
 <!--<div id="outer" class="container-fluid">-->
