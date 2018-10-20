@@ -4,9 +4,9 @@
 
 <div class="crumbmenu">
 	<ul class="breadcrumb">
-		<li><a href="#">Products</a></li>
-		<li><a href="#">Deer</a></li>
-		<li>{{ product.name }}</li>
+		<li class="crumb"><a href="{% url 'products' %}">Products</a></li>
+		<li class="crumb"><a href="{% url 'deer' %}">Deer</a></li>
+		<li class="crumb">{{ product.name }}</li>
 	</ul>
 </div>
 <div id="outer" class="productcontainer">
