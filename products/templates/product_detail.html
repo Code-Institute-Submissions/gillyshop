@@ -3,7 +3,7 @@
 
 
 
-<div id="outer" class="container">
+<div id="outer" class="productcontainer">
   
 	<div class="row">
 		<div class="col-md-4">						
@@ -22,8 +22,8 @@
 		</div>
 	
 	
-		<div class="col-md-8">
-  			<img src="{{ MEDIA_URL}}{{ product.image }}" id="expandedImg" style="width:60%">
+		<div class="col-md-4-offset-4">
+  			<img src="{{ MEDIA_URL}}{{ product.image }}" class="mainimg" style="width:60%">
   			<h3>{{ product.name }}</h3>
   			<h3>€{{ product.price }}</h3>
   			<h3>{{ product.description }}</h3>
