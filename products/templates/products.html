@@ -1,14 +1,14 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<div class="crumbmenu">
-	<ul class="breadcrumb">
-		<li class="crumb"><a href="{% url 'index' %}">Home</a></li>
-		<li class="crumb"><a href="{% url 'products' %}">Products</a></li>
-		<li class="crumb"><a href="{% url 'deer' %}">{{ product.category }}</a></li>
-		<li class="crumb">{{ product.name }}</li>
-	</ul>
-</div>
+<!--<div class="crumbmenu">-->
+<!--	<ul class="breadcrumb">-->
+<!--		<li class="crumb"><a href="{% url 'index' %}">Home</a></li>-->
+<!--		<li class="crumb"><a href="{% url 'products' %}">Products</a></li>-->
+<!--		<li class="crumb"><a href="{% url 'products' product.category %}">{{ product.category }}</a></li>-->
+<!--		<li class="crumb">{{ product.name }}</li>-->
+<!--	</ul>-->
+<!--</div>-->
 
 
 <div id="cardcontainer">
