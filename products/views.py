@@ -13,9 +13,6 @@ def cactus(request):
     cactusproducts = Product.objects.filter(category="Cactus")
     return render(request, "cactus.html", {"products": cactusproducts})
     
-def animals(request):
-    animalproducts = Product.objects.filter(category="Animal")
-    return render(request, "animals.html", {"products": animalproducts})
     
 def flamingos(request):
     flamingoproducts = Product.objects.filter(category="Flamingo")
