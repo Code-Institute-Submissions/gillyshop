@@ -9,8 +9,8 @@
 		<div class="col-md-4">						
 			<div class="row">
 				<div class="col-md-12">
-		  			<img src="{{ MEDIA_URL}}{{ product.image }}" class ="imgtab" width="30%" onclick="imgFunction(this);">
-		  			<img src="{{ MEDIA_URL}}{{ product.imagetwo }}" class ="imgtab" width="30%" onclick="imgFunction(this);">
+		  			<img src="{{ MEDIA_URL}}{{ product.image }}" class ="imgtab" width="35%" onclick="imgFunction(this);">
+		  			<img src="{{ MEDIA_URL}}{{ product.imagetwo }}" class ="imgtab" width="35%" onclick="imgFunction(this);">
 		  			
 		  		</div>
 			</div>
@@ -21,6 +21,15 @@
 		  			<h3>{{ product.name }}</h3>
   			<h3>€{{ product.price }}</h3>
   			<h3>{{ product.description }}</h3>
+  			<form method="post" action="{% url 'add_to_cart' product.id %}">
+            {% csrf_token %}
+            <div class="input-group">
+                <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity">
+                <span class="input-group-btn">
+                    <button class="btn btn-success" type="submit">Add</button>
+                </span>
+            </div>
+        </form> 
 		  		</div>
 			</div>
 		</div>
