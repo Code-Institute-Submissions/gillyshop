@@ -6,6 +6,13 @@
 
 {% block content %}
 
+<div class="crumbmenu">
+	<ul class="breadcrumb">
+		<li class="crumb"><a href="{% url 'index' %}">Home</a></li>
+		<li class="crumb"><a href="{% url 'products' %}">Products</a></li>
+	</ul>
+</div>
+
 <div id="cardcontainer">
     <div class="row row-flex">
     {% for product in products %}
