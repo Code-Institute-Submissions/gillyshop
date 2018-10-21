@@ -90,3 +90,6 @@ def about(request):
 def shipping(request):
     return render(request, 'shipping.html')
     
+def contact(request):
+    return render(request, 'contact.html')
+    
