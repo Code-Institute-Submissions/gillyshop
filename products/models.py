@@ -11,7 +11,7 @@ class Product(models.Model):
     imagetwo = models.ImageField(upload_to='images', blank=True)
     tags = TaggableManager()
     category = models.CharField(max_length=100, default='')
-    photog = models.CharField(max_length=200, default = '')
+
     
     
     def __str__(self):
