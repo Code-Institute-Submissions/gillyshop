@@ -61,10 +61,6 @@
            <li><a href="{% url 'galaxy' %}">Galaxies</a></li>
                <li><a href="{% url 'palmtrees' %}">Palm Trees</a></li>
                 <li><a href="{% url 'pink' %}">Pink</a></li>
-    
-
-     
-        
       </ul></li>
       
         <li class="dropdown">
@@ -74,7 +70,7 @@
       <li><a href="{% url 'shipping' %}">Shipping</a></li>
       </ul></li>
   
-   <li class="contactmenu"><a href="{% url 'products' %}">Contact</a></li>
+   <li class="contactmenu"><a href="{% url 'contact' %}">Contact</a></li>
    
   {% if user.is_authenticated %}
                 <li><a href="{% url 'profile' %}"><i class="fas fa-user"></i>Profile</a></li>
