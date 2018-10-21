@@ -53,7 +53,7 @@
 				<h3 class="info">{{ product.description }}</h3>
 				<h3 class="info">A3 Matte Paper</h3>
   				<h3>€{{ product.price }}</h3>
-  				<h3>{{ product.tags }}</h3>
+  				<h3>{{ product.Objects.tags(all) }}</h3>
   			
   			<form method="post" action="{% url 'add_to_cart' product.id %}">
             {% csrf_token %}
