@@ -5,11 +5,11 @@
 {% block content %}
 
 <div class="container">
-<table class="table">
+<table class="table table-bordered">
     <tr>
     {% for item in cart_items %}
     <td class="cartimg" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></td>
-    <td>{{ item.product.name }}</td>
+    <td>{{ item.product.name }}{{ item.product.description }}</td>
     <td><form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
                     {% csrf_token %}
                         <div class="form-group">
