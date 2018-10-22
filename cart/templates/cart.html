@@ -10,17 +10,16 @@
 
         <div class="col-md-6">
             <div class="row">
-            <div class="cardcart">
+         
                     <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
                     <h3>{{ item.product.name }}</h3>
                         <!--<p class="product-description">{{ item.product.description }}</p>-->
             </div>
-            </div>
+            
         </div>
 
         <div class="col-md-3">
             <div class="row">
-            <div class="cardcart">
               <form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
                     {% csrf_token %}
                         <div class="form-group">
@@ -34,14 +33,14 @@
                         <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-edit" aria-hidden="true"</span>Amend</button>
                 </form>
             </div>
-        </div>
+        
         </div>
 
 
         <div class="col-md-3">
-            <div class="cardcart">
+        
               <p>{{ item.product.price }}</p>
-            </div>
+            
         </div>
 
 {% endfor %}
