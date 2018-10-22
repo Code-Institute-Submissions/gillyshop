@@ -8,14 +8,14 @@
     <div class="row">
 {% for item in cart_items %}
 
-        <div class="col-sm-4">
+        <div class="col-md-6">
                   <div class="cartimg" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
                     <h3 class="cartname">{{ item.product.name }}</h3>
-                        <!--<p class="product-description">{{ item.product.description }}</p>-->
+                        <p class="product-description">{{ item.product.description }}</p>
+                         <p>{{ item.product.price }}</p>
         </div>
 
-        <div class="col-sm-4">
-            <p>test 2</p>
+        <div class="col-md-6">
             <div class="row">
               <form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
                     {% csrf_token %}
@@ -33,12 +33,7 @@
         </div>
 
 
-        <div class="col-sm-4">
-   <p>{{ item.product.price }}</p>
-      <p>{{ item.product.price }}</p>
-         <p>{{ item.product.price }}</p>
-            <p>{{ item.product.price }}</p>
-        </div>
+        
 
 {% endfor %}
 
