@@ -22,7 +22,7 @@
                         </div>
                         <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-edit" aria-hidden="true"</span>Amend</button>
                 </form></td>
-    <td>{{ item.product.price }}</td>
+    <td>€{{ item.product.price }}</td>
     </tr>
 
     {% endfor %}
@@ -41,9 +41,10 @@
 
  
 <div class="row cartbtns">
-    
-      <a href="{% url 'products' %}" class="btn btn-success" role="button"><span class="goback" aria-hidden="true"></span><i class="fas fa-arrow-left"></i> Continue Shopping</a>
-      <a href="{% url 'checkout' %}" class="btn btn-success" role="button"><span class="proceed" aria-hidden="true"></span><i class="fas fa-arrow-right"></i> Proceed to checkout</a>
+    <div class="col-sm-6">
+      <a href="{% url 'products' %}" class="btn btn-success" role="button"><span class="goback" aria-hidden="true"></span><i class="fas fa-arrow-left"></i> Continue Shopping</a></div>
+      <div class="col-sm-6">
+      <a href="{% url 'checkout' %}" class="btn btn-success" role="button"><span class="proceed" aria-hidden="true"></span><i class="fas fa-arrow-right"></i> Proceed to checkout</a></div>
   
 </div>
 </div>
