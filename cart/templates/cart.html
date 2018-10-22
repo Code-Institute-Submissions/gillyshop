@@ -8,7 +8,7 @@
 <table class="table table-bordered">
     <tr>
     {% for item in cart_items %}
-    <td class="cartimg" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></td>
+    <td class="cartimg">{{ item.product.image }}</td>
     <td><h3 class="h3cart">{{ item.product.name }}</h3><br>{{ item.product.description }}</td>
     <td><form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
                     {% csrf_token %}
