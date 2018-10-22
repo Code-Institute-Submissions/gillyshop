@@ -4,6 +4,7 @@
 
 {% block content %}
 
+<div class="container">
 <table class="table">
     <tr>
     {% for item in cart_items %}
@@ -21,7 +22,7 @@
                         </div>
                         <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-edit" aria-hidden="true"</span>Amend</button>
                 </form></td>
-    <td>{{ item.product.price }}{{ item.quantity }}</td>
+    <td>{{ item.product.price.quantity }}</td>
     </tr>
     {% endfor %}
 </table>
@@ -35,5 +36,6 @@
       <a href="{% url 'products' %}" class="btn btn-success" role="button"><span class="goback" aria-hidden="true"></span><i class="fas fa-arrow-left"></i> Continue Shopping</a>
       <a href="{% url 'checkout' %}" class="btn btn-success" role="button"><span class="proceed" aria-hidden="true"></span><i class="fas fa-arrow-right"></i> Proceed to checkout</a>
   
+</div>
 </div>
 {% endblock %}
