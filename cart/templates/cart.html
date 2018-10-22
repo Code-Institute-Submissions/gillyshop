@@ -4,12 +4,12 @@
 
 {% block content %}
 
-<div class="cartcontainer">
+<div class="container-fluid">
     <div class="row">
 {% for item in cart_items %}
 
         <div class="cartcol col-md-4">
-                  <div class="cartimg" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
+                  <div class="img-responsive" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
                     <h3 class="cartname">{{ item.product.name }}</h3>
                         <!--<p class="product-description">{{ item.product.description }}</p>-->
         </div>
