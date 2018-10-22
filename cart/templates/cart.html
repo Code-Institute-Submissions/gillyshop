@@ -8,13 +8,13 @@
     <!--<div class="row">-->
 {% for item in cart_items %}
 
-        <div class="cartcol col-md-4">
+        <div class="cartcol">
                   <div class="cartimg" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
                     <h3 class="cartname">{{ item.product.name }}</h3>
                         <!--<p class="product-description">{{ item.product.description }}</p>-->
         </div>
 
-        <div class="cartcol col-md-4">
+        <div class="cartcol">
             <p>test 2</p>
             <div class="row">
               <form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
@@ -33,7 +33,7 @@
         </div>
 
 
-        <div class="cartcol col-md-4">
+        <div class="cartcol">
    <p>{{ item.product.price }}</p>
         </div>
 
