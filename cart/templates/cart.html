@@ -5,16 +5,16 @@
 {% block content %}
 
 <div class="cartcontainer">
-    <!--<div class="row">-->
+    <div class="row">
 {% for item in cart_items %}
 
-        <div class="cartcol">
+        <div class="cartcol col-md-4">
                   <div class="cartimg" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
                     <h3 class="cartname">{{ item.product.name }}</h3>
                         <!--<p class="product-description">{{ item.product.description }}</p>-->
         </div>
 
-        <div class="cartcol">
+        <div class="cartcol col-md-4">
             <p>test 2</p>
             <div class="row">
               <form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
@@ -33,12 +33,12 @@
         </div>
 
 
-        <div class="cartcol">
+        <div class="cartcol col-md-4">
    <p>{{ item.product.price }}</p>
         </div>
 
 {% endfor %}
- <!--</div>-->
+ </div>
 <div class="row">
     <p>Total</p>
     <p><span class="glyphicon-glyphicon-euro" aria-hidden="true"></span>{{ total }}</p>
