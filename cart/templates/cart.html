@@ -31,16 +31,17 @@
         <td></td>
         <td></td>
         <td>TOTAL:</td>
-        <td>{{ total }}</td>
+        <td>€{{ total }}</td>
     </tr>
+   
+    
 </table>
 
 
 
  
-<div class="row">
-    <p>Total</p>
-    <p><span class="glyphicon-glyphicon-euro" aria-hidden="true"></span>{{ total }}</p>
+<div class="row cartbtns">
+    
       <a href="{% url 'products' %}" class="btn btn-success" role="button"><span class="goback" aria-hidden="true"></span><i class="fas fa-arrow-left"></i> Continue Shopping</a>
       <a href="{% url 'checkout' %}" class="btn btn-success" role="button"><span class="proceed" aria-hidden="true"></span><i class="fas fa-arrow-right"></i> Proceed to checkout</a>
   
