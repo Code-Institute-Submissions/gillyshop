@@ -4,17 +4,17 @@
 
 {% block content %}
 
-<div class="container-fluid">
+<div class="cartcontainer">
     <div class="row">
 {% for item in cart_items %}
 
-        <div class="cartcol col-md-4">
-                  <div class="img-responsive" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
+        <div class="col-md">
+                  <div class="cartimg" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
                     <h3 class="cartname">{{ item.product.name }}</h3>
                         <!--<p class="product-description">{{ item.product.description }}</p>-->
         </div>
 
-        <div class="cartcol col-md-4">
+        <div class="col-md">
             <p>test 2</p>
             <div class="row">
               <form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
@@ -33,7 +33,7 @@
         </div>
 
 
-        <div class="cartcol col-md-4">
+        <div class="col-md">
    <p>{{ item.product.price }}</p>
         </div>
 
