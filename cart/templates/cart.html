@@ -7,6 +7,12 @@
 <div class="cartcontainer">
 <table class="table table-bordered">
     <tr>
+        <th></th>
+        <th>Product</th>
+        <th>Number of items</th>
+        <th>Price per item</th>
+        </tr>
+        <tr>
     {% for item in cart_items %}
     <td><img class="cartimg" src="{{ MEDIA_URL }}{{ item.product.image }}"></td>
     <td><h3 class="h3cart">{{ item.product.name }}</h3><br>{{ item.product.description }}</td>
