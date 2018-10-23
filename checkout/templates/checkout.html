@@ -15,7 +15,7 @@
 {% block content %}
 
 <div class="checkcontainer">
-    <legend>Payment Details</legend>
+    <legend><h2 class="ledge">Payment Details</h2><h2 class="ledger">Order Summary</h2></legend>
 <!--    <div class="col-md-4">-->
 <!--<table class="tablecheck table-bordered">-->
    
@@ -60,7 +60,7 @@
 <!--</div>-->
 <div class="col-md-8">
 <form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
-<legend>Payment Details</legend>
+<!--<legend>Payment Details</legend>-->
 <div id="credit-card-errors" style="display: none">
     <div class="alert-messsage block-message error" id="stripe-error-message"></div>
 </div>
