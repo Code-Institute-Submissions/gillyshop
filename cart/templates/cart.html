@@ -20,7 +20,7 @@
                                 <div class="input-group-addon">{{item.quantity}}</div>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-edit" aria-hidden="true"</span>Amend</button>
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-edit" aria-hidden="true"</i>Amend</button>
                 </form></td>
     <td>€{{ item.product.price }}</td>
     </tr>
@@ -45,7 +45,7 @@
       <a href="{% url 'products' %}" class="btn btn-goback" role="button"><span aria-hidden="true"></span><i class="fas fa-arrow-left"></i> Continue Shopping</a></div>
       <div class="col-sm-2">
       <a href="{% url 'checkout' %}" class="btn btn-proceed" role="button"><span aria-hidden="true"></span><i class="fas fa-arrow-right"></i> Proceed to checkout</a></div>
-  
+    </div>
 </div>
-</div>
+
 {% endblock %}
