@@ -19,7 +19,7 @@
    
         <tr>
     {% for item in cart_items %}
-    <td><img class="checkimg" src="{{ MEDIA_URL }}{{ item.product.image }}">{{ item.product.name }}</td>
+    <td><img class="checkimg" src="{{ MEDIA_URL }}{{ item.product.image }}"></td>
     <td>{{item.quantity}}</td>
     <td>€{{ item.product.price }}</td>
     </tr>
