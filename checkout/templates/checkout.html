@@ -16,25 +16,20 @@
 
 <div class="cartcontainer">
 <table class="tablecheck table-bordered">
-    <tr>
-        <th></th>
-        <th>Product</th>
-        <th>Number of items</th>
-        <th>Price per item</th>
-        </tr>
+   
         <tr>
     {% for item in cart_items %}
-    <td><img class="cartimg" src="{{ MEDIA_URL }}{{ item.product.image }}">{{ item.product.name }}</td>
+    <td><img class="checkimg" src="{{ MEDIA_URL }}{{ item.product.image }}">{{ item.product.name }}</td>
     <td>{{item.quantity}}</td>
-    <td><h3 class="h3cart">€{{ item.product.price }}</h3></td>
+    <td>€{{ item.product.price }}</td>
     </tr>
 
     {% endfor %}
         
     <tr>
         <td></td>
-        <td></td>
-        <td><h3 class="h3cart">TOTAL: €{{ total }}</h3></td>
+        <td>TOTAL:</td>
+        <td>€{{ total }}</td>
     </tr>
   
 </table>
