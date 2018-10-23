@@ -15,7 +15,7 @@
 {% block content %}
 
 <div class="cartcontainer">
-<table class="table table-bordered">
+<table class="tablecheck table-bordered">
     <tr>
         <th></th>
         <th>Product</th>
@@ -24,23 +24,8 @@
         </tr>
         <tr>
     {% for item in cart_items %}
-    <td><img class="cartimg" src="{{ MEDIA_URL }}{{ item.product.image }}"></td>
-    <td><h3 class="h3cart">{{ item.product.name }}</h3><br>{{ item.product.description }}</td>
-    <td><form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
-                    {% csrf_token %}
-                        <div class="form-group">
-                            <h3 class="h3cart">Quantity:{{item.quantity}} </h3>
-                            <label for="exampleInputAmount" class="sr-only">New qty</label>
-                            <div class="input-group">
-                                <!--<div class="input-group-addon">Qty</div>-->
-                                <input name="quantity" type="number" min="0" max="999" class="form-control">
-                                <!--<div class="input-group-addon">{{item.quantity}}</div>-->
-                                <button type="submit" class="btn btn-primary" aria-hidden="true">Amend</button>
-                            </div>
-                        </div>
-                        <!--<button type="submit" class="btn btn-primary" aria-hidden="true">Amend</button>-->
-                </form>
-                </td>
+    <td><img class="cartimg" src="{{ MEDIA_URL }}{{ item.product.image }}">{{ item.product.name }}</td>
+    <td>{{item.quantity}}</td>
     <td><h3 class="h3cart">€{{ item.product.price }}</h3></td>
     </tr>
 
@@ -49,11 +34,9 @@
     <tr>
         <td></td>
         <td></td>
-        <td></td>
         <td><h3 class="h3cart">TOTAL: €{{ total }}</h3></td>
     </tr>
-   
-    
+  
 </table>
 
 </div>
@@ -94,7 +77,9 @@
 
 
 {% csrf_token %}
-<div class="form-group col-md-12">
+<div class="col-sm-10">
+      <a href="{% url 'products' %}" class="btn btn-goback" role="button"><span aria-hidden="true"></span><i class="fas fa-arrow-left"></i> Continue Shopping</a></div>
+<div class="form-group col-sm-2">
     <input class="btn btn-primary" id="submit_payment_btn" name="commit" type="submit" value="Submit Payment">
 </div>
 
