@@ -73,26 +73,30 @@
 </div>
 
   <div class="col-md-4">
-<!--<table class="tablecheck table-bordered">-->
+<table class="tablecheck table-bordered">
    
-<!--        <tr>-->
+   <tr>
+       <th>Product</th>
+       <th>Quantity</th>
+       <th>Price</th>
+   </tr>
+        <tr>
     {% for item in cart_items %}
-    
- <div class="row"> <img class="checkimg" src="{{ MEDIA_URL }}{{ item.product.image }}"></div>
-    <div class="row">{{item.quantity}}</div>
-   <div class="row">€{{ item.product.price }}</div>
-    
+    <td><img class="checkimg" src="{{ MEDIA_URL }}{{ item.product.image }}"></td>
+    <td>{{item.name}}</td>
+    <td>{{item.quantity}}</td>
+    <td>€{{ item.product.price }}</td>
+    </tr>
 
     {% endfor %}
         
-   
-     
-      <div class="row">  TOTAL:
-        €{{ total }}
-        </div>
+    <tr>
+        <td></td>
+        <td>TOTAL:</td>
+        <td>€{{ total }}</td>
+    </tr>
   
-  
-<!--</table>-->
+</table>
 </div>
 
 {% csrf_token %}
