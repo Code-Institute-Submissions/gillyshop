@@ -77,17 +77,19 @@
    
 <!--        <tr>-->
     {% for item in cart_items %}
-  <img class="checkimg" src="{{ MEDIA_URL }}{{ item.product.image }}">
-    {{item.quantity}}
-    €{{ item.product.price }}
+    
+ <div class="row"> <img class="checkimg" src="{{ MEDIA_URL }}{{ item.product.image }}"></div>
+    <div class="row">{{item.quantity}}</div>
+   <div class="row">€{{ item.product.price }}</div>
     
 
     {% endfor %}
         
    
      
-        TOTAL:
+      <div class="row">  TOTAL:
         €{{ total }}
+        </div>
   
   
 <!--</table>-->
