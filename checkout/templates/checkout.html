@@ -73,24 +73,24 @@
 </div>
 
   <div class="col-md-4">
-<table class="tablecheck table-bordered">
+<!--<table class="tablecheck table-bordered">-->
    
-        <tr>
+<!--        <tr>-->
     {% for item in cart_items %}
-    <td><img class="checkimg" src="{{ MEDIA_URL }}{{ item.product.image }}"></td>
-    <td>{{item.quantity}}</td>
-    <td>€{{ item.product.price }}</td>
-    </tr>
+  <img class="checkimg" src="{{ MEDIA_URL }}{{ item.product.image }}">
+    {{item.quantity}}
+    €{{ item.product.price }}
+    
 
     {% endfor %}
         
-    <tr>
-        <td></td>
-        <td>TOTAL:</td>
-        <td>€{{ total }}</td>
-    </tr>
+   
+     
+        TOTAL:
+        €{{ total }}
   
-</table>
+  
+<!--</table>-->
 </div>
 
 {% csrf_token %}
