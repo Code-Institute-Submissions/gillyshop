@@ -12,7 +12,7 @@ urlpatterns = [
     url(r'^deer/$', deer, name="deer"),
     url(r'^galaxy/$', galaxy, name="galaxy"),
     url(r'^(?P<pk>\d+)/$', product_detail, name="product_detail"),
-    url(r'^(?P<tag>\d+)/$', products, name='products_by_tag'),
+    url(r'^tag/(?P<tag_slug>\d+)/$', products, name='products_by_tag'),
     ]
     
     
