@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Product
+from taggit.models import Tag
 # Create your views here.
 
 def all_products(request):
