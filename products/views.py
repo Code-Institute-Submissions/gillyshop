@@ -45,6 +45,10 @@ def product_detail(request, pk):
  
 def tag(request):
     return render(request, 'tag.html')
+    
+def blue(request, tag):
+    blue = get_object_or_404(Product, tag=tag)
+    return render(request, "tag_blue.html", {"blue":blue})
 
        
 
