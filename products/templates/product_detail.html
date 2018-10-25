@@ -42,7 +42,7 @@
   		<li><a class="url" href="{% url 'tag' %}">{{ tag.name }}</a></li>
   		{% if tag.name == blue %}
   		<a class="url" href="{% url 'tag' products.tag.blue %}"></a>
-  	
+  		{% endif %}
   
   	
   		{% endfor %}
