@@ -40,7 +40,7 @@
   				<h3>€{{ product.price }}</h3>
   		{% for tag in product.tags.all %}
  
-  		<a class="url" href="{% url 'tag' tag.name %}">{{ tag.name }}</a>
+  		<li><a class="url" href="{% url 'tag' %}">{{ tag.name }}</a></li>
   	
   		{% endfor %}
   			
