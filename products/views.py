@@ -43,8 +43,8 @@ def product_detail(request, pk):
     product = get_object_or_404(Product, pk=pk)
     return render(request, "product_detail.html", {"product": product})
  
-# def tag(request):
-#     tag = Tag.objects.all()
+def tag(request):
+    return render(request, 'tag.html')
 
        
 
