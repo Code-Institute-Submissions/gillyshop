@@ -38,10 +38,11 @@
 				<h3 class="info">{{ product.description }}</h3>
 				<h3 class="info">A3 Matte Paper</h3>
   				<h3>€{{ product.price }}</h3>
+  				
   		{% for tag in product.tags.all %}
-  		<li>{{ tag.name }}</li>
+  		<li><a href="#">{{ tag.name }}</a></li>
   		{% if tag.name == blue %}
-  		<a class="url" href="{% url 'tag_blue' tag.name %}"></a>
+  		{% url 'tag_blue' tag.name %}
   		{% endif %}
   
   	
