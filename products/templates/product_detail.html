@@ -42,7 +42,9 @@
   		{% for tag in product.tags.all %}
   		<li><a href="#">{{ tag.name }}</a></li>
   		{% if tag.name == blue %}
-  		{% url 'tag_blue' tag.name %}
+  		<a href="{% url 'tag_blue' %}">blueee</a>
+  		{% else %}
+  		<a href="{% url 'product_detail' %}">bleh</a>
   		{% endif %}
   
   	
