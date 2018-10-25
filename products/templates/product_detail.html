@@ -39,7 +39,7 @@
 				<h3 class="info">A3 Matte Paper</h3>
   				<h3>€{{ product.price }}</h3>
   		{% for tag in product.tags.all %}
-  		<!--<li><a class="url" href="{% url 'tag' %}">{{ tag.name }}</a></li>-->
+  		<li>{{ tag.name }}</li>
   		{% if tag.name == blue %}
   		<a class="url" href="{% url 'tag_blue' tag.name %}"></a>
   		{% endif %}
