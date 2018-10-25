@@ -39,7 +39,8 @@
 				<h3 class="info">A3 Matte Paper</h3>
   				<h3>€{{ product.price }}</h3>
   		{% for tag in product.tags.all %}
-  		<li>{{ tag.name }}</li>
+  		<li><a class="url" href="{% url 'tag' tag.name %}"></a></li>
+  		<!--<li><a href="{{ tag.name }}</li>-->
   		{% endfor %}
   			
   			<form method="post" action="{% url 'add_to_cart' product.id %}">
