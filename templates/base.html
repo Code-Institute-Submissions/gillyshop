@@ -24,17 +24,13 @@
     	<div id="header">
 		<div class="container">  
 			<div class="row align-items-center">
-				<span><a class="header" href="{% url 'index' %}">MILLENNIAL PINK</a>
-				<p class="subhead">A curated art collection for the millenial in your life</p></span>
+				<a class="header" href="{% url 'index' %}">MILLENNIAL PINK</a>
+				<p class="subhead">A curated art collection for the millenial in your life</p>
 				<span class="icons">
 				    <ul>
 				    {% if user.is_authenticated %}
-                <li><a href="{% url 'profile' %}"><i class="fas fa-user"></i>Profile</a></li>
-                <li><a href="{% url 'logout' %}"><i class="fas fa-sign-out"></i>Logout</a></li>
+                <li><a href="{% url 'profile' %}"><i class="fas fa-user"></i></a></li>
             {%  else %}
-    
-                
-                <li><a href="{% url 'registration' %}"><i class="fas fa-user-plus"></i>Register</a></li>
                 <li><a href="{% url 'login' %}"><i class="fas fa-sign-in"></i>Login</a></li>
             {% endif %}        
 				    <li class="shop">
