@@ -27,21 +27,19 @@
 				<a class="header" href="{% url 'index' %}">MILLENNIAL PINK</a>
 				<p class="subhead">A curated art collection for the millenial in your life</p>
 				<span class="icons">
-				    <ul>
-				    {% if user.is_authenticated %}
-                <li><a href="{% url 'profile' %}"><i class="fas fa-user"></i></a></li>
+			    {% if user.is_authenticated %}
+                <a href="{% url 'profile' %}"><i class="fas fa-user"></i></a>
             {%  else %}
-                <li><a href="{% url 'login' %}"><i class="fas fa-sign-in"></i>Login</a></li>
+                <a href="{% url 'login' %}"><i class="fas fa-sign-in"></i>Login</a>
             {% endif %}        
-				    <li class="shop">
-               <a href="{% url 'view_cart' %}">
+				    <!--<li class="shop">-->
+               <a class="shop" href="{% url 'view_cart' %}">
                     <i class="fas fa-shopping-cart"></i>
                  {% if product_count > 0 %}
                     <label class="badge badge-warning">{{ product_count }}</label>
                     {% endif %}
                 </a>
-           </li>
-           </ul>
+          
 				</span>
 			</div>
 		</div>
