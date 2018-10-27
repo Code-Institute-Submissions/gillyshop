@@ -25,9 +25,26 @@
 		<div class="container">  
 			<div class="row align-items-center">
 				<a class="header" href="{% url 'index' %}">MILLENNIAL PINK</a>
-				<!--<h2 class="subhead">A curated art collection for the millenial in your life</h2>-->
-	
-		
+				<p class="subhead">A curated art collection for the millenial in your life</p>
+				<span class="icons">
+				    {% if user.is_authenticated %}
+                <li><a href="{% url 'profile' %}"><i class="fas fa-user"></i>Profile</a></li>
+                <li><a href="{% url 'logout' %}"><i class="fas fa-sign-out"></i>Logout</a></li>
+            {%  else %}
+    
+                
+                <li><a href="{% url 'registration' %}"><i class="fas fa-user-plus"></i>Register</a></li>
+                <li><a href="{% url 'login' %}"><i class="fas fa-sign-in"></i>Login</a></li>
+            {% endif %}        
+				    <li class="shop">
+               <a href="{% url 'view_cart' %}">
+                    <i class="fas fa-shopping-cart"></i>
+                 {% if product_count > 0 %}
+                    <label class="badge badge-warning">{{ product_count }}</label>
+                    {% endif %}
+                </a>
+           </li>
+				</span>
 			</div>
 		</div>
 	</div>
