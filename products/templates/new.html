@@ -2,7 +2,6 @@
 
 {% load bootstrap_tags %}
 {% load staticfiles %}
-{% load mediafiles %}
 
 
 {% block content %}
@@ -13,7 +12,7 @@
 
 <div id="cardcontainer">
 	<div class="card newin">
-		<img class="newimage" src="{% media 'images/d2.jpg' %}">
+		<img class="newimage" src="{{MEDIA_URL}}images/d2.jpg">
 	</div>
 	<div class="card newin">
 		<img class="newimage" src="images/summer.jpg">	
