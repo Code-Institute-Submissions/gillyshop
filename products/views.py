@@ -54,7 +54,7 @@ class TagIndexView(ListView):
         return Product.objects.filter(tags__slug=self.kwargs.get('slug'))
 
 def tag(request, slug):
-    tag = get_object_or_404(Product, slug=slug)
+    tag = Product.objects.filter(slug=slug)
     return render(request, "tag.html", {"tag":tag})
 
 
