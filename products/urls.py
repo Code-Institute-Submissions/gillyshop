@@ -13,7 +13,7 @@ urlpatterns = [
     url(r'^galaxy/$', galaxy, name="galaxy"),
     url(r'^(?P<pk>\d+)/$', product_detail, name="product_detail"),
     # url(r'^tag/(?P<slug>[-\w]+)/$', TagIndexView.as_view(), name='tagged'),
-    url(r'^(?P<tag>[-\w]+)/$', tagpage, name='tagpage'),
+    url(r'^(?P<tag>\w+)/$', tagpage, name='tagpage'),
     ]
     
     
