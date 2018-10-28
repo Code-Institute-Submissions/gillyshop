@@ -1,5 +1,5 @@
 from django.conf.urls import url, include
-from .views import products, new, cactus, flamingos, palm, pink, deer, galaxy, product_detail, TagIndexView, tagpage
+from .views import products, new, cactus, flamingos, palm, pink, deer, galaxy, product_detail, tagpage
 
 
 urlpatterns = [
@@ -12,7 +12,7 @@ urlpatterns = [
     url(r'^deer/$', deer, name="deer"),
     url(r'^galaxy/$', galaxy, name="galaxy"),
     url(r'^(?P<pk>\d+)/$', product_detail, name="product_detail"),
-    url(r'^tag/(?P<slug>[-\w]+)/$', TagIndexView.as_view(), name='tagged'),
+    # url(r'^tag/(?P<slug>[-\w]+)/$', TagIndexView.as_view(), name='tagged'),
     url(r'^tag/(?P<tag>\w+)$', tagpage, name='tagpage'),
     ]
     
