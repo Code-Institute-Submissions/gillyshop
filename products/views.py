@@ -60,9 +60,13 @@ class TagIndexView(ListView):
     # def get_queryset(self):
     #     return Product.objects.filter(tags__slug=self.kwargs.get('slug'))
 
-def tag(request, slug):
-    tag = get_object_or_404(Product, slug=slug)
-    return render(request, "tag.html", {"tag":tag})       
+def tag(request, tag):
+    products = Product.objects.filter(tag__name=tag)
+    return render(request, "tag.html", {"products":products, "tag":tag})   
+
+# def tag(request, slug):
+#     tag = get_object_or_404(Product, slug=slug)
+#     return render(request, "tag.html", {"tag":tag})       
 
 
     
