@@ -57,6 +57,8 @@ def tag(request):
     tags = Product.objects.filter(tags="tags")
     return render(request, "tag.html", {"tags":tags})
 
+    def get_queryset(self):
+        return Product.objects.filter(tags__slug=self.kwargs.get('slug'))
 
 # def tag(request, slug):
 #     tag = get_object_or_404(Product, slug=slug)
