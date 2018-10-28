@@ -57,6 +57,8 @@ class TagIndexView(ListView):
 #     tag = get_object_or_404(Product, slug=slug)
 #     return render(request, "tag.html", {"tag":tag})
 
+def tag(request):
+    return render(request, 'tag.html')
        
 
 
