@@ -1,4 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect
+from django.views.generic import ListView
 from .models import Product
 from taggit.models import Tag
 # Create your views here.
@@ -43,12 +44,11 @@ def product_detail(request, pk):
     product = get_object_or_404(Product, pk=pk)
     return render(request, "product_detail.html", {"product": product})
  
-def tag(request):
-    return render(request, 'tag.html')
+class TagIndexView(ListView):
     
-def blue(request, tag):
-    blue = get_object_or_404(Product, tag=tag)
-    return render(request, "tag_blue.html", {"blue":blue})
+    def get_queryset(self):
+        return Product.objects.filter(tags__slug=self.kwargs.get('slug'))
+        
 
        
 
