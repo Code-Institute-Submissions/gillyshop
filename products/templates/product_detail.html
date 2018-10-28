@@ -39,16 +39,16 @@
 				<h3 class="info">A3 Matte Paper</h3>
   				<h3>€{{ product.price }}</h3>
   				
-  		{% for tag in product.tags.all %}
-  		<li><a href="#">{{ tag.name }}</a></li>
-  		{% if tag.name == blue %}
-  		<a href="{% url 'tag_blue' %}">blueee</a>
-  		{% else %}
-  		<a href="{% url 'products' %}">bleh</a>
-  		{% endif %}
+  		<!--{% for tag in product.tags.all %}-->
+  		<!--<li><a href="#">{{ tag.name }}</a></li>-->
+  		<!--{% if tag.name == blue %}-->
+  		<!--<a href="{% url 'tag_blue' %}">blueee</a>-->
+  		<!--{% else %}-->
+  		<!--<a href="{% url 'products' %}">bleh</a>-->
+  		<!--{% endif %}-->
   
   	
-  		{% endfor %}
+  		<!--{% endfor %}-->
   			
   			<form method="post" action="{% url 'add_to_cart' product.id %}">
             {% csrf_token %}
