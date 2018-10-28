@@ -3,29 +3,22 @@
 {% load bootstrap_tags %}
 {% load staticfiles %}
 
-<style>
-body {
-	background: url({% static 'images/pi1big.jpg' %}) no-repeat center center;
-	background-size:cover;
-	height: 100vh;
-}
-</style>
 {% block content %}
 
 
 
-<!--<div id="container">-->
-<!--	<div class="menucarousel">-->
-<!--		<div class="w3-content w3-section foodpics">-->
-<!--			<a href="{% url 'pink' %}"><img class="myPics" src="{% static 'images/pi1big.jpg' %}"></a>-->
-<!--			<a href="{% url 'deer' %}"><img class="myPics" src="{% static 'images/d2big.jpg' %}"></a>-->
-<!--			<a href="{% url 'palmtrees' %}"><img class="myPics" src="{% static 'images/p1big.jpg' %}"></a>-->
-<!--			<a href="{% url 'galaxy' %}"><img class="myPics" src="{% static 'images/g1big.jpg' %}"></a>-->
+<div id="container">
+	<div class="menucarousel">
+		<div class="w3-content w3-section foodpics">
+			<a href="{% url 'pink' %}"><img class="myPics" src="{% static 'images/pi1big.jpg' %}"></a>
+			<a href="{% url 'deer' %}"><img class="myPics" src="{% static 'images/d2big.jpg' %}"></a>
+			<a href="{% url 'palmtrees' %}"><img class="myPics" src="{% static 'images/p1big.jpg' %}"></a>
+			<a href="{% url 'galaxy' %}"><img class="myPics" src="{% static 'images/g1big.jpg' %}"></a>
 			
-<!--		</div>-->
-<!--	</div>-->
-<!--</div>-->
+		</div>
+	</div>
+</div>
 
-<!--  <script src="{% static 'js/script.js' %}"></script>-->
+  <script src="{% static 'js/script.js' %}"></script>
 
 {% endblock %}
