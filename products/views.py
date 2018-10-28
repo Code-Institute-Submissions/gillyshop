@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404, redirect
+from django.shortcuts import render, get_object_or_404, redirect, render_to_response
 from django.views.generic import ListView
 from .models import Product
 from taggit.models import Tag
@@ -52,7 +52,18 @@ class TagIndexView(ListView):
     
     def get_queryset(self):
         return Product.objects.filter(tags__slug=self.kwargs.get('slug'))
+        
+        
+def tagpage(request, tag):
+    products = Product.objects.filter(tags__name=tag)
+    return render_to_response("tagpage.html", {"products":products, "tag":tag})
 
+        
+# def tag(request, tag):
+#     products = Product.objects.filter(tag__name=tag)
+#     return render(request, "tag.html", {"products":products, "tag":tag})
+    
+    
 # def tag(request):
 #     tags = Product.objects.filter(tags="blue")
 #     return render(request, "tag.html", {"products":tags})
@@ -60,9 +71,7 @@ class TagIndexView(ListView):
     # def get_queryset(self):
     #     return Product.objects.filter(tags__slug=self.kwargs.get('slug'))
 
-def tag(request, tag):
-    products = Product.objects.filter(tag__name=tag)
-    return render(request, "tag.html", {"products":products, "tag":tag})   
+   
 
 # def tag(request, slug):
 #     tag = get_object_or_404(Product, slug=slug)
