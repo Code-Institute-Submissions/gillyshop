@@ -45,7 +45,7 @@ def product_detail(request, pk):
     return render(request, "product_detail.html", {"product": product})
  
 class TagIndexView(ListView):
-    template_name = 'product_detail.html'
+    # template_name = 'product_detail.html'
     model = Product
     paginate_by = '10'
     context_object_name = 'products'
