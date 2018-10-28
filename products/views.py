@@ -53,7 +53,7 @@ class TagIndexView(ListView):
     def get_queryset(self):
         return Product.objects.filter(tags__slug=self.kwargs.get('slug'))
         
-        
+# //solution found on youtube//        
 def tagpage(request, tag):
     products = Product.objects.filter(tags__name=tag)
     return render_to_response("tagpage.html", {"products":products, "tag":tag})
