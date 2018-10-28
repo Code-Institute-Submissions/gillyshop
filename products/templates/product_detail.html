@@ -45,16 +45,7 @@
   				{% empty %}
   				<li>no tags</li>
   				{% endfor %}
-  		<!--{% for tag in product.tags.all %}-->
-  		<!--<li><a href="#">{{ tag.name }}</a></li>-->
-  		<!--{% if tag.name == blue %}-->
-  		<!--<a href="{% url 'tag_blue' %}">blueee</a>-->
-  		<!--{% else %}-->
-  		<!--<a href="{% url 'products' %}">bleh</a>-->
-  		<!--{% endif %}-->
-  
-  	
-  		<!--{% endfor %}-->
+
   			
   			<form method="post" action="{% url 'add_to_cart' product.id %}">
             {% csrf_token %}
