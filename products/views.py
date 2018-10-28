@@ -55,7 +55,7 @@ class TagIndexView(ListView):
 
 def tag(request):
     tags = Product.objects.filter(tags="blue")
-    return render(request, "tag.html", {"tags":tags})
+    return render(request, "tag.html", {"products":tags})
 
     # def get_queryset(self):
     #     return Product.objects.filter(tags__slug=self.kwargs.get('slug'))
