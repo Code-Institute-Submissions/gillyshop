@@ -12,7 +12,8 @@ def products(request):
     return render(request, "products.html", {"products": products})
 
 def new(request):
-    return render(request, 'new.html')
+    newproducts = Product.objects.all()
+    return render(request, 'new.html', {"products":products})
     
 def cactus(request):
     cactusproducts = Product.objects.filter(category="Cactus")
