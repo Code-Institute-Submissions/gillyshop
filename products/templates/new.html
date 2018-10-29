@@ -6,6 +6,9 @@
 
 {% block content %}
 
+{% for product in products %}
+
+
 <div id="cardcontainer">
 	<div><h2 class="new">Galaxies</h2><a href="{% url 'galaxy' %}">Shop the full collection here</a></div>
 </div>
@@ -56,7 +59,7 @@
 	</div>	
 </div>
 
-
+{% endfor %}
 
 
 {% endblock %}
