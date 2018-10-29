@@ -7,8 +7,6 @@
 {% block content %}
 
 
-
-	{% for product in products %}
 <div id="cardcontainer">
 
 	<div><h2 class="new">Galaxies</h2><a href="{% url 'galaxy' %}">Shop the full collection here</a></div>
@@ -17,7 +15,7 @@
 <div id="cardcontainer">
 	<div class="card newin">
 		<img class="newimage" src="{{MEDIA_URL}}images/g3.jpg">
-		<h2>{{ product.name }}</h2>
+		<h2>{{product.name}}</h2>
 	</div>
 	<div class="card newin">
 		<img class="newimage" src="{{MEDIA_URL}}images/g4.jpg">
@@ -58,7 +56,7 @@
 	<div class="card newin">
 		<img class="newimage" src="{{MEDIA_URL}}images/p4.jpg">
 	</div>	
-	{% endfor %}
+
 </div>
 
 
