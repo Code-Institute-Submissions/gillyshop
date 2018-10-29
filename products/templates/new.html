@@ -7,12 +7,13 @@
 {% block content %}
 
 <div id="cardcontainer">
-	<div><h2 class="new">Galaxies</h2><a href="{% url 'galaxy' %}">Shop here</a></div>
+	<div><h2 class="new">Galaxies</h2><a href="{% url 'galaxy' %}">Shop the full collection here</a></div>
 </div>
 
 <div id="cardcontainer">
 	<div class="card newin">
 		<img class="newimage" src="{{MEDIA_URL}}images/g3.jpg">
+		<h4>{{ product.name }}</h4>
 	</div>
 	<div class="card newin">
 		<img class="newimage" src="{{MEDIA_URL}}images/g4.jpg">
@@ -23,7 +24,7 @@
 </div>
 
 <div id="cardcontainer">
-	<div><h2 class="new">Deer</h2><a href="{% url 'deer' %}">Shop here</a></div>
+	<div><h2 class="new">Deer</h2><a href="{% url 'deer' %}">Shop the full collection here</a></div>
 </div>
 
 <div id="cardcontainer">
@@ -39,7 +40,7 @@
 </div>
 
 <div id="cardcontainer">
-	<div><h2 class="new">Palm Trees</h2><a href="{% url 'palmtrees' %}">Shop here</a></div>
+	<div><h2 class="new">Palm Trees</h2><a href="{% url 'palmtrees' %}">Shop the full collection here</a></div>
 </div>
 
 <div id="cardcontainer">
