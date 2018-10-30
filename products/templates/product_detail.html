@@ -39,9 +39,9 @@
 				<h3 class="info">A3 Matte Paper</h3>
   				<h3>€{{ product.price }}</h3>
   				
-  				<h3 class="tag">Tags</h3>
+  				<h3 class="tag">Tags:</h3>
   				{% for tag in product.tags.all %}
-  				<a class="tag" href="{% url 'tagpage' tag.slug %}">{{ tag.name }}, </a>
+  				<a href="{% url 'tagpage' tag.slug %}">{{ tag.name }}, </a>
   				{% empty %}
   				<p>no tags</p>
   				{% endfor %}
@@ -50,7 +50,7 @@
   			<form method="post" action="{% url 'add_to_cart' product.id %}">
             {% csrf_token %}
             <div class="input-group">
-                <input name="quantity" type="number" min="1" max="999" class="form-add" placeholder="Add" required>
+                <input name="quantity" type="number" min="1" max="999" class="form-add" placeholder="Quantity" required>
                 </div>
                 <div>
                 <span class="input-group-btn">
