@@ -10,6 +10,11 @@
     //]]>
 </script>
 <script type="text/javascript" src="{% static 'js/stripe.js' %}"></script>
+<script src="/update/this/path/creditcardjs-v0.10.13.min.js"></script>
+
+<head>
+    <link rel="stylesheet" href="{% static 'css/creditcardjs-v0.10.13.min.css' %}">
+</head>
 {% endblock %}
 
 {% block content %}
@@ -68,7 +73,7 @@
     {{ order_form|as_bootstrap }}
 </div>
 
-<link href="/update/this/path/creditcardjs-v0.10.13.min.css" rel="stylesheet">
+
 
 <div class="ccjs-card">
   <label class="ccjs-number">
@@ -185,5 +190,5 @@
 
 </form>
 </div>
-<script src="/update/this/path/creditcardjs-v0.10.13.min.js"></script>
+
 {% endblock %}
