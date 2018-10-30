@@ -8,16 +8,17 @@
 
 <div class="container">
     <div class="col-md-4">
-      {% if user.is_authenticated %}  
+        
     <a href="{% 'password-reset' %}">Change password</a></h3>    
         
     </div>            
    <div class="col-md-8">             
                 <a class="logout" href="{% url 'logout' %}"><i class="fas fa-sign-out"></i>Logout</a>
 
- 
+ {% if user.is_authenticated %}
  <p>Welcome {{ user }}</p>
- <p>Start shopping now!</p>
+ <a href="{% 'products' %}">Start shopping now!</a>
+   <a href="{% 'password-reset' %}">Change your password</a></h3>  
      <p>{{ profile.email }}</p>
     {%  else %}
     <a href="{% url 'registration' %}"><i class="fas fa-user-plus"></i>Register Now</a>
