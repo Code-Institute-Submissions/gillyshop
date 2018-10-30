@@ -6,19 +6,19 @@
 
 {% block content %}
 
-<div class="container">
+<div class="profcontainer">
 
   <a class="btn btn-logout" href="{% url 'logout' %}"><i class="fas fa-sign-out"></i>Logout</a>
                 
               
-<div>
+<div class="profile">
  {% if user.is_authenticated %}
  <h3>Welcome {{ user }}</h3>
 </div> 
- <div>
+ <div class="profile">
  <a href="{% url 'products' %}">Start shopping now!</a>
  </div>
- <div>
+ <div class="profile">
    <a href="{% url 'password_reset' %}">Change your password</a></h3>  
    </div>
      <p>{{ profile.email }}</p>
