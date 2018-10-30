@@ -26,11 +26,11 @@
 			<div class="row align-items-center">
 				<a class="header" href="{% url 'index' %}">MILLENNIAL PINK</a>
 				<span class="icons">
-			    {% if user.is_authenticated %}
+			    <!--{% if user.is_authenticated %}-->
                 <a href="{% url 'profile' %}"><i class="headicon fas fa-user"></i></a>
-            {%  else %}
-                <a href="{% url 'login' %}"><i class="headicon fas fa-sign-in"></i>Login</a>
-            {% endif %}        
+            <!--{%  else %}-->
+            <!--    <a href="{% url 'login' %}"><i class="headicon fas fa-sign-in"></i>Login</a>-->
+            <!--{% endif %}        -->
 				   
                <a class="shop" href="{% url 'view_cart' %}">
                     <i class="fas fa-shopping-cart"></i>
