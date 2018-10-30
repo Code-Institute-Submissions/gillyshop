@@ -86,27 +86,27 @@
    
    
    
-  {% if user.is_authenticated %}
-                <li><a href="{% url 'profile' %}"><i class="fas fa-user"></i></a></li>
+  <!--{% if user.is_authenticated %}-->
+  <!--              <li><a href="{% url 'profile' %}"><i class="fas fa-user"></i></a></li>-->
                 <!--<li><a href="{% url 'logout' %}"><i class="fas fa-sign-out"></i>Logout</a></li>-->
-            {%  else %}
+  <!--          {%  else %}-->
     
                 
                 <!--<li><a href="{% url 'registration' %}"><i class="fas fa-user-plus"></i>Register</a></li>-->
-                <li><a href="{% url 'login' %}"><i class="fas fa-sign-in"></i>Login</a></li>
-            {% endif %}        
+  <!--              <li><a href="{% url 'login' %}"><i class="fas fa-sign-in"></i>Login</a></li>-->
+  <!--          {% endif %}        -->
             
     
     <!--<li class="profile"><a href="{% url 'login' %}"><i class="fas fa-user"></i></a></li>-->
     
-    <li class="shop">
-               <a href="{% url 'view_cart' %}">
-                    <i class="fas fa-shopping-cart"></i>
-                 {% if product_count > 0 %}
-                    <label class="badge badge-warning">{{ product_count }}</label>
-                    {% endif %}
-                </a>
-           </li>
+  <!--  <li class="shop">-->
+  <!--             <a href="{% url 'view_cart' %}">-->
+  <!--                  <i class="fas fa-shopping-cart"></i>-->
+  <!--               {% if product_count > 0 %}-->
+  <!--                  <label class="badge badge-warning">{{ product_count }}</label>-->
+  <!--                  {% endif %}-->
+  <!--              </a>-->
+  <!--         </li>-->
      
          
             <li class="search">
