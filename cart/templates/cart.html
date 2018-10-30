@@ -15,7 +15,7 @@
         <tr>
     {% for item in cart_items %}
     <td><img class="cartimg" src="{{ MEDIA_URL }}{{ item.product.image }}"></td>
-    <td><a class="h3cart" href="{% url 'product_detail' item.product.name %}"></a><br>{{ item.product.description }}</td>
+    <td><a class="h3cart" href="{% url 'product_detail' product.name %}"></a><br>{{ item.product.description }}</td>
     <td><form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
                     {% csrf_token %}
                         <div class="form-group">
