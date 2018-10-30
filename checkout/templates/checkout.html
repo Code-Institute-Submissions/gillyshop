@@ -152,34 +152,34 @@
 <!--</div>-->
 <!--</div>-->
 
-  <div class="col-md-4">
-<table class="tablecheck table-bordered">
+<!--  <div class="col-md-4">-->
+<!--<table class="tablecheck table-bordered">-->
    
-   <tr>
-       <th>Product</th>
-       <th></th>
-       <th>Quantity</th>
-       <th>Price</th>
-   </tr>
-        <tr>
-    {% for item in cart_items %}
-    <td><img class="checkimg" src="{{ MEDIA_URL }}{{ item.product.image }}"></td>
-    <td>{{item.product.name}}</td>
-    <td>{{item.quantity}}</td>
-    <td>€{{ item.product.price }}</td>
-    </tr>
+<!--   <tr>-->
+<!--       <th>Product</th>-->
+<!--       <th></th>-->
+<!--       <th>Quantity</th>-->
+<!--       <th>Price</th>-->
+<!--   </tr>-->
+<!--        <tr>-->
+<!--    {% for item in cart_items %}-->
+<!--    <td><img class="checkimg" src="{{ MEDIA_URL }}{{ item.product.image }}"></td>-->
+<!--    <td>{{item.product.name}}</td>-->
+<!--    <td>{{item.quantity}}</td>-->
+<!--    <td>€{{ item.product.price }}</td>-->
+<!--    </tr>-->
 
-    {% endfor %}
+<!--    {% endfor %}-->
         
-    <tr>
-        <td></td>
-        <td></td>
-        <td>TOTAL:</td>
-        <td>€{{ total }}</td>
-    </tr>
+<!--    <tr>-->
+<!--        <td></td>-->
+<!--        <td></td>-->
+<!--        <td>TOTAL:</td>-->
+<!--        <td>€{{ total }}</td>-->
+<!--    </tr>-->
   
-</table>
-</div>
+<!--</table>-->
+<!--</div>-->
 
 {% csrf_token %}
 <div class="col-sm-10">
