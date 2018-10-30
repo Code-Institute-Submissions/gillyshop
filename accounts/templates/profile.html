@@ -5,5 +5,14 @@
 {% block page_heading %}{{ user }}'s Profile{% endblock %}
 
 {% block content %}
-<p>{{ profile.email }}</p>
+
+                <a href="{% url 'logout' %}"><i class="fas fa-sign-out"></i>Logout</a>
+
+ {% if user.is_authenticated %}
+     <p>{{ profile.email }}</p>
+    {%  else %}
+    <a href="{% url 'registration' %}"><i class="fas fa-user-plus"></i>Register Now</a>
+          {% endif %}    
+
+
 {% endblock %}
