@@ -7,10 +7,11 @@
 {% block page_heading %}User registration{% endblock %}
 
 {% block content %}
-
-<div class="regcontainer">
      
 <p>If you already have an account you can <a class="signin" href="{% url 'login' %}">sign in</a></p>
+
+<div class="regcontainer">
+
 
 <form method="POST">
      {% csrf_token %}
