@@ -25,12 +25,9 @@
 		<div class="container">  
 			<div class="row align-items-center">
 				<a class="header" href="{% url 'index' %}">MILLENNIAL PINK</a>
-				<span class="icons">
-			    <!--{% if user.is_authenticated %}-->
-                <a href="{% url 'profile' %}"><i class="headicon fas fa-user"></i></a>
-            <!--{%  else %}-->
-            <!--    <a href="{% url 'login' %}"><i class="headicon fas fa-sign-in"></i>Login</a>-->
-            <!--{% endif %}        -->
+				<span class="icons">    
+				<a href="{% url 'profile' %}"><i class="headicon fas fa-user"></i></a>
+			 
 				   
                <a class="shop" href="{% url 'view_cart' %}">
                     <i class="fas fa-shopping-cart"></i>
@@ -139,3 +136,10 @@
 
 </body>
 </html>
+
+
+   <!--{% if user.is_authenticated %}-->
+            
+            <!--{%  else %}-->
+            <!--    <a href="{% url 'login' %}"><i class="headicon fas fa-sign-in"></i>Login</a>-->
+            <!--{% endif %}        -->
