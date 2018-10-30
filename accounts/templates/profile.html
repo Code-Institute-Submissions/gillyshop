@@ -7,6 +7,12 @@
 {% block content %}
 
 <div class="container">
+    <div class="col-md-4">
+        
+    <a href="{% 'password-reset' %}">Change password</a></h3>    
+        
+    </div>            
+   <div class="col-md-8">             
                 <a class="logout" href="{% url 'logout' %}"><i class="fas fa-sign-out"></i>Logout</a>
 
  {% if user.is_authenticated %}
