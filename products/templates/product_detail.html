@@ -41,9 +41,9 @@
   				
   				
   				{% for tag in product.tags.all %}
-  				<li><a href="{% url 'tagpage' tag.slug %}">{{ tag.name }}</a></li>
+  				<a href="{% url 'tagpage' tag.slug %}">{{ tag.name }}</a>
   				{% empty %}
-  				<li>no tags</li>
+  				<p>no tags</p>
   				{% endfor %}
 
   			
