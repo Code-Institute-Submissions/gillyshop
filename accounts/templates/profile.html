@@ -16,8 +16,8 @@
 
  {% if user.is_authenticated %}
  <p>Welcome {{ user }}</p>
- <a href="{% 'products' %}">Start shopping now!</a>
-   <a href="{% 'password-reset' %}">Change your password</a></h3>  
+ <a href="{% url 'products' %}">Start shopping now!</a>
+   <a href="{% url 'password-reset' %}">Change your password</a></h3>  
      <p>{{ profile.email }}</p>
     {%  else %}
     <a href="{% url 'registration' %}"><i class="fas fa-user-plus"></i>Register Now</a>
