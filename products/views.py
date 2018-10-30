@@ -48,7 +48,7 @@ class TagIndexView(ListView):
     template_name = 'tagpage.html'
     model = Product
     paginate_by = '10'
-    context_object_name = 'tags'
+    context_object_name = 'products'
     
     def get_queryset(self):
         return Product.objects.filter(tags__slug=self.kwargs.get('slug'))

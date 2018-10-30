@@ -25,20 +25,20 @@
 		<div class="container">  
 			<div class="row align-items-center">
 				<a class="header" href="{% url 'index' %}">MILLENNIAL PINK</a>
-				<!--<span class="icons">-->
-			 <!--   {% if user.is_authenticated %}-->
-    <!--            <a href="{% url 'profile' %}"><i class="headicon fas fa-user"></i></a>-->
-    <!--        {%  else %}-->
-    <!--            <a href="{% url 'login' %}"><i class="headicon fas fa-sign-in"></i>Login</a>-->
-    <!--        {% endif %}        -->
-				    <!--<li class="shop">-->
-    <!--           <a class="shop" href="{% url 'view_cart' %}">-->
-    <!--                <i class="fas fa-shopping-cart"></i>-->
-    <!--             {% if product_count > 0 %}-->
-    <!--                <label class="badge badge-warning">{{ product_count }}</label>-->
-    <!--                {% endif %}-->
-    <!--            </a>-->
-				<!--</span>-->
+				<span class="icons">
+			    {% if user.is_authenticated %}
+                <a href="{% url 'profile' %}"><i class="headicon fas fa-user"></i></a>
+            {%  else %}
+                <a href="{% url 'login' %}"><i class="headicon fas fa-sign-in"></i>Login</a>
+            {% endif %}        
+				    <li class="shop">
+               <a class="shop" href="{% url 'view_cart' %}">
+                    <i class="fas fa-shopping-cart"></i>
+                 {% if product_count > 0 %}
+                    <label class="badge badge-warning">{{ product_count }}</label>
+                    {% endif %}
+                </a>
+				</span>
 				<p class="subhead">A curated art collection for the millennial in your life</p>
 				
 			</div>
