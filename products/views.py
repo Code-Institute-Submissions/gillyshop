@@ -44,19 +44,19 @@ def product_detail(request, pk):
     product = get_object_or_404(Product, pk=pk)
     return render(request, "product_detail.html", {"product": product})
  
-class TagIndexView(ListView):
-    template_name = 'tagpage.html'
-    model = Product
-    paginate_by = '10'
-    context_object_name = 'products'
+# class TagIndexView(ListView):
+#     template_name = 'tagpage.html'
+#     model = Product
+#     paginate_by = '10'
+#     context_object_name = 'products'
     
-    def get_queryset(self):
-        return Product.objects.filter(tags__slug=self.kwargs.get('slug'))
+#     def get_queryset(self):
+#         return Product.objects.filter(tags__slug=self.kwargs.get('slug'))
         
 # //solution found on youtube//        
-# def tagpage(request, tag):
-#     products = Product.objects.filter(tags__name=tag)
-#     return render_to_response("tagpage.html", {"products":products, "tag":tag})
+def tagpage(request, tag):
+    products = Product.objects.filter(tags__name=tag)
+    return render_to_response("tagpage.html", {"products":products, "tag":tag})
 
         
 # def tag(request, tag):
