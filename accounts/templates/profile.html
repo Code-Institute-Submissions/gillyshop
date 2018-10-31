@@ -9,31 +9,36 @@
 
   <a class="btn btn-logout" href="{% url 'logout' %}"><i class="fas fa-sign-out"></i>Logout</a>
 <div class="profcontainer">
-
-
-                
-              
-<div class="profile">
+ 
  {% if user.is_authenticated %}
+ 
+<div class="col-md-4">
  
  <h3>User Details</h3>
  <p>Username: {{ user }}</p>
- <p>Account email address: {{ profile.email }}</p>
+ <p>Account email address: {{ profile.email }}</p>    
+ 
+</div>
+           
+              
+<div class="col-md-8">
+
  <h3>Welcome {{ user }}</h3>
 
 <p>You currently have {{ product_count }} products in your cart</p>
 
 <p>Would you like to?<p/>
- <a href="{% url 'products' %}">Shop products</a>
+ <a href="{% url 'products' %}">Shop products</a><br>
 
- <a href="{% url 'view_cart' %}">Go to your cart</a>
+ <a href="{% url 'view_cart' %}">Go to your cart</a><br>
 
    <a href="{% url 'password_reset' %}">Change your password</a>
 
-     <p>{{ profile.email }}</p>
+ 
     {%  else %}
     <a href="{% url 'registration' %}"><i class="fas fa-user-plus"></i>Register Now</a>
           {% endif %}    
+</div>
 </div>
 
 {% endblock %}
