@@ -7,21 +7,22 @@
 {% block content %}
 
 
-  <a class="btn btn-logout" href="{% url 'logout' %}"><i class="fas fa-sign-out"></i>Logout</a>
+
 <div class="profcontainer">
  
  {% if user.is_authenticated %}
  
-<div class="col-md-2">
+<div class="col-md-4">
  
- <h3>User Details</h3>
+ <h3>Your Account Details</h3>
  <p>Username: {{ user }}</p>
- <p>Account email address: {{ profile.email }}</p>    
+ <p>Email address: {{ profile.email }}</p>  
+   <a class="btn btn-logout" href="{% url 'logout' %}"><i class="fas fa-sign-out"></i>Logout</a>
  
 </div>
            
               
-<div class="col-md-10">
+<div class="col-md-8">
  <div class="profile">
 
  <h3>Welcome {{ user }}</h3>
