@@ -29,12 +29,12 @@
 
 <p>You currently have {{ product_count }} products in your cart</p><br>
 
-<h2>Would you like to?</h2>
- <i class="fas fa-dot-circle"></i><a href="{% url 'products' %}">Shop products</a><br>
+<h3>Would you like to?</h3>
+ <i class="fas fa-dot-circle"></i><a href="{% url 'products' %}"> Shop products</a><br>
 
-  <i class="fas fa-dot-circle"></i><a href="{% url 'view_cart' %}">Go to your cart</a><br>
+  <i class="fas fa-dot-circle"></i><a href="{% url 'view_cart' %}"> Go to your cart</a><br>
 
-    <i class="fas fa-dot-circle"></i><a href="{% url 'password_reset' %}">Change your password</a>
+    <i class="fas fa-dot-circle"></i><a href="{% url 'password_reset' %}"> Change your password</a>
 
  
     {%  else %}
