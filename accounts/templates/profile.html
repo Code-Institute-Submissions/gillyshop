@@ -6,20 +6,29 @@
 
 {% block content %}
 
-<div class="profcontainer">
 
   <a class="btn btn-logout" href="{% url 'logout' %}"><i class="fas fa-sign-out"></i>Logout</a>
+<div class="profcontainer">
+
+
                 
               
 <div class="profile">
  {% if user.is_authenticated %}
+ 
+ <h3>User Details</h3>
+ <p>Username: {{ user }}</p>
+ <p>Account email address: {{ profile.email }}</p>
  <h3>Welcome {{ user }}</h3>
 
-<p>You have {{ product_count }} products in your cart</p>
-<p>Go to cart now</p>
- <a href="{% url 'products' %}">Start shopping now!</a>
+<p>You currently have {{ product_count }} products in your cart</p>
 
-   <a href="{% url 'password_reset' %}">Change your password</a></h3>  
+<p>Would you like to?<p/>
+ <a href="{% url 'products' %}">Shop products</a>
+
+ <a href="{% url 'cart' %}">Go to your cart</a>
+
+   <a href="{% url 'password_reset' %}">Change your password</a>
 
      <p>{{ profile.email }}</p>
     {%  else %}
