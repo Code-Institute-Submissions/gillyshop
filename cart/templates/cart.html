@@ -6,8 +6,8 @@
 
 {% if product_count == 0 %}
 
-<div class="container">
-    <p>You have nothing in your cart. Click <a href="{% url 'products' %}">here</a> to start shopping</p>
+<div class="nocartcontainer">
+    <h3 class="nocart">You have nothing in your cart. Click <a class="boldcart" href="{% url 'products' %}">here</a> to start shopping</h3>
 </div>
 
 {% else %}
