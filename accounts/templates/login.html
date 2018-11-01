@@ -7,6 +7,9 @@
 {% block page_heading %}User login{% endblock %}
 
 {% block content %}
+
+<div class="regcontainer">
+     <div class="reg">
 <form method="POST">
      {% csrf_token %}
      {{ login_form | as_bootstrap }}
@@ -14,6 +17,7 @@
 </form>
 
 <p><a href="{% url 'password_reset' %}">Reset password</a></p>
-
+</div>
+</div>
 {% endblock %}
          
