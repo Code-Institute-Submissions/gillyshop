@@ -4,6 +4,15 @@
 
 {% block content %}
 
+{% if product_count == 0 %}
+
+<div class="container">
+    <p>You have nothing in your cart. Click <a href="{% url 'products' %}">here</a> to start shopping</p>
+</div>
+
+{% else %}
+
+
 <div class="cartcontainer">
 <table class="table table-bordered">
     <tr>
@@ -60,5 +69,6 @@
       Proceed to checkout</a></div>
     </div>
 </div>
+{% endif %}
 
 {% endblock %}
