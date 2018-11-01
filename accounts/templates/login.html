@@ -11,7 +11,7 @@
 <div class="regcontainer">
      <div class="reg">
           <h3 class="aboutp">Login to your account</h3>    
-<form method="POST">
+<form class ="logform" method="POST">
      {% csrf_token %}
      {{ login_form | as_bootstrap }}
      <button type="submit" class="btn btn-default">Login</button>
