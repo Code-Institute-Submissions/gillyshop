@@ -10,6 +10,10 @@ import stripe
 
 # Create your views here.
 
+            
+def paid(request):
+    return render(request, 'paid.html')
+
 
 stripe.api_key = settings.STRIPE_SECRET
 
@@ -49,7 +53,7 @@ def checkout(request):
                 messages.error(request, "Your card was declined")
                 
             if customer.paid:
-                # messages.error(request, "You have successfully paid")
+                messages.error(request, "You have successfully paid")
                 # request.session['cart'] = {}
                 return redirect(reverse('paid'))
                 
@@ -66,6 +70,3 @@ def checkout(request):
         
     return render(request, "checkout.html", {'order_form': order_form, 'payment_form': payment_form, 'publishable': settings.STRIPE_PUBLISHABLE})
                 
-            
-def paid(request):
-    return render(request, 'paid.html')
