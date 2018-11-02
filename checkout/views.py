@@ -10,6 +10,9 @@ import stripe
 
 # Create your views here.
 
+            
+def paid(request):
+    return render(request, 'paid.html')
 
 
 stripe.api_key = settings.STRIPE_SECRET
