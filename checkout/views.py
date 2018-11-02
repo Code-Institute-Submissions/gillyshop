@@ -50,7 +50,7 @@ def checkout(request):
                 
             if customer.paid:
                 messages.error(request, "You have successfully paid")
-                request.session['cart'] = {}
+                # request.session['cart'] = {}
                 return redirect(reverse('paid'))
                 
             else: 
