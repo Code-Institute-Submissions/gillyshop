@@ -8,17 +8,17 @@
 
 {% block content %}
 
-<div class="regcontainer">
-     <div class="reg">
-          <h3 class="aboutp">Login to your account</h3>    
-<form class ="logform" method="POST">
+<!--<div class="regcontainer">-->
+<!--     <div class="reg">-->
+<!--          <h3 class="aboutp">Login to your account</h3>    -->
+<form method="POST">
      {% csrf_token %}
      {{ login_form | as_bootstrap }}
      <button type="submit" class="btn btn-default">Login</button>
 </form>
 
-<p><a href="{% url 'password_reset' %}">Forgot your password?</a></p>
-</div>
-</div>
+<!--<p><a href="{% url 'password_reset' %}">Forgot your password?</a></p>-->
+<!--</div>-->
+<!--</div>-->
 {% endblock %}
          
