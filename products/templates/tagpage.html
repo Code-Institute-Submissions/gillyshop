@@ -4,6 +4,14 @@
 {% load staticfiles %}
 
 {% block content %}
+<div class="crumbmenu">
+	<ul class="breadcrumb">
+		<li class="crumb"><a href="{% url 'index' %}">Home</a></li>
+		<li class="crumb"><a href="{% url 'products' %}">Products</a></li>
+		
+	</ul>
+</div>
+
 
 <h3 class="tagpage">Products tagged {{tag.name}}</h3>
 {% for tag in product.tags.all %}
