@@ -85,23 +85,6 @@
 
   
    <!--<li class="contactmenu"><a href="{% url 'contact' %}">Contact</a></li>-->
-   <li class="alignright">
-     {% if user.is_authenticated %}
-            <a href="{% url 'profile' %}"><i class="headicon fas fa-user"></i></a>
-            {%  else %}
-                <a href="{% url 'registration' %}"><i class="headicon fas fa-user-plus"></i></a>
-            {% endif %}       
-            </li>
-				
-			 
-				<li class="alignright">   
-               <a class="shop" href="{% url 'view_cart' %}">
-                    <i class="fas fa-shopping-cart"></i>
-                 {% if product_count > 0 %}
-                    <label class="badge badge-warning">{{ product_count }}</label>
-                    {% endif %}
-                </a>
-   </li>
    
    
   <!--{% if user.is_authenticated %}-->
@@ -133,6 +116,26 @@
                 <button type="submit" class="searchbut"><i class="fas fa-search"></i></button>
             </form></li>       
 			
+			</ul>
+			<ul>
+			    <li class="alignright">
+     {% if user.is_authenticated %}
+            <a href="{% url 'profile' %}"><i class="headicon fas fa-user"></i></a>
+            {%  else %}
+                <a href="{% url 'registration' %}"><i class="headicon fas fa-user-plus"></i></a>
+            {% endif %}       
+            </li>
+				
+			 
+				<li class="alignright">   
+               <a class="shop" href="{% url 'view_cart' %}">
+                    <i class="fas fa-shopping-cart"></i>
+                 {% if product_count > 0 %}
+                    <label class="badge badge-warning">{{ product_count }}</label>
+                    {% endif %}
+                </a>
+   </li>
+   
 			</ul>
 		</div>
 	</nav>
