@@ -5,15 +5,9 @@
 
       {% block headjs %}
   
-
      <script src="{% static 'js/card.js' %}"></script>   
-<script>
-        new Card({
-            form: document.querySelector('form'),
-            container: '.card-wrapper'
-        });
-    </script>
-     {% endblock headjs %}  
+
+     {% endblock %}  
   
 
 {% block content %}
@@ -30,6 +24,13 @@
             </form>
         </div>
     </div>
+    
+    <script>
+        new Card({
+            form: document.querySelector('form'),
+            container: '.card-wrapper'
+        });
+    </script>
     
      
 {% endblock %}
