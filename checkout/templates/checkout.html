@@ -1,4 +1,4 @@
-
+{% extends 'base.html' %}
 {% load static from staticfiles %}
 <!--{% load bootstrap_tags %}-->
 
@@ -6,7 +6,7 @@
 
     <div class="demo-container">
         <div class="card-wrapper"></div>
-    <script src="{% static 'js/card.js' %}"></script>
+
         <div class="form-container active">
             <form action="">
                 <input placeholder="Card number" type="tel" name="number">
@@ -19,12 +19,15 @@
 
 
     <script>
-        var card = new Card({
+   var card = new Card({
     form: 'form',
     container: '.card-wrapper',
 
-    formSelectors: {
-        nameInput: 'input[name="first-name"], input[name="last-name"]'
+    placeholders: {
+        number: '**** **** **** ****',
+        name: 'Your Name',
+        expiry: '**/****',
+        cvc: '***'
     }
 });
     </script>
