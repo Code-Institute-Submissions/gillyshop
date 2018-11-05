@@ -18,15 +18,19 @@
         </div>
     </div>
 
-     <script type="text/javascript" src="{% static 'js/card.js' %}">  
+     <script type="text/javascript" src="{% static 'js/card.js' %}"></script>  
      
-     
+     <script>
         new Card({
             form: document.querySelector('form'),
             container: '.card-wrapper'
         });
     </script>
 
+   
+   
+
+     {% endblock %}  
 
      
 {% endblock %}
