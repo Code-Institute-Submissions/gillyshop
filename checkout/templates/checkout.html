@@ -3,11 +3,6 @@
 {% load static from staticfiles %}
 {% load bootstrap_tags %}
 
-      {% block headjs %}
-  
-     <script src="{% static 'js/card.js' %}"></script>   
-
-     {% endblock %}  
   
 
 {% block content %}
@@ -37,7 +32,7 @@
 
  {% block headjs %}
   
-     <script src="{% static 'js/card.js' %}"></script>   
+     <script type="text/javascript" src="{% static 'js/card.js' %}"></script>   
 
      {% endblock %}  
       
