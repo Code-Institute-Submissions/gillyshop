@@ -1,4 +1,4 @@
-<!--{% extends "base.html" %}-->
+{% extends "base.html" %}
 
 {% load static from staticfiles %}
 <!--{% load bootstrap_tags %}-->
@@ -20,6 +20,7 @@
             </form>
         </div>
     </div>
+   {% block head_js %}
     
      <script src="{% static 'js/card.js' %}"></script>   
 <script>
@@ -28,7 +29,7 @@
             container: '.card-wrapper'
         });
     </script>
-
+{% endblock head_js %} 
 
     
     {% endblock %}
