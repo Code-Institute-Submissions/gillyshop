@@ -1,10 +1,7 @@
 {% extends 'base.html' %}
 
-{% load staticfiles %}
 {% load bootstrap_tags %}
-
-
-     <script type="text/javascript" src="{% static 'js/card.js' %}"></script> 
+{% load staticfiles %}
 
 {% block content %}
 
@@ -20,10 +17,7 @@
             </form>
         </div>
     </div>
-    
- 
-    
-     {% block headjs %}   
+
      <script type="text/javascript" src="{% static 'js/card.js' %}"></script>  
      
      <script>
@@ -33,10 +27,6 @@
         });
     </script>
 
-   
-   
-
-     {% endblock %}  
 
      
 {% endblock %}
