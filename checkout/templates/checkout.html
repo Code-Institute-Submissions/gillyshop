@@ -1,10 +1,10 @@
-
+{% extends "base.html" %}
 
 {% load static from staticfiles %}
 <!--{% load bootstrap_tags %}-->
 
 
-
+  
 
 {% block content %}
 
@@ -20,8 +20,11 @@
             </form>
         </div>
     </div>
+      {% endblock %}
+      
+   {% block headjs %}
   
-    {% block head %}
+
      <script src="{% static 'js/card.js' %}"></script>   
 <script>
         new Card({
@@ -29,12 +32,12 @@
             container: '.card-wrapper'
         });
     </script>
+     {% endblock headjs %} 
     
-    {% endblock %}
 
 
     
-    {% endblock %}
+
     
 <!--{% csrf_token %}-->
 <!--<div class="col-sm-10">-->
