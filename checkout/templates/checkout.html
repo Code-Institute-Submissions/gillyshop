@@ -100,6 +100,7 @@
 
 
 {% block content %}
+
 <style>
         .demo-container {
             width: 100%;
@@ -128,7 +129,7 @@
         </div>
     </div>
 
-    <script src="{% static 'js/card.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/card.js' %}"></script>
     <script>
         new Card({
             form: document.querySelector('form'),
