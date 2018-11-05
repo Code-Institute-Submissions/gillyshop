@@ -19,10 +19,14 @@
 
     <script src="{% static 'js/card.js' %}"></script>
     <script>
-        new Card({
-            form: document.querySelector('form'),
-            container: '.card-wrapper'
-        });
+        var card = new Card({
+    form: 'form',
+    container: '.card-wrapper',
+
+    formSelectors: {
+        nameInput: 'input[name="first-name"], input[name="last-name"]'
+    }
+});
     </script>
     
     {% endblock %}
