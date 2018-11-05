@@ -1,12 +1,12 @@
-{% extends 'base.html' %}
-
-{% load bootstrap_tags %}
-{% load staticfiles %}
-
-
-{% block content %}
-
-  <style>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Card &ndash; the better way to collect credit cards</title>
+    <meta name="viewport" content="initial-scale=1">
+    <!-- CSS is included through the card.js script -->
+</head>
+<body>
+    <style>
         .demo-container {
             width: 100%;
             max-width: 350px;
@@ -34,12 +34,12 @@
         </div>
     </div>
 
- <script type="text/javascript" src="{% static 'js/card.js' %}"></script>
+    <script src="jquery.card.js"></script>
     <script>
         new Card({
             form: document.querySelector('form'),
             container: '.card-wrapper'
         });
     </script>
-
-{% endblock %}
+</body>
+</html>
