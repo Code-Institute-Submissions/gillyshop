@@ -3,7 +3,17 @@
 {% load static from staticfiles %}
 <!--{% load bootstrap_tags %}-->
 
+      {% block headjs %}
+  
 
+     <script src="{% static 'js/card.js' %}"></script>   
+<script>
+        new Card({
+            form: document.querySelector('form'),
+            container: '.card-wrapper'
+        });
+    </script>
+     {% endblock headjs %}  
   
 
 {% block content %}
@@ -21,17 +31,6 @@
         </div>
     </div>
     
-      {% block headjs %}
-  
-
-     <script src="{% static 'js/card.js' %}"></script>   
-<script>
-        new Card({
-            form: document.querySelector('form'),
-            container: '.card-wrapper'
-        });
-    </script>
-     {% endblock headjs %}  
      
 {% endblock %}
       
