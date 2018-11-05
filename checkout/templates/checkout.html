@@ -8,10 +8,8 @@
 
 {% block content %}
 
-    <div class="demo-container">
-          <script src="{% static 'js/card.js' %}"></script>
+ <div class="demo-container">
         <div class="card-wrapper"></div>
-        
 
         <div class="form-container active">
             <form action="">
@@ -23,16 +21,12 @@
         </div>
     </div>
     
-    
-    <script>
-var card = new Card({
-    form: 'form',
-    container: '.card-wrapper',
-
-    formSelectors: {
-        nameInput: 'input[name="first-name"], input[name="last-name"]'
-    }
-});
+     <script src="{% static 'js/card.js' %}"></script>   
+<script>
+        new Card({
+            form: document.querySelector('form'),
+            container: '.card-wrapper'
+        });
     </script>
 
 
