@@ -6,21 +6,7 @@
 {% block head_js %}
 <script src="{% static 'js/card.js' %}"></script>
 
-    <script>
-var card = new Card({
-    form: 'form',
-    container: '.card-wrapper',
-
-    formSelectors: {
-        nameInput: 'input[name="first-name"], input[name="last-name"]'
-    }
-});
-    </script>
-{% endblock %}
-
-
-
-
+{% endblock head_js %}
 
 
 {% block content %}
@@ -38,6 +24,18 @@ var card = new Card({
             </form>
         </div>
     </div>
+    
+    
+    <script>
+var card = new Card({
+    form: 'form',
+    container: '.card-wrapper',
+
+    formSelectors: {
+        nameInput: 'input[name="first-name"], input[name="last-name"]'
+    }
+});
+    </script>
 
 
     
