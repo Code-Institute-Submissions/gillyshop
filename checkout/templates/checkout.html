@@ -20,15 +20,15 @@
         </div>
     </div>
     
-    <script>
+ 
+    
+     {% block headjs %}
+     <script>
         new Card({
             form: document.querySelector('form'),
             container: '.card-wrapper'
         });
     </script>
-    
-     {% block headjs %}
-  
      <script type="text/javascript" src="{% static 'js/card.js' %}"></script>   
 
      {% endblock %}  
