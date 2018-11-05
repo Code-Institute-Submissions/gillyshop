@@ -137,10 +137,13 @@
 
   <script type="text/javascript" src="{% static 'js/card.js' %}"></script>
     <script>
-        new Card({
-            form: document.querySelector('form'),
-            container: '.card-wrapper'
-        });
+   $('form').card({
+    // a selector or DOM element for the container
+    // where you want the card to appear
+    container: '.card-wrapper', // *required*
+
+    // all of the other options from above
+});
     </script>
 
 {% csrf_token %}
