@@ -171,24 +171,41 @@
   
 <!--</table>-->
 <!--</div>-->
+    <style>
+        .demo-container {
+            width: 100%;
+            max-width: 350px;
+            margin: 50px auto;
+        }
+        form {
+            margin: 30px;
+        }
+        input {
+            width: 200px;
+            margin: 10px auto;
+            display: block;
+        }
+    </style>
+    <div class="demo-container">
+        <div class="card-wrapper"></div>
 
-<form>
-    <input type="text" name="number">
-    <input type="text" name="first-name"/>
-    <input type="text" name="last-name"/>
-    <input type="text" name="expiry"/>
-    <input type="text" name="cvc"/>
-</form>
-<script>
-var card = new Card({
-    form: 'form',
-    container: '.card-wrapper',
+        <div class="form-container active">
+            <form action="">
+                <input placeholder="Card number" type="tel" name="number">
+                <input placeholder="Full name" type="text" name="name">
+                <input placeholder="MM/YY" type="tel" name="expiry">
+                <input placeholder="CVC" type="number" name="cvc">
+            </form>
+        </div>
+    </div>
 
-    formSelectors: {
-        nameInput: 'input[name="first-name"], input[name="last-name"]'
-    }
-});
-</script>
+    <script src="http://localhost:8080/card.js"></script>
+    <script>
+        new Card({
+            form: document.querySelector('form'),
+            container: '.card-wrapper'
+        });
+    </script>
 
 {% csrf_token %}
 <div class="col-sm-10">
