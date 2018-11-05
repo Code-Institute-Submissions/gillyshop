@@ -2,42 +2,42 @@
 {% load static from staticfiles %}
 {% load bootstrap_tags %}
 
-{% block head_js %}
+<!--{% block head_js %}-->
 <!--<script type="text/javascript" src="https://js.stripe.com/v2/"></script>-->
 <!--<script type="text/javascript">-->
-    //<![CDATA[
+<!--    //<![CDATA[-->
 <!--    Stripe.publishableKey = '{{ publishable }}';-->
-    //]]>
+<!--    //]]>-->
 <!--</script>-->
 <!--<script type="text/javascript" src="{% static 'js/stripe.js' %}"></script>-->
 <!--<script type="text/javascript" src="{% static 'js/creditcardjs-v0.10.13.min.js' %}"></script>-->
 
-{% endblock %}
+<!--{% endblock %}-->
 
 {% block content %}
 
-<div class="checkcontainer">
-    <legend><span class="ledge">Payment Details</span><span class="ledger">Order Summary</span></legend>
-    <div class="col-md-4">
-<table class="tablecheck table-bordered">
+<!--<div class="checkcontainer">-->
+<!--    <legend><span class="ledge">Payment Details</span><span class="ledger">Order Summary</span></legend>-->
+<!--    <div class="col-md-4">-->
+<!--<table class="tablecheck table-bordered">-->
    
-        <tr>
-    {% for item in cart_items %}
-    <td><img class="checkimg" src="{{ MEDIA_URL }}{{ item.product.image }}">{{ item.product.name }}
-    <td>{{item.quantity}}</td>
-    <td>€{{ item.product.price }}</td>
-    </tr>
+<!--        <tr>-->
+<!--    {% for item in cart_items %}-->
+<!--    <td><img class="checkimg" src="{{ MEDIA_URL }}{{ item.product.image }}">{{ item.product.name }}-->
+<!--    <td>{{item.quantity}}</td>-->
+<!--    <td>€{{ item.product.price }}</td>-->
+<!--    </tr>-->
 
-    {% endfor %}
+<!--    {% endfor %}-->
         
-    <tr>
-        <td></td>
-        <td>TOTAL:</td>
-        <td>€{{ total }}</td>
-    </tr>
+<!--    <tr>-->
+<!--        <td></td>-->
+<!--        <td>TOTAL:</td>-->
+<!--        <td>€{{ total }}</td>-->
+<!--    </tr>-->
   
-</table>
-</div>
+<!--</table>-->
+<!--</div>-->
 <!--<div class="row row-flex">-->
 <!--    {% for item in cart_items %}-->
     
