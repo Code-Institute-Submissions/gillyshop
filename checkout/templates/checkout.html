@@ -75,11 +75,11 @@
 <div class="ccjs-card">
   <label class="ccjs-number">
     Card Number
-    <input name="card-number" class="ccjs-number" placeholder="•••• •••• •••• ••••">
+    <input name="credit_card_number" class="ccjs-number" placeholder="•••• •••• •••• ••••">
   </label>
    <label class="ccjs-csc">
     Security Code
-    <input name="csc" class="ccjs-csc" placeholder="•••">
+    <input name="cvv" class="ccjs-csc" placeholder="•••">
   </label>
   <button type="button" class="ccjs-csc-help">?</button>
   <label class="ccjs-name">
@@ -88,7 +88,7 @@
   </label>
   <fieldset class="ccjs-expiration">
     <legend>Expiration</legend>
-    <select name="month" class="ccjs-month">
+    <select name="expiry_month" class="ccjs-month">
       <option selected disabled>MM</option>
       <option value="01">01</option>
       <option value="02">02</option>
@@ -103,7 +103,7 @@
       <option value="11">11</option>
       <option value="12">12</option>
     </select>
-    <select name="year" class="ccjs-year">
+    <select name="expiry_year" class="ccjs-year">
       <option selected disabled>YY</option>
       <option value="14">14</option>
       <option value="15">15</option>
@@ -127,9 +127,9 @@
   </select>
 </div>
 </div>
-<div class="form-group col-md-4">
-    {{ payment_form|as_bootstrap }}
-</div>
+<!--<div class="form-group col-md-4">-->
+<!--    {{ payment_form|as_bootstrap }}-->
+<!--</div>-->
 <!--</div>-->
 <!--  <div class="col-md-4">-->
 <!--<table class="tablecheck table-bordered">-->
