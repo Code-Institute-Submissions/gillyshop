@@ -48,10 +48,14 @@
 <!--    {% endfor %}-->
 <!--</div>-->
 <div class="row">
+<div class="col-md-12">
+<legend>Order Summary</legend>
+<p>{{ product_count }}</p>
     <p>Order total:  </p>
     <p>€{{ total }}</p>
 </div>
-<div class="col-md-8">
+</div>
+<div class="col-md-12">
 <form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
 <legend>Payment Details</legend>
 <div id="credit-card-errors" style="display: none">
