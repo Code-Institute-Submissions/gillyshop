@@ -1,10 +1,15 @@
+<!--{% extends 'base.html' %}-->
+
+{% load bootstrap_tags %}
+{% load staticfiles %}
 
 {% block content %}
+
  <div class="demo-container">
         <div class="card-wrapper"></div>
 
         <div class="form-container active">
-            <form action="" id="payment">
+            <form action="">
                 <input placeholder="Card number" type="tel" name="number">
                 <input placeholder="Full name" type="text" name="name">
                 <input placeholder="MM/YY" type="tel" name="expiry">
@@ -12,26 +17,23 @@
             </form>
         </div>
     </div>
-    
-    <script>
-    
-new Card({
-    form: document.querySelector('#payment'),
-    container: '.card-wrapper'
-});
-   </script>
-   
 
-    
-    <script type="text/javascript" src="{% static 'js/card.js' %}"></script> 
-    <script type="text/javascript" src="{% static 'js/script.js' %}"></script> 
+     <script type="text/javascript" src="{% static 'js/card.js' %}"></script>  
+     
+     <script>
+        new Card({
+            form: document.querySelector('form'),
+            container: '.card-wrapper'
+        });
+    </script>
+
+   
+   
 
  
 
-  
-  {% endblock %}
-      
-
+     
+{% endblock %}
     
 
 
