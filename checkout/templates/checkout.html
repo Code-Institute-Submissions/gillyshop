@@ -1,9 +1,4 @@
-{% extends 'base.html' %}
 
-{% load bootstrap_tags %}
-{% load staticfiles %}
-
-{% block content %}
 
  <div class="demo-container">
         <div class="card-wrapper"></div>
@@ -26,17 +21,16 @@ new Card({
 });
    </script>
    
-{% endblock %}
 
-    {% block js %}
+
+
     
     <script type="text/javascript" src="{% static 'js/card.js' %}"></script> 
     <script type="text/javascript" src="{% static 'js/script.js' %}"></script> 
 
  
 
-  
-  {% endblock %}
+
       
 
     
