@@ -29,6 +29,14 @@
 		<div class="container">  
 			<div class="row head align-items-center">
 				<a class="header" href="{% url 'index' %}">MILLENNIAL PINK</a>
+				<span class="searchbar">
+				        <!--<li class="search">-->
+       <form action="{% url 'search' %}" method="get">
+                <input type="text" class ="searchform" placeholder="Search" name="q">
+                <button type="submit" class="searchbut"><i class="fas fa-search"></i></button>
+            </form>
+            <!--</li>  -->
+				</span>
 				<span class="icons">   
 				
    {% if user.is_authenticated %}
