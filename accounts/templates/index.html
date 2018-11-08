@@ -7,15 +7,20 @@
 
 
 
-<div id="container">
+<div id="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+	
 	<div class="menucarousel">
 		<div class="w3-content w3-section foodpics">
-			<a href="{% url 'pink' %}"><img class="myPics" src="{% static 'images/pi1big.jpg' %}"></a>
-			<a href="{% url 'deer' %}"><img class="myPics" src="{% static 'images/d2big.jpg' %}"></a>
-			<a href="{% url 'palmtrees' %}"><img class="myPics" src="{% static 'images/p1big.jpg' %}"></a>
-			<a href="{% url 'galaxy' %}"><img class="myPics" src="{% static 'images/g1big.jpg' %}"></a>
+			<a href="{% url 'pink' %}"><img class="myPics img-responsive" src="{% static 'images/pi1big.jpg' %}"></a>
+			<a href="{% url 'deer' %}"><img class="myPics img-responsive" src="{% static 'images/d2big.jpg' %}"></a>
+			<a href="{% url 'palmtrees' %}"><img class="myPics img-responsive" src="{% static 'images/p1big.jpg' %}"></a>
+			<a href="{% url 'galaxy' %}"><img class="myPics img-responsive" src="{% static 'images/g1big.jpg' %}"></a>
 			
 		</div>
+	</div>
+	</div>
 	</div>
 </div>
 
