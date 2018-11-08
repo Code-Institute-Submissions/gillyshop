@@ -17,25 +17,18 @@
     {% endblock head_js %}
 </head>
 <body>
-    
-  
-    
-    
-    
-    
+
 <a name="top"></a>
     
-    	<div id="header">
-		<div class="container">  
-			<div class="row head align-items-center">
-				<a class="header" href="{% url 'index' %}">MILLENNIAL PINK</a>
+<div id="header">
+	<div class="container">  
+		<div class="row head align-items-center">
+			<a class="header" href="{% url 'index' %}">MILLENNIAL PINK</a>
 				<span class="searchbar">
-				        <!--<li class="search">-->
-       <form action="{% url 'search' %}" method="get">
-                <input type="text" class ="searchform" placeholder="Search" name="q">
+        <form action="{% url 'search' %}" method="get">
+            <input type="text" class ="searchform" placeholder="Search" name="q">
                 <button type="submit" class="searchbut"><i class="fas fa-search"></i></button>
-            </form>
-            <!--</li>  -->
+        </form>
 				</span>
 				<span class="icons">   
 				
@@ -55,10 +48,9 @@
                 </a>
 				</span>
 				<!--<p class="subhead">A curated art collection for the millennial in your life</p>-->
-				
-			</div>
 		</div>
 	</div>
+</div>
 
 <div>
 	<nav class="navbar navbar-default">
@@ -68,52 +60,26 @@
 			<span class="icon-bar"></span>
 		</button>
 	
-	
-	
-		<div class="collapse navbar-collapse" id="myCollapseList">
-			<ul class="nav navbar-nav navbar-center">
-
-
-				  
-		
-		<li><a href="{% url 'new' %}">New In</a></li>
-		
-		      
-      <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >Products <i class="fas fa-caret-down"></i></a>
-          <ul class="dropdown-menu">
-               <li><a href="{% url 'products' %}">View All</a></li>
-       <li><a href="{% url 'cactus' %}">Cactii</a></li>
-         <li><a href="{% url 'deer' %}">Deer</a></li>
-         <li><a href="{% url 'flamingos' %}">Flamingos</a></li>
-           <li><a href="{% url 'galaxy' %}">Galaxies</a></li>
-               <li><a href="{% url 'palmtrees' %}">Palm Trees</a></li>
-                <li><a href="{% url 'pink' %}">Pink</a></li>
-      </ul></li>
-      
-   
-      <li class="aboutnav"><a href="{% url 'about' %}">About us</a></li>
-
-  
-   <!--<li class="contactmenu"><a href="{% url 'contact' %}">Contact</a></li>-->
-  
-     
-         
-       <!--     <li class="search">-->
-       <!--<form action="{% url 'search' %}" method="get">-->
-       <!--         <input type="text" class ="searchform" placeholder="Search" name="q">-->
-       <!--         <button type="submit" class="searchbut"><i class="fas fa-search"></i></button>-->
-       <!--     </form></li>       -->
-			
-			</ul>
-	
-		</div>
+	<div class="collapse navbar-collapse" id="myCollapseList">
+		<ul class="nav navbar-nav navbar-center">
+            <li><a href="{% url 'new' %}">New In</a></li>
+		    <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >Products <i class="fas fa-caret-down"></i></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="{% url 'products' %}">View All</a></li>
+                    <li><a href="{% url 'cactus' %}">Cactii</a></li>
+                     <li><a href="{% url 'deer' %}">Deer</a></li>
+                        <li><a href="{% url 'flamingos' %}">Flamingos</a></li>
+                          <li><a href="{% url 'galaxy' %}">Galaxies</a></li>
+                           <li><a href="{% url 'palmtrees' %}">Palm Trees</a></li>
+                            <li><a href="{% url 'pink' %}">Pink</a></li>
+                    </ul>
+            </li>
+          <li class="aboutnav"><a href="{% url 'about' %}">About us</a></li>
+		</ul>
+	</div>
 	</nav>
 </div>
-
-	
-    
-    
 
     {% if messages %}
         <div class="alert alert-success">
@@ -124,8 +90,6 @@
             </div>
         </div>
     {% endif %}
-
-
 
         {% block content %} {% endblock %}
       
