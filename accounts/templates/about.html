@@ -1,30 +1,17 @@
 {% extends 'base.html' %}
 
-
-
 {% block content %}
 
 <div class="aboutcontainer">
-    
-<div class="about">
-    <h3 class="free">THIS MONTH ONLY -- FREE SHIPPING! </h3>
-
-    <h3 class="abname">About Us</h3>
-   
-    <p class="aboutp">Millennial Pink is Ireland's newest online source for high quality prints and artwork.</p>
-    <p class="aboutp">We specialise in art that appeals to millennials and their interests, from avocados to llamas and everything in between.</p>
-
-
-    <h3 class="abname">Shipping</h3>
-    <p class="aboutp">Currently we only ship within Ireland but hope to expand worldwide in the coming months.</p>
-    <p class="aboutp">Shipping is a flat fare of €5 anywhere within Ireland.</p>
-    <p class="aboutp">Your poster will be sent by An Post in a fully recyclable paper tube.</p>
+    <div class="about">
+        <h3 class="abname">About Us</h3>
+            <p class="aboutp">Millennial Pink is Ireland's newest online source for high quality prints and artwork.</p>
+            <p class="aboutp">We specialise in art that appeals to millennials and their interests, from avocados to llamas and everything in between.</p>
+            <p class="aboutp">Millennial Pink specialises in prints photographed by Irish photographers.</p>
+            <p class="aboutp">We love to support local talent and are always looking for the next big thing.</p>
+            <p class="aboutp">We also aim to add even more to our site in the next months, from tote bags to resuable cups.</p>
+            <p class="aboutp">If you'd like to talk to us about getting your art or photos onto Millennial Pink, <a class="signin" href="{% url 'contact' %}">get in touch</a></p>
+    </div>
 </div>
-
-
-</div>
-
-
-
 
 {% endblock %}
