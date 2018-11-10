@@ -17,7 +17,7 @@
 <div id="cardcontainer">
     
     % for tag in product.tags.all %}
-  	<a class="taglink" href="{% url 'tagpage' tag.slug %}">{{ tag.name }}, </a>
+  	<li>{{ tag.name }}</li>
   
  {% endblock %
 </div>
