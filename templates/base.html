@@ -99,12 +99,14 @@
 </div>
         
 <div id="footer">
-    <div class="container-fluid footcontainer">
+    <!--<div class="container-fluid">-->
+    <div id="cardcontainer">
         <div class="logorow">
             <h3 class="logo">MP</h3>
         </div>
         <div class="row footrow">
-            <div class="col-md-4">
+            <div class="card">
+            <!--<div class="col-md-4">-->
                 <ul class="firstfoot">
                     <li class="lifooter"><a href="{% url 'about' %}"><i class="fas fa-info-circle"></i> About Us</a></li>
                     <li class="lifooter"><a href="{% url 'contact' %}"><i class="fas fa-shipping-fast"></i> Shipping</a></li>
@@ -113,7 +115,8 @@
             </div>
             
             
-            <div class="col-md-4">
+            <!--<div class="col-md-4">-->
+             <div class="card">
                  <ul class="middle">
                     <li class="lifooter"><a href="{% url 'contact' %}"><i class="far fa-comments"></i> Contact Us</a></li>
                     <li class="lifooter"><a href="{% url 'contact' %}"><i class="fas fa-shopping-bag"></i> Stockists</a></li>
@@ -126,7 +129,8 @@
             </div>
             
            
-            <div class="col-md-4">
+            <!--<div class="col-md-4">-->
+             <div class="card">
                 <ul class="newsletter">
                      <!--<form name ="footform">-->
 					<!--<label for="email" class="field">Sign up here for our mailing list</label>-->
