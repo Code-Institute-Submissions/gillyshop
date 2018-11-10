@@ -15,12 +15,15 @@
 </div>
 
 <div id="cardcontainer">
-    
-  	{% for tag in product.tags.all %}
-  	<a class="taglink" href="{% url 'tagpage' tag.slug %}">{{ tag.name }}, </a>
- {% endfor %}
-</div>
+  	<div class="row">  
+  {% for tag in product.tags.all %}
+  				<a class="taglink" href="{% url 'tagpage' %}">{{ tag.name }}, </a>
+  				{% empty %}
+  				<p>no tags</p>
+  				{% endfor %}
 
+</div>
+</div>
 
 <div class="productcontainer">
     <div class="row row-flex">
