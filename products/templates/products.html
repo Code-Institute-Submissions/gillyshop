@@ -17,7 +17,7 @@
 <div id="cardcontainer">
   	<div class="row">  
   {% for tag in tags.all %}
-  				<a class="taglink" href="{% url 'tagpage' tag.slug %}">{{ tag.name }}, </a>
+  				<a class="taglink" href="{% url 'tagpage' %}">{{ tag.name }}, </a>
   				{% endfor %}
   				<!--<a class="taglink" href="{% url 'tagpage' %}">{{ tag.name }}, </a>-->
   				
