@@ -20,7 +20,7 @@
 
 </head>
 <body>
-
+<div id="main">
 <a name="top"></a>
     
 <div id="header">
@@ -95,11 +95,10 @@
     {% endif %}
 
         {% block content %} {% endblock %}
-      
-</body>
-</html>
-    
-<footer>
+
+</div>
+        
+<div id="footer">
     <div class="container-fluid footcontainer">
         <div class="row footrow">
             <div class="col-md-4">
@@ -141,9 +140,14 @@
         </div>
     
     </div>
-</footer>  
+</div>  
 
-<script src="{% static 'js/footer.js' %}"></script>
+<script src="{% static 'js/footer.js' %}"></script> 
+
+</body>
+</html>
+    
+
 
 
 
