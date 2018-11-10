@@ -8,25 +8,28 @@
 
 
 <div class="homecontainer">
-	<div class="menucarousel">
-		<div class="w3-content w3-section foodpics">
-			<div class="smoke">
-			<a href="{% url 'pink' %}"><img class="myPics img-responsive" src="{% static 'images/pi1big.jpg' %}">Curated Art For Millennials</a>
-			</div>
 		
-			<div class="deer">
-			<a href="{% url 'deer' %}"><img class="myPics img-responsive" src="{% static 'images/d2big.jpg' %}">Art that appeals</a>
-			</div>	
-
-			<div class="palmt">
-			<a href="{% url 'palmtrees' %}"><img class="myPics img-responsive" src="{% static 'images/p1big.jpg' %}">More text here</a>
-			</div>
-	
-			<div class="galx">more more More text here
-			<a href="{% url 'galaxy' %}"><img class="myPics img-responsive" src="{% static 'images/g1big.jpg' %}"></a>
-			</div>
+		<div class="myPics">
+			<a href="{% url 'pink' %}"><img class="myPics img-responsive" src="{% static 'images/pi1big.jpg' %}"></a>
+			<div class="smoke">Curated Art For Millennials</div>
 		</div>
-	</div>
+		<div class="myPics">
+			<a href="{% url 'deer' %}"><img class="myPics img-responsive" src="{% static 'images/d2big.jpg' %}"></a>
+			<div class="deer">Art that appeals</div>	
+		</div>
+		<div class="myPics">
+			<a href="{% url 'palmtrees' %}"><img class="myPics img-responsive" src="{% static 'images/p1big.jpg' %}"></a>
+			<div class="palmt">More text here</div>
+		</div>
+		<div class="myPics">
+			<a href="{% url 'galaxy' %}"><img class="myPics img-responsive" src="{% static 'images/g1big.jpg' %}"></a>
+			<div class="galx">more more More text here</div>
+		</div>
+</div>  
+
+<script src="{% static 'js/script.js' %}"></script>
+
+{% endblock %}
 		<!--<div class="imagetext">-->
 		<!--	<p class="moon">A curated art collection for</p>-->
 		<!--	<p class="moon">MILLENNIALS</p> -->
@@ -41,8 +44,7 @@
 			<!--<p class="loba"><span>your</span></p> <br>-->
 			<!--<p class="loba"><span>life</span></p>-->
 		<!--</div>-->
-	
-</div>
+
 
 <!--<div id="container-fluid">-->
 <!--	<div class="row">-->
@@ -59,6 +61,3 @@
 <!--</div>-->
 
 
-  <script src="{% static 'js/script.js' %}"></script>
-
-{% endblock %}
