@@ -13,26 +13,16 @@
 		<!--<li class="cats"><a href="{% url 'cactus' %}">Cactii</a></li>-->
 	</ul>
 </div>
-<!--<div class="container">-->
-<!--<div class="crumbmenu">-->
-<!--	<ul class="breadcrumb">-->
-<!--		<li class="cat"><a href="{% url 'cactus' %}">Cactii</a></li>-->
-<!--		<li class="cat"><a href="{% url 'deer' %}">Deer</a></li>-->
-<!--		<li class="cat"><a href="{% url 'flamingos' %}">Flamingos</a></li>-->
-<!--		<li class="cat"><a href="{% url 'galaxy' %}">Galaxies</a></li>-->
-<!--		<li class="cat"><a href="{% url 'palmtrees' %}">Palm Trees</a></li>-->
-<!--		<li class="cat"><a href="{% url 'pink' %}">Pink</a></li>-->
-<!--	</ul>-->
-	<!--<a class="btn productbtn" href="{% url 'cactus' %}">Cactii</a>-->
-	<!--<a class="btn productbtn" href="{% url 'deer' %}">Deer</a>-->
-	<!--<a class="btn productbtn" href="{% url 'flamingos' %}">Flamingos</a>-->
-	<!--<a class="btn productbtn" href="{% url 'galaxy' %}">Galaxies</a>-->
-	<!--<a class="btn productbtn" href="{% url 'palmtrees' %}">Palm Trees</a>-->
-	<!--<a class="btn productbtn" href="{% url 'pink' %}">Pink</a>-->
-	
-<!--</div>-->
-<!--</div>-->
 
+<div id="cardcontainer">
+    
+    % for tag in product.tags.all %}
+  	<a class="taglink" href="{% url 'tagpage' tag.slug %}">{{ tag.name }}, </a>
+  	{% empty %}
+  	<p>no tags</p>
+  	{% endfor %}
+
+</div>
 
 
 <div class="productcontainer">
