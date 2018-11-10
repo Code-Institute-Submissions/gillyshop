@@ -16,7 +16,7 @@
 
 <div id="cardcontainer">
     
-    % for tag in product.tags.all %}
+    {% for tag in product.tags.all %}
   	<li>{{ tag.name }}</li>
   
  {% endblock %
