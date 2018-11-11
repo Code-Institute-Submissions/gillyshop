@@ -4,21 +4,20 @@
 
 {% block content %}
 
-<div id="cardcontainer">		
-	<div class="card form">
+<div class="aboutcontainer">		
+	<div class="form">
 		<fieldset>
-			<form name ="myForm" id="contactForm" method="get" class="form-inline" onsubmit="return submitFunction()">
+			<form name ="myForm" id="contactForm" method="get" class="form-inline">
 				<div class="form-group">
-					<p>Get In Touch!</p>
+					<p>Fill in the form and let us know your thoughts</p>
 					<br>
-					<label for="name" class="field">NAME*</label>
+					<label for="name" class="field">Full Name</label>
 					<input type="text" placeholder="Name" id="name" name="name" required/>
 						
-					<label for="email" class="field">EMAIL ADDRESS*</label>
+					<label for="email" class="field">Email adddress</label>
 					<input type="email" placeholder="name@domain.com" id="email" name="email" required/>
 						
-						
-					<label for="comment" class="field">YOUR COMMENTS*</label>
+					<label for="comment" class="field">Your comments</label>
 					<textarea type="text" placeholder="Your comments" id="comms" name="comments" maxlength="300" required></textarea>
 						
 
@@ -27,26 +26,34 @@
 							<br><br>
 			</form>
 		</fieldset>
-	</div>
-
-	<div class="card contact">
-		<div class="col-lg-12">
-			<p></p>
 			<h3>Contact Details</h3>
 			<br>
-				<h2>Call us</h2><p>021-7001234 <br>or <br>087-1234567</p><br>
+				<h2>Call us</h2><p>01-8001234 <br>or <br>087-1234567</p><br>
 		
-				<h2>Email us</h2><p> <a href="mailto:bookings@seaandstone.com">bookings@seaandstone.com</a></p>
-				<a href="http://www.facebook.com/seaandstone" class="fa fa-facebook"></a> <a href="http://www.instagram.com/seaandstone" class="fa fa-instagram"></a>  <a href="http://www.twitter.com/seaandstone" class="fa fa-twitter"></a>
-		</div>
+				<h2>Email us</h2><p> <a href="mailto:info@millennialpink.com">info@millenialpink.com</a></p>
+
+
+		
 	</div>
-</div>
+
+<!--	<div class="card contact">-->
+<!--		<div class="col-lg-12">-->
+<!--			<p></p>-->
+<!--			<h3>Contact Details</h3>-->
+<!--			<br>-->
+<!--				<h2>Call us</h2><p>021-7001234 <br>or <br>087-1234567</p><br>-->
+		
+<!--				<h2>Email us</h2><p> <a href="mailto:bookings@seaandstone.com">bookings@seaandstone.com</a></p>-->
+<!--				<a href="http://www.facebook.com/seaandstone" class="fa fa-facebook"></a> <a href="http://www.instagram.com/seaandstone" class="fa fa-instagram"></a>  <a href="http://www.twitter.com/seaandstone" class="fa fa-twitter"></a>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--</div>-->
 
 
 
-<script type="text/javascript" src="js/script.js"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
+<!--<script type="text/javascript" src="js/script.js"></script>-->
+<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+<!--<script src="bootstrap/js/bootstrap.min.js"></script>-->
 
 
 {% endblock %}
