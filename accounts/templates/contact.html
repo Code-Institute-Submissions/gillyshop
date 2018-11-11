@@ -18,7 +18,8 @@
 					<!--<input class="commsinput" type="text" placeholder="Your comments" id="comms" name="comments" maxlength="500" required/>-->
 					<textarea type="text" class="commsinput" placeholder="Your comments" id="comms" name="comments" maxlength="500" required></textarea>
 					
-					<input class="contactbtn" type="submit" value="Submit"/>
+					<input class="contactbtn" onclick="cformFunction()" type="submit" value="Submit"/>
+					<div id="hiddentxt">Thanks, we'll be in touch soon!</div>
 					</div>
 				</form>
 			</fieldset>
@@ -28,6 +29,6 @@
 				<p class="ship">Email us</p><p class="ship"> <a href="mailto:info@millennialpink.com">info@millenialpink.com</a></p>
 	</div>
 </div>
-
+<script src="{% static 'js/script.js' %}"></script> 
 
 {% endblock %}
