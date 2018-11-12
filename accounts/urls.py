@@ -1,5 +1,5 @@
 from django.conf.urls import url, include
-from accounts.views import index, logout, login, registration, user_profile, about, shipping, contact
+from accounts.views import index, logout, login, registration, user_profile, about, shipping, contact, stockists
 from accounts import url_reset
 
 urlpatterns = [
@@ -13,4 +13,5 @@ urlpatterns = [
     url(r'^about/$', about, name="about"),
     url(r'^shipping/$', shipping, name="shipping"),
     url(r'^contact/$', contact, name="contact"),
+    url(r'^stockists/$', stockists, name="stockists"),
 ]

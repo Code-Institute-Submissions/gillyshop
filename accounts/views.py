@@ -91,3 +91,6 @@ def shipping(request):
 def contact(request):
     return render(request, 'contact.html')
     
+def stockists(request):
+    return render(request, 'stockists.html')
+    
