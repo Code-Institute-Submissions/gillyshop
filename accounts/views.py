@@ -94,3 +94,6 @@ def contact(request):
 def stockists(request):
     return render(request, 'stockists.html')
     
+def returns(request):
+    return render(request, 'returns.html')
+    
