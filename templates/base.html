@@ -36,7 +36,7 @@
 				<span class="icons">   
 				
    {% if user.is_authenticated %}
-            <a href="{% url 'profile' %}"><i class="headicon fas fa-user"></i></a>
+            <a href="{% url 'profile' %}" aria-label="user profile"><i class="headicon fas fa-user"></i></a>
             {%  else %}
                 <a href="{% url 'registration' %}"><i class="headicon fas fa-user-plus"></i></a>
             {% endif %}        
