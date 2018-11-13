@@ -53,10 +53,10 @@ class TagIndexView(ListView):
     # def get_queryset(self):
     #     return Product.objects.filter(tags__slug=self.kwargs.get('slug'))
    
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['products'] = Product.objects.filter(tags__slug=self.kwargs.get('slug'))
-        return context 
+    # def get_context_data(self, **kwargs):
+    #     context = super().get_context_data(**kwargs)
+    #     context['products'] = Product.objects.filter(tags__slug=self.kwargs.get('slug'))
+    #     return context 
         
 # //solution found on youtube//        
 # def tagpage(request, tag):
