@@ -4,9 +4,9 @@ from .models import Product
 from taggit.models import Tag
 # Create your views here.
 
-def products(request):
-    products = Product.objects.all()
-    return render(request, "products.html", {"products": products})
+# def products(request):
+#     products = Product.objects.all()
+#     return render(request, "products.html", {"products": products})
     # tags = Product.objects.filter(tags='slug')
     # tags = self.kwargs.get('slug')
     # if tag_slug:
@@ -57,6 +57,13 @@ class TagMixin(object):
         context = super(TagMixin, self).get_context_data(kwargs)
         context['tags'] = Tag.objects.all()
         return context    
+
+class ProductIndex(TagMixin, ListView):
+    template_name = 'products.html'
+    model = Product
+    paginate_by = '10'
+    queryset = Product.objects.all()
+    context_object_name = 'products'
  
 class TagIndexView(Tag Mixin, ListView):
     template_name = 'tagpage.html'
