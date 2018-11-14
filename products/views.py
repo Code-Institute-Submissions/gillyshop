@@ -6,12 +6,13 @@ from taggit.models import Tag
 
 def products(request):
     products = Product.objects.all()
-    tags = Product.objects.filter(tags='slug')
+    return render(request, "products.html", {"products": products})
+    # tags = Product.objects.filter(tags='slug')
     # tags = self.kwargs.get('slug')
     # if tag_slug:
     #     tag = get_object_or_404(Tag, slug=tag_slug)
     #     products = products(tags__in=[tag])
-    return render(request, "products.html", {"products": products})
+    
 
     # def get_context_data(self, **kwargs):
     #     context = super().get_context_data(**kwargs)
@@ -50,21 +51,27 @@ def galaxy(request):
 def product_detail(request, pk):
     product = get_object_or_404(Product, pk=pk)
     return render(request, "product_detail.html", {"product": product})
+    
+class TagMixin(object):
+    def get_context_data(self, kwargs):
+        context = super(TagMixin, self).get_context_data(kwargs)
+        context['tags'] = Tag.objects.all()
+        return context    
  
-class TagIndexView(ListView):
+class TagIndexView(Tag Mixin, ListView):
     template_name = 'tagpage.html'
     model = Product
     paginate_by = '10'
-    # context_object_name = 'products'
+    context_object_name = 'products'
     
-    # def get_queryset(self):
-    #     return Product.objects.filter(tags__slug=self.kwargs.get('slug'))
+    def get_queryset(self):
+        return Product.objects.filter(tags__slug=self.kwargs.get('slug'))
    
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['products'] = Product.objects.filter(tags__slug=self.kwargs.get('slug'))
-        context['tagname'] = self.kwargs.get('slug')
-        return context 
+    # def get_context_data(self, **kwargs):
+    #     context = super().get_context_data(**kwargs)
+    #     context['products'] = Product.objects.filter(tags__slug=self.kwargs.get('slug'))
+    #     context['tagname'] = self.kwargs.get('slug')
+    #     return context 
         
 # //solution found on youtube//        
 # def tagpage(request, tag):
