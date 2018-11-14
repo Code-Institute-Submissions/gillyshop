@@ -6,9 +6,9 @@ from taggit.models import Tag
 
 def products(request):
     products = Product.objects.all()
-    # if tag_slug:
-    #     tag = get_object_or_404(Tag, slug=tag_slug)
-    #     products = products(tags__in=[tag])
+    if tag_slug:
+        tag = get_object_or_404(Tag, slug=tag_slug)
+        products = products(tags__in=[tag])
     return render(request, "products.html", {"products": products})
 
 def new(request):
