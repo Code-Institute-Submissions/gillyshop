@@ -6,15 +6,16 @@ from taggit.models import Tag
 
 def products(request):
     products = Product.objects.all()
+    tags = self.kwargs.get('slug')
     # if tag_slug:
     #     tag = get_object_or_404(Tag, slug=tag_slug)
     #     products = products(tags__in=[tag])
     return render(request, "products.html", {"products": products})
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['tagname'] = self.kwargs.get('slug')
-        return context 
+    # def get_context_data(self, **kwargs):
+    #     context = super().get_context_data(**kwargs)
+    #     context['tagname'] = self.kwargs.get('slug')
+    #     return context 
         
 def new(request):
     return render(request, 'new.html')
