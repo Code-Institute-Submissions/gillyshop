@@ -5,7 +5,7 @@ from taggit.models import Tag
 # Create your views here.
 
 def products(request):
-    # products = Product.objects.all()
+    products = Product.objects.all()
     # if tag_slug:
     #     tag = get_object_or_404(Tag, slug=tag_slug)
     #     products = products(tags__in=[tag])
@@ -13,7 +13,6 @@ def products(request):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['products'] = Product.objects.all()
         context['tagname'] = self.kwargs.get('slug')
         return context 
         
