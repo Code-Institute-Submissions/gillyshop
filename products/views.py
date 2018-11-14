@@ -6,7 +6,8 @@ from taggit.models import Tag
 
 def products(request):
     products = Product.objects.all()
-    tags = self.kwargs.get('slug')
+    tags = Product.objects.filter(tags='slug')
+    # tags = self.kwargs.get('slug')
     # if tag_slug:
     #     tag = get_object_or_404(Tag, slug=tag_slug)
     #     products = products(tags__in=[tag])
