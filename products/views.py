@@ -13,7 +13,7 @@ def products(request):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['products'] = Product.objects.filter(tags__slug=self.kwargs.get('slug'))
+        context['products'] = Product.objects.all()
         context['tagname'] = self.kwargs.get('slug')
         return context 
         
