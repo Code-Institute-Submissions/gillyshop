@@ -5,12 +5,18 @@ from taggit.models import Tag
 # Create your views here.
 
 def products(request):
-    products = Product.objects.all()
-    if tag_slug:
-        tag = get_object_or_404(Tag, slug=tag_slug)
-        products = products(tags__in=[tag])
+    # products = Product.objects.all()
+    # if tag_slug:
+    #     tag = get_object_or_404(Tag, slug=tag_slug)
+    #     products = products(tags__in=[tag])
     return render(request, "products.html", {"products": products})
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['products'] = Product.objects.filter(tags__slug=self.kwargs.get('slug'))
+        context['tagname'] = self.kwargs.get('slug')
+        return context 
+        
 def new(request):
     return render(request, 'new.html')
     
