@@ -14,18 +14,17 @@
 
 
 <div class="cartcontainer">
-<table class="table table-bordered">
-    <tr>
-        <th></th>
-        <th>Product</th>
-        <th>Number of items</th>
-        <th>Price per item</th>
-        </tr>
-        <tr>
-    {% for item in cart_items %}
-    <td><img class="cartimg" alt="product image" src="{{ MEDIA_URL }}{{ item.product.image }}"></td>
-    <td><h3 class="h3cart">{{ item.product.name }}</h3><br>{{ item.product.description }}</td>
-    <td><form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
+    
+<div class="row">
+     {% for item in cart_items %}
+    <div class="col-md-3">
+        <img class="cartimg" alt="product image" src="{{ MEDIA_URL }}{{ item.product.image }}">
+    </div>
+    <div class="col-md-3">
+        <h3 class="h3cart">{{ item.product.name }}</h3><br>{{ item.product.description }}
+    </div>
+    <div class="col-md-3">
+        <form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
                     {% csrf_token %}
                         <div class="form-group">
                             <h3 class="h3cart">Quantity:{{item.quantity}} </h3>
@@ -39,21 +38,58 @@
                         </div>
                         <!--<button type="submit" class="btn btn-primary" aria-hidden="true">Amend</button>-->
                 </form>
-                </td>
-    <td><h3 class="h3cart">€{{ item.product.price }}</h3></td>
-    </tr>
+    </div>
+    <div class="col-md-3">
+        <h3 class="h3cart">€{{ item.product.price }}</h3>
+    </div>
+      {% endfor %}
+</div>  
 
-    {% endfor %}
+<div class="row">
+    <h3 class="h3cart">TOTAL: €{{ total }}</h3>
+</div>
+    
+    
+<!--<table class="table table-bordered">-->
+<!--    <tr>-->
+<!--        <th></th>-->
+<!--        <th>Product</th>-->
+<!--        <th>Number of items</th>-->
+<!--        <th>Price per item</th>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--    {% for item in cart_items %}-->
+<!--    <td><img class="cartimg" alt="product image" src="{{ MEDIA_URL }}{{ item.product.image }}"></td>-->
+<!--    <td><h3 class="h3cart">{{ item.product.name }}</h3><br>{{ item.product.description }}</td>-->
+<!--    <td><form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">-->
+<!--                    {% csrf_token %}-->
+<!--                        <div class="form-group">-->
+<!--                            <h3 class="h3cart">Quantity:{{item.quantity}} </h3>-->
+<!--                            <label for="exampleInputAmount" class="sr-only">New qty</label>-->
+<!--                            <div class="input-group">-->
+                                <!--<div class="input-group-addon">Qty</div>-->
+<!--                                <input name="quantity" type="number" min="0" max="999" class="form-control">-->
+                                <!--<div class="input-group-addon">{{item.quantity}}</div>-->
+<!--                                <button type="submit" class="btn btn-primary" aria-hidden="true">Amend</button>-->
+<!--                            </div>-->
+<!--                        </div>-->
+                        <!--<button type="submit" class="btn btn-primary" aria-hidden="true">Amend</button>-->
+<!--                </form>-->
+<!--                </td>-->
+<!--    <td><h3 class="h3cart">€{{ item.product.price }}</h3></td>-->
+<!--    </tr>-->
+
+<!--    {% endfor %}-->
         
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td><h3 class="h3cart">TOTAL: €{{ total }}</h3></td>
-    </tr>
+<!--    <tr>-->
+<!--        <td></td>-->
+<!--        <td></td>-->
+<!--        <td></td>-->
+<!--        <td><h3 class="h3cart">TOTAL: €{{ total }}</h3></td>-->
+<!--    </tr>-->
    
     
-</table>
+<!--</table>-->
 
 
 
