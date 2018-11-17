@@ -15,7 +15,7 @@
 
 <div class="cartcontainer">
   <legend>Your Products</legend>  
-<div class="row">
+    <div class="row">
      {% for item in cart_items %}
     <div class="col-md-3 cartcol">
         <img class="cartimg" alt="product image" src="{{ MEDIA_URL }}{{ item.product.image }}">
@@ -43,73 +43,25 @@
         <h3 class="h3cart">Price per item:</h3><br>
         <p>€{{ item.product.price }}</p>
     </div>
-    
       {% endfor %}
+    </div>  
 
-</div>  
-
-<div class="row">
-    <div class="col-md-12 cartcoltot">
-    <h3 class="h3carttot">TOTAL: €{{ total }}</h3>
+    <div class="row">
+        <div class="col-md-12 cartcoltot">
+        <h3 class="h3carttot">TOTAL: €{{ total }}</h3>
+        </div>
     </div>
-</div>
 
-</div>
-    
-    
-<!--<table class="table table-bordered">-->
-<!--    <tr>-->
-<!--        <th></th>-->
-<!--        <th>Product</th>-->
-<!--        <th>Number of items</th>-->
-<!--        <th>Price per item</th>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--    {% for item in cart_items %}-->
-<!--    <td><img class="cartimg" alt="product image" src="{{ MEDIA_URL }}{{ item.product.image }}"></td>-->
-<!--    <td><h3 class="h3cart">{{ item.product.name }}</h3><br>{{ item.product.description }}</td>-->
-<!--    <td><form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">-->
-<!--                    {% csrf_token %}-->
-<!--                        <div class="form-group">-->
-<!--                            <h3 class="h3cart">Quantity:{{item.quantity}} </h3>-->
-<!--                            <label for="exampleInputAmount" class="sr-only">New qty</label>-->
-<!--                            <div class="input-group">-->
-                                <!--<div class="input-group-addon">Qty</div>-->
-<!--                                <input name="quantity" type="number" min="0" max="999" class="form-control">-->
-                                <!--<div class="input-group-addon">{{item.quantity}}</div>-->
-<!--                                <button type="submit" class="btn btn-primary" aria-hidden="true">Amend</button>-->
-<!--                            </div>-->
-<!--                        </div>-->
-                        <!--<button type="submit" class="btn btn-primary" aria-hidden="true">Amend</button>-->
-<!--                </form>-->
-<!--                </td>-->
-<!--    <td><h3 class="h3cart">€{{ item.product.price }}</h3></td>-->
-<!--    </tr>-->
-
-<!--    {% endfor %}-->
-        
-<!--    <tr>-->
-<!--        <td></td>-->
-<!--        <td></td>-->
-<!--        <td></td>-->
-<!--        <td><h3 class="h3cart">TOTAL: €{{ total }}</h3></td>-->
-<!--    </tr>-->
-   
-    
-<!--</table>-->
-
-
-
- 
-<div class="row cartbtns">
-    <div class="col-sm-10">
-      <a href="{% url 'products' %}" class="btn btn-goback" role="button"><span aria-hidden="true"></span><i class="fas fa-arrow-left"></i> Continue Shopping</a></div>
-      <div class="col-sm-2">
-      <a href="{% url 'checkout' %}" class="btn btn-proceed" role="button"><span aria-hidden="true"></span><i class="fas fa-shopping-cart"></i>
+    <div class="row cartbtns">
+        <div class="col-sm-10">
+          <a href="{% url 'products' %}" class="btn btn-goback" role="button"><span aria-hidden="true"></span><i class="fas fa-arrow-left"></i> Continue Shopping</a>
+          </div>
+          <div class="col-sm-2">
+          <a href="{% url 'checkout' %}" class="btn btn-proceed" role="button"><span aria-hidden="true"></span><i class="fas fa-shopping-cart"></i>
                  {% if product_count > 0 %}
                     <label class="badge badge-warning">{{ product_count }}</label>
-                    {% endif %}<i class="fas fa-arrow-right"></i>
-      Proceed to checkout</a></div>
+                    {% endif %}<i class="fas fa-arrow-right"></i> Proceed to checkout</a>
+          </div>
     </div>
 </div>
 {% endif %}
