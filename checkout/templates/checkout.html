@@ -10,8 +10,8 @@
     //]]>
 </script>
 <script type="text/javascript" src="{% static 'js/stripe.js' %}"></script>
-{% endblock %}
 
+{% endblock %}
 {% block content %}
 
 <div class="checkcontainer">
@@ -23,6 +23,7 @@
     </div>
   </div>
 
+  <div class="row">
   <div class="col-md-12">
     <form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
       <legend>Payment Details</legend>
@@ -44,5 +45,7 @@
       </div>
     </form>
   </div>
+  </div>
+  
 </div>
 {% endblock %}
