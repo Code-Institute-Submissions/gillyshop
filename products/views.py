@@ -4,7 +4,7 @@ from .models import Product
 from taggit.models import Tag
 # Create your views here.
 
-def products(request, pk):
+def products(request):
     products = Product.objects.all()
     return render(request, "products.html", {"products": products})
     # tags = Product.objects.filter(tags='slug')
