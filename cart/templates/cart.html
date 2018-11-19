@@ -23,7 +23,7 @@
         <img class="cartimg" alt="product image" src="{{ MEDIA_URL }}{{ item.product.image }}">
     </div>
     <div class="col-md-3 cartcol">
-        <h3><a class="url" href="{% url 'product_detail' product.id %}">{{ product.name }}</a></h3>
+        <h3><a class="url" href="{% url 'product_detail' product.id %}">{{ item.product.name }}</a></h3>
         <!--<h3 class="h3cart">{{ item.product.name }}</h3><br>{{ item.product.description }}-->
     </div>
     <div class="col-md-3 cartcol">
