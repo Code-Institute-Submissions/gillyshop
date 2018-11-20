@@ -15,7 +15,6 @@
     //]]>
 </script>
 <script type="text/javascript" src="{% static 'js/stripe.js' %}"></script>
-<script src="{% static 'js/creditcardjs-v0.10.13.min.js' %}"></script> 
 {% endblock %}
 
 
@@ -95,11 +94,6 @@
       <option value="24">24</option>
     </select>
   </fieldset>
-  
-  <input type="hidden" name="stripe_id" class="form-control" id="id_stripe_id"/>
-
-
-
 
   <select name="card-type" class="ccjs-hidden-card-type">
     <option value="mastercard" class="ccjs-mastercard">MasterCard</option>
@@ -110,6 +104,10 @@
     <option value="visa-electron" class="visa-electron">Visa Electron</option>
 
   </select>
+  
+    
+  <input type="hidden" name="stripe_id" class="form-control" id="id_stripe_id"/>
+  
 </div>        
         
         
@@ -134,5 +132,5 @@
 {% endblock %}
 
 {% block endjs %}
-
+<script src="{% static 'js/creditcardjs-v0.10.13.min.js' %}"></script> 
 {% endblock %}
