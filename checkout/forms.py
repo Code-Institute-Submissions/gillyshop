@@ -10,7 +10,7 @@ class MakePaymentForm(forms.Form):
     csc = forms.CharField(label='Security code (CVV)', required=False, widget=forms.TextInput(attrs={'placeholder': '***'}))
     month = forms.ChoiceField(label='Expiry Month', choices=MONTH_CHOICES, required=False)
     year = forms.ChoiceField(label='Expiry Year', choices=YEAR_CHOICES, required=False)
-    stripe_id = forms.CharField(widget=forms.HiddenInput)
+    # stripe_id = forms.CharField(widget=forms.HiddenInput)
     
     
 class OrderForm(forms.ModelForm):
