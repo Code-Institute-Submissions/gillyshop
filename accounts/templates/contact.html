@@ -9,7 +9,7 @@
 	<div class="form">
 		<h3 class="abname">Get in touch</h3>
 			<fieldset class="cform">
-				<form name ="myForm" id="contactForm" class="form-inline">
+				<form name ="myForm" id="contactForm" class="form-inline" onsubmit="return cformFunction()">
 					<div class="form-group">
 					<br>
 					<label for="name" class="field">Full Name</label>
@@ -25,7 +25,8 @@
 					<!--<input class="contactbtn" onclick="cformFunction()" type="submit" value="Submit"/>-->
 					</div>
 				</form>
-					<button class="contactbtn" onclick="cformFunction()">Submit</button>
+				<button class="contactbtn">Submit</button>
+					<!--<button class="contactbtn" onclick="cformFunction()">Submit</button>-->
 					<div id="hiddentxt">Thanks, we'll be in touch soon!</div>
 			</fieldset>
 
