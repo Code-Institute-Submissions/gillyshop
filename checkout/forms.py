@@ -4,13 +4,12 @@ from .models import Order
 class MakePaymentForm(forms.Form):
     
     MONTH_CHOICES = [(i,i) for i in range (1, 13)]
-    YEAR_CHOICES = [(i, i) for i in range (2018, 2036)]
+    YEAR_CHOICES = [(i, i) for i in range (2017, 2036)]
     
-    fname = forms.CharField(label='name', required=False)
-    credit_card_number = forms.CharField(label='Credit Card Number', required=False)
-    csc = forms.CharField(label='Security code (CVV)', required=False)
-    month = forms.ChoiceField(label='Expiry Month', choices=MONTH_CHOICES, required=False)
-    year = forms.ChoiceField(label='Expiry Year', choices=YEAR_CHOICES, required=False)
+    credit_card_number = forms.CharField(label='Credit Card Number', required=False, widget=forms.TextInput(attrs={'placeholder': '**** **** **** ****'}))
+    cvv = forms.CharField(label='Security code (CVV)', required=False, widget=forms.TextInput(attrs={'placeholder': '***'}))
+    expiry_month = forms.ChoiceField(label='Expiry Month', choices=MONTH_CHOICES, required=False)
+    expiry_year = forms.ChoiceField(label='Expiry Year', choices=YEAR_CHOICES, required=False)
     stripe_id = forms.CharField(widget=forms.HiddenInput)
     
     
