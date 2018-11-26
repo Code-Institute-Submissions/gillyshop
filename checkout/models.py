@@ -8,10 +8,10 @@ class Order(models.Model):
     country = models.CharField(max_length=40, blank=False)
     postcode = models.CharField(max_length=20, blank=True)
     town_or_city = models.CharField(max_length=40, blank=False)
-    address_line1 = models.CharField(max_length=40, blank=False)
-    address_line2 = models.CharField(max_length=40, blank=False)
+    address_line_1 = models.CharField(max_length=40, blank=False)
+    address_line_2 = models.CharField(max_length=40, blank=False)
     county = models.CharField(max_length=40, blank=False)
-    date = models.DateField()
+
     
     def __str__(self):
         return "{0}-{1}-{2}".format(self.id, self.date, self.full_name)
