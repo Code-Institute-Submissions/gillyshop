@@ -2,11 +2,11 @@
 
 # Stream Three Project - Millennial Pink
 
-About:
-
 Millennial Pink is a humourous and ironic online store that sells artworks/photographs aimed at millennials, with items that appeal to millennials such as cactii, galaxies, palm trees etc. 
 
 My idea originally began as a vintage clothing store called Starry Starry Night. It then evolved into a jewellery store before eventually becoming an online art/photography store. The biggest challenge for an online art store was actually finding royalty free images that were of a high enough quality to use so the site evolved over time because of this. Ideally, it would contain art, illustrations and more typical millennial items like avocados, unicorns and llamas but finding images was a real challenge so I had to keep it more simple.
+
+## UX
 
 Starting off:
 
@@ -17,11 +17,6 @@ Building the site:
 The site was built using the lessons provided by Code Institute. While much of the code is my own, I also used the code from the lessons to build the site. 
 
 
-
-
-# Stream Two Project - Death & Destruction in Home & Away Data Dashboard
-
-For my data dashboard, I wanted to show the ridiculous and hilarious ways in which characters have died in Home and Away over the last 20 years. 
 
 ## UX
 
