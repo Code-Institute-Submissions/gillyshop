@@ -9,7 +9,7 @@
 	<div class="form">
 		<h3 class="abname">Get in touch</h3>
 			<fieldset class="cform">
-				<form name ="myForm" id="contactForm" class="form-inline" method="post" onsubmit="return cformFunction()">
+				<form name ="myForm" id="contactForm" class="form-inline" method="post">
 					<div class="form-group">
 					<br>
 					<label for="name" class="field">Full Name</label>
@@ -26,7 +26,7 @@
 					
 				
 				<!--<button class="contactbtn" onsubmit="return cformFunction()">Submit</button>-->
-					<button class="contactbtn" type="submit" value="submit">Submit</button>
+					<button class="contactbtn" type="submit" value="submit" onclick="cformFunction()">Submit</button>
 					<div id="hiddentxt">Thanks, we'll be in touch soon!</div>
 					</div>
 					{% csrf_token %}
