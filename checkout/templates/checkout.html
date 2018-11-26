@@ -9,8 +9,6 @@
     Stripe.publishableKey = '{{ publishable }}';
     //]]>
 </script>
-
-<script type="text/javascript" src="{% static 'js/script.js' %}"></script>
 <script type="text/javascript" src="{% static 'js/stripe.js' %}"></script>
 {% endblock %}
 
@@ -56,5 +54,9 @@
 {% endblock %}
 
 {% block endjs %}
+ <script>
+    payform.cardNumberInput(document.getElementById('id_credit_card_number'));
+
+  </script>
 <script type="text/javascript" src="{% static 'js/payform.js' %}"></script>
 {% endblock %}
