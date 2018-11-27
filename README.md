@@ -119,3 +119,6 @@ The sites I used were:
 
 /solution to tagging problem//
 https://www.youtube.com/watch?v=srHZoj3ASmk
+
+/solution to return nothing for no search items
+https://stackoverflow.com/questions/38006125/how-to-implement-search-function-in-django
