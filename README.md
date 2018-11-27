@@ -168,43 +168,10 @@ Code Snippets
 All code was written by me and/or adapted from the LMS lessons.
 I also received great help on the Tutoring page from Nakita, Haley & Niel
 /solution to tagging problem// https://www.youtube.com/watch?v=srHZoj3ASmk
-© 2018, Amazon Web Services, Inc. or its affiliates. All rights reserved.CommunityDocumentationSupportSecurityPrivacyTermsStatus
 
 
-Features left to implement:
 
-- Responsive:
 
-If I had more time, I would like to make the site more responsive
-
-- Sizing issues
-
-I think some of the graphs could be resized slightly to allow the labels to display a bit better and so that the legend isnt right on top of them/beside them.
-
-## Technologies Used
-
-- HTML - for the basic site layout
-- CSS - to style the site
-- [MongoDb](https://www.mongodb.com/) - I collected all the data I wanted from various sites and then created a database in MongoDb
-- [Python](https://www.python.org/) - for the backend of the dashboard
-- [Flask](https://www.fullstackpython.com/flask.html) - for the backend
-- [Bootstrap](https://getbootstrap.com/) - to style the site and make it more responsive
-- [D3](https://d3js.org/) - to create charts
-- [DC](http://dc-js.github.io/dc.js/) - to make an interactive dashboard
-- [Intro.js](https://introjs.com/) - to allow for a tour of the site
-- [Crossfilter](https://github.com/square/crossfilter) - to allow data interaction
-- [Javascript](https://www.javascript.com/) - to create graphs
-- [Gunicorn](https://gunicorn.org/) - to help run the app
-- [Pymongo](https://api.mongodb.com/python/current/) - to work with MongoDb
-- [mLab](https://mlab.com/) - to host the database
-- [Heroku](http://www.heroku.com) - to host the website
-- [Google Fonts](https://fonts.google.com/) - for easy font integration
-- [Pycharm](https://www.jetbrains.com/pycharm/) - started the dashboard here before moving it to Cloud9
-- [Mongo Management Studio](http://mms.litixsoft.de/) - to update/maintain the database
-
-## Testing
-
-I tested the site on a number of browsers and devices to ensure it worked on all. I attempted numerous times to make the site more responsive on mobile devices but eventually realised it would take more time than I had. I added an 'overflow: auto' to the charts to allow them to overflow on mobile devices but if I had more time, I would have tried to make the graphs more responsive. However, given the scale of them, I'm not sure they would have ever worked very well on mobile devices as there were too many sections and labels. 
 
 ## Deployment
 
