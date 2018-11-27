@@ -13,92 +13,94 @@ Most of my ideas begin as a visual representation in my head which is how Starry
 
 I wanted to somehow make the website pink but also be user friendly and not garish so I found a very light pink that wouldn’t be too overpowering. The font and look of thr website were very important to me so I spent a lot of time choosing correct fonts and eventually found one online for the header as well as picking a Google font for the main body. While I kept the main body a very light pink, I brought in other slightly brighter shades of pink for extra elements like buttons and navigation elements, as well as light grey and white. 
 
-- User stories:
-- User A – A student
+### User stories:
+#### User A – A student
 
 This student wants to find some artwork to decorate his college room. The homepage allows them a quick overview of some of the pictures available and allows them to click straight through to those sections. The student clicks on the deer picture and is brought to the deer section where he picks a deer picture and adds it to his cart. This redirects him to the cart where he checks out straight away
-
-- User B – A mother
+#### User B – A mother
 
 This mother wants to buy something for her daughter. She knows she likes pink and shes hoping to find something on the site for her daughter. She’s not much of an internet user so when she goes onto the site she goes to the products tab and sees that the products are arranged into helpful categories, including a pink one. Shes browses the pink products and adds one to the cart. She goes back to look for more and clicks on the pastel tag which brings her to other similarly coloured images. Here she finds something else that might appeal to her daughter also, she adds it to cart and checks out. 
 
 ## Features
 
-## Homepage:
+### Homepage:
 
 I wanted visitors to Millennial Pink to be greeted by a large full screen image on entering the site that would be visually impactful so I chose to use 4 of the images available for sale to create this impact.  I also wanted these images to be practical so clicking on them brings you straight to that section of the website. My mentor suggested I add some text somewhere to explain what the site is/does so I chose to layer this over the images so it was clear straight away what the site is/does. 
 
-## New in page:
+### New in page:
 
 This page allows users to immediately see what is new in perhaps since their last visit and to then go directly to those sections to shop whats new.
 
-## Products page:
+### Products page:
 
 The products page displays all the products together so users can shop everything at once.
 Individual product category pages:
 The products are then categorised into a few sections to allow shoppers only browse what theyre interested in, ie palm tree, pink products etc.
 
-## Product detail page:
+### Product detail page:
 
 The product detail page gives the user more info on what they’re buying – the type of the paper, the size, and it also allows users to see what the picture might look like on their wall in the frame mockup
 
-## Tag page:
+### Tag page:
 
 This allows users to filter products by ‘tag’, for example blue products, purple products etc. It allows users another level of categorising products
 
-## Search page:
+### Search page:
 
 The search page allows user to search for items, searching through titles and product descriptions. I would have added tags to this too if I had more time. 
 
-## About us:
+### About us:
 
 The about page tells the user what the ethos of Millennial Pink is and where they plan to go in the future. I didn’t want the page to feel and look stuffy so I used the header font to make it more visually appealing. 
 
-## Cart page:
+### Cart page:
 
 The cart page gives a simple layout of what the user is buying, the name, description and info as well as the price per item and total price
 
-## Checkout:
+### Checkout:
 
 The checkout is a simple form for users to fill in to pay. Once paid, it redirects them to the paid page
 
-## Paid:
+### Paid:
 
 This is a simple page to inform users that they have paid and when to expect their item. It allows users the option to go to products to start shopping again
 
-## Profile:
+### Profile:
 
 This gives the user a brief overview of their account. It includes their account email address, and some links to start/continue shopping, change their password or view their cart.
 
-## Login/Register:
+### Login/Register:
 
 These are simple forms that allow existing users to login or new users to register.
 
-## Password change:
+### Password change:
 
 This allows users to reset their password if they have forgotten it or just want to change it.
 
-## Shipping/returns/stockists:
+### Shipping/returns/stockists:
 
 These pages give basic info on shipping details, returns and stockists
 
-## Contact us:
+### Contact us:
 
 This gives users the details needed to contact Millennial Pink as well as a contact form that allows users to submit questions, complaints and or feedback
 
 ## Features left to implement:
 
-- Search function
+#### Search function
 
 If I had more time, I would have improved the search functionality to return something when it doesnt find anything
 
-I should have added more products to the site from the start but it was intended to just be an art site but could have been much more
--tag cloud/filter list
+- Tag cloud/filter list
 
-Credit card integration
-I tried lots of different credit cart plugins to allow for better formatting of my credit card form but could never get them to work properly/look right so I eventually reverted to my originallayout.This is something I would have really like to have integrated
 I had hoped to add a menu/list to filter by tag but ran out of time
-Technologies Used
+
+- Credit card integration
+
+I tried lots of different credit cart plugins to allow for better formatting of my credit card form but could never get them to work properly/look right so I eventually reverted to my original layout.This is something I would have really like to have integrated.
+
+## Technologies Used
+
 HTML - for the basic site layout
 CSS - to style the site
 Django Framework - to build the site
