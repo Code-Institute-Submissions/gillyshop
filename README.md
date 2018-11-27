@@ -2,38 +2,47 @@
 
 # Stream Three Project - Millennial Pink
 
-Millennial Pink is a humourous and ironic online store that sells artworks/photographs aimed at millennials, with items that appeal to millennials such as cactii, galaxies, palm trees etc. 
+Millennial Pink is a humourous and ironic online store that sells artworks/photographs aimed at millennials, with items that appeal to millennials such as cactii, galaxies, palm trees etc.
+My idea originally began as a vintage clothing store called Starry Starry Night. It then evolved into a jewellery store before eventually becoming an online art/photography store. The biggest challenge for an online art store was actually finding royalty free images that were of a high enough quality to use so the site evolved over time because of this. Ideally, it would contain art, illustrations and more typical millennial items like avocados, unicorns and llamas but finding images was a real challenge so I had to keep it simple. Over time, Millennial Pink would evolve to include illustrations, tote bags, mugs, and other kitschy millennial orientated items. 
 
-My idea originally began as a vintage clothing store called Starry Starry Night. It then evolved into a jewellery store before eventually becoming an online art/photography store. The biggest challenge for an online art store was actually finding royalty free images that were of a high enough quality to use so the site evolved over time because of this. Ideally, it would contain art, illustrations and more typical millennial items like avocados, unicorns and llamas but finding images was a real challenge so I had to keep it more simple.
 
 ## UX
 
-Starting off:
+Millennial Pink is a one stop shop for Irish shoppers to find everything for the millennials in their life. It is intended to be a destination where people can find very specific items rather than a broader website like Society 6. Millennials are blamed for ruining so many things and this site celebrates their unique interests and looks at what might appeal to them in ironic ways, like avocado toast Christmas ornaments and llamas wearing hats. 
+User stories:
+User A – A student
+This student wants to find some artwork to decorate his college room. The homepage allows them a quick overview of some of the pictures available and allows them to click straight through to those sections.
+The student clicks on the deer picture and is brought to the deer section where he picks a deer picture and adds it to his cart. This redirects him to the cart where he checks out straight away
 
+User B – A mother
+This mother wants to buy something for her daughter. She knows she likes pink and shes hoping to find something on the site for her daughter. She’s not much of an internet user so when she goes onto the site she goes to the products tab and sees that the products are arranged into helpful categories, including a pink one. Shes browses the pink products and adds one to the cart. She goes back to look for more and clicks on the pastel tag which brings her to other similarly coloured images. Here she finds something else that might appeal to her daughter also, she adds it to cart and checks out. 
 Most of my ideas begin as a visual representation in my head which is how Starry Starry Night began. I could see the exact type of font I wanted and so built the initial homepage around that in my head. When it evolved into Millennial Pink, I kept the visual framework the same and just adjusted the font to something more 'millennial'. My early drawings which can be found in the mockups section. I knew I wanted to keep the site layout clean and simple with a focus on some of the key art pieces to create a really nice visual entrance to the site. I made some wireframes to get an idea of how I wanted it to look and then began building the site.
-
-Building the site:
-
-The site was built using the lessons provided by Code Institute. While much of the code is my own, I also used the code from the lessons to build the site. 
+I wanted to somehow make the website pink but also be user friendly and not garish so I found a very light pink that wouldn’t be too overpowering. The font and look of thr website were very important to me so I spent a lot of time choosing correct fonts and eventually found one online for the header as well as picking a Google font for the main body. While I kept the main body a very light pink, I brought in other slightly brighter shades of pink for extra elements like buttons and navigation elements, as well as light grey and white. 
 
 
-
-## UX
-
-I wanted to keep the layout for the dashboard quite simple but I also wanted to show how ridiculous Home and Away can be sometimes and really show the ways in which people have died, the fact that some people are always getting injured or having heart attacks and I wanted it to be a comical dashboard for users to enjoy. Therefore, some of the graphs are quite large and do contain a lot of information. I thought about scaling this back but it wouldn't have really conveyed what I wanted to show and I wanted to highlight stuff like the amount of people who get shot or die in car crashes which wouldn't be the same if I scaled back the data. 
-
-I tried to incorporate some sort of beachy themed colour scheme but it ended up being too overbearing so I decided to just create rainbow coloured graphs, using the hex codes of Crayola crayons. I also made sure to include the Home and Away font so it felt more authentic. 
-
-I drew some rough drawings on pen and paper to show how I wanted the dashboard to look. These can be found in the mockups section. 
-
-Because of the sheer scale of some graphs, I removed the labels from some as they were overlapping too much and instead used legends to allow users interact with the graphs. 
-
-I wanted users to enter the site and in the first graph to get a good idea of how many people have actually died in the last 23 years, and of course who faked their own death! The graphs move along to then show how people died, what the big storyline was and then further down, to show who these people were, where they lived and who they left behind. My main emphasis though was to show the ways in which people died so these graphs were kept to the start of the site. 
 
 
 ## Features
 
-The site is simply laid out with a tour button to guide people through it in a comical way. I used a bright colour scheme with numerous colours to make the legend easier to navigate if labels weren't present. 
+Homepage:
+I wanted visitors to Millennial Pink to be greeted by a large full screen image on entering the site that would be visually impactful so I chose to use 4 of the images available for sale to create this impact.  I also wanted these images to be practical so clicking on them brings you straight to that section of the website. My mentor suggested I add some text somewhere to explain what the site is/does so I chose to layer this over the images so it was clear straight away what the site is/does. 
+New in page:
+This page allows users to immediately see what is new in perhaps since their last visit and to then go directly to those sections to shop whats new.
+
+Products page:
+The products page displays all the products together so users can shop everything at once.
+Individual product category pages:
+The products are then categorised into a few sections to allow shoppers only browse what theyre interested in, ie palm tree, pink products etc.
+Product detail page:
+The product detail page gives the user more info on what they’re buying – the type of the paper, the size, and it also allows users to see what the picture might look like on their wall in the frame mockup
+Tag page:
+This allows users to filter products by ‘tag’, for example blue products, purple products etc. It allows users another level of categorising products
+Search page:
+The search page allows user to search for items, searching through titles and product descriptions. I would have added tags to this too if I had more time. 
+About us:
+The about page tells the user what the ethos of Millennial Pink is and where they plan to go in the future. I didn’t want the page to feel and look stuffy so I used the header font to make it more visually appealing. 
+
+
 
 Features left to implement:
 
