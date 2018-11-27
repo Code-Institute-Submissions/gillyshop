@@ -126,7 +126,7 @@ I did a number of tests on the site to ensure all functionality was working prop
 
 #### Test 1:
 
-Check the image carousel loads properly and that each image is a link and goes to the right section of the products.
+Check the image carousel loads properly and that each image is a link and goes to the right section of the products.\\
 Result - all checked and working
 
 #### Test 2:
