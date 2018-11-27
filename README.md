@@ -91,29 +91,30 @@ This gives users the details needed to contact Millennial Pink as well as a cont
 
 If I had more time, I would have improved the search functionality to return something when it doesnt find anything
 
-- Tag cloud/filter list
+#### Tag cloud/filter list
 
 I had hoped to add a menu/list to filter by tag but ran out of time
 
-- Credit card integration
+#### Credit card integration
 
 I tried lots of different credit cart plugins to allow for better formatting of my credit card form but could never get them to work properly/look right so I eventually reverted to my original layout.This is something I would have really like to have integrated.
 
 ## Technologies Used
 
-HTML - for the basic site layout
-CSS - to style the site
-Django Framework - to build the site
-Python - for the backend 
-Bootstrap - to style the site and make it more responsive
-Javascript - to create extra functionality
-Django Taggit - to add tags
-Amazon AWS - to host my images and static files
-Stripe - to take payments
-Gunicorn - to help run the app
-Heroku - to host the website
-Google Fonts - for easy font integration
-Font Awesome - for easy icons
+- HTML - for the basic site layout
+- CSS - to style the site
+- [Django Framework](https://www.djangoproject.com/) - to build the site
+- [Python](https://www.python.org/) - for the backend 
+- [Bootstrap](https://getbootstrap.com/) - to style the site and make it more responsive
+- [Javascript](https://www.javascript.com/) - to create extra functionality
+- [Django Taggit](https://github.com/alex/django-taggit) - to add tags
+- [Amazon AWS](https://aws.amazon.com/) - to host my images and static files
+- [Stripe](https://stripe.com) - to take payments
+- [Gunicorn](https://gunicorn.org/) - to help run the app
+- [Heroku](http://www.heroku.com) - to host the website
+- [Google Fonts](https://fonts.google.com/) - for easy font integration
+- [Font Awesome](https://fontawesome.com/) - for easy icons
+
 
 Testing
 I tested the site on a variety of browsers and devices to ensure it worked correctly and used Chrome developer tools to make sure it worked responsively and looked nice on a number of screen sizes. 
