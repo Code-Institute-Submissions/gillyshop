@@ -138,11 +138,13 @@ Result - all checked and working correctly
 
 #### Test 2: 
 
-Check the mailing list signup works and doesn't submit if email address is not valid/input is empty. 
+- Check the mailing list signup works and doesn't submit if email address is not valid/input is empty, alerts users that form submission was successful. 
 
-Result - test passed. Popup appears if form submit is clicked when form is empty to say 'please fill out this field' and another popup appears if email address is not valid 'Please include @ in address'
+Result - test passed. Popup appears if form submit is clicked when form is empty to say 'please fill out this field' and another popup appears if email address is not valid 'Please include @ in address'. Pop up informs users that it was succesfully submitted. 
 
 ### New In/About Us/Shipping/Returns/Stockists page tests:
+
+### Test 1:
 
 - Check all links work correctly and go where they're meant to 
 - Check map loads correctly on Stockists page
@@ -158,15 +160,30 @@ Result - test passed, all links working correctly, map loading correctly.
 - Check that the form gives an error if the email is not in the correct format
 - Check that the form correctly submits when it is fully filled out and the user is made aware of this
 
+Result - all tests passed. Form does not submit unless fully filled out, with all fields filled in the correct format. A pop up appears to inform users that it has been submitted. 
+
 ### Product Page tests:
 
+- Ensure all titles and descriptions are correct
+- Make sure all products are categorised correctly
+- Make sure all products have appropriate tags and secondary images in product detail page
+- Make sure add to cart button works for all products
 
 
-Result - all tests passed. Form does not submit unless fully filled out, with all fields filled in the correct format. 
+
+ 
 
 Deployment
 I initially started the Dashboard on Pycharm and after a lot of work, got it working locally. However I eventually ran out of a licence so spoke to Student Care who sorted me out with a new licence. However I was worried this would expire before I finished the dashboard so I spoke to Nakita who recommended I switch to Cloud9. This caused even more head scratching as I had to move everything and figure out how to get it work again from Cloud9 but after a lot of back and forth, I finally got everything working properly on Cloud9. This allowed me to then deploy to Heroku. I used mLab to host the database and again after a lot of confusion, I finally got Heroku to host the page. Looking back, I'm not sure why I struggled so much but when I took my time and read over everything clearly, it all made sense. However since moving to the new LMS for Stream 3, I think having videos of every step is a huge help so maybe that might have helped me at the time. My main struggle was getting the database hosted instead of having it locally which I struggled to really get a grasp on intially but finally got my head around after a while. I also didnt back up my project as much as I should because genuinely I forgot to so although I did eventually back up to Github, it was months after I first started the project and probably only when I moved the project to Cloud9.
 Credits
+
+Code used:
+Written by me: about, contact, homepage, returns, stockists, shipping, cart, paid, products urls (mostly me) products views and tag view, static upload, password reset email actually sending (sorta)
+
+Half me/half lessons: profile, checkout forms (to a degree), products model, search view, password reset
+
+adapted from lessons: registration/reg form, login/login form, register/login/logout views/user profile view, password reset urls, checkout, cart urls/views, checkout models, checkout views, settings db, aws settings etc. 
+
 Content
 all social media links are not owned by me!!!
 All content for this site was created by me. Using numerous Home and Away fan websites, Wikipedia and my own memories, I created a rough database in Excel as the framework for how I would create the database in MongoDB.
