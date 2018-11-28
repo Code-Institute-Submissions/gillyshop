@@ -99,6 +99,10 @@ I had hoped to add a menu/list to filter by tag but ran out of time
 
 I tried lots of different credit cart plugins to allow for better formatting of my credit card form but could never get them to work properly/look right so I eventually reverted to my original layout.This is something I would have really like to have integrated.
 
+#### Shipping costs
+
+I would have liked to have integrated shipping costs in the checkout based on what the person was buying but again, I ran out of time. 
+
 ## Technologies Used
 
 - HTML - for the basic site layout
@@ -127,22 +131,25 @@ I did a number of tests on the site to ensure all functionality was working prop
 #### Test 1:
 
 Check the image carousel loads properly and that each image is a link and goes to the right section of the products.
+
 Result - all checked and working
 
 #### Test 2:
 
-Check all homepage links are correct and go to the right place.
+Check all homepage links are correct and go to the right place. 
 
 Result- test passed.
 
 #### Test 3: 
 
-Check the mailing list signup works and doesn't submit if email address is not valid/input is empty.
+Check the mailing list signup works and doesn't submit if email address is not valid/input is empty. 
+
 Result - test passed. Popup appears if form submit is clicked when form is empty to say 'please fill out this field' and another popup appears if email address is not valid 'Please include @ in address'
 
 #### Test 4:
 
-Check the back to top link works.
+Check the back to top link works. 
+
 Result - test passed. Link returns the user to the top of the current page
 
 
