@@ -184,11 +184,38 @@ Result - all tests passed. All product info is correct. Item quantities can be i
 
 - If not logged in, proceeding to checkout forces you to login
 - Check that form will not submit when empty
-- Check that the form will propmpt you to fill in all your address details and will not submit unless these are filled in (except for Postcode which is not required)
+- Check that the form will prompt you to fill in all your address details and will not submit unless these and payment details are filled in (except for Postcode which is not required)
 - Check that the form gives you an error if you leave the credit card section blank
 - Check that the form will submit when all details are entered correctly
+- Check that checkout redirects to 'paid' when payment is successful
 
+Result -all test passed. Proceeding to check out redirects you to the login page if you are not logged in. The form gives popup errors for fields not filled in correctly and stripe errors for any payment issues. The page redirects to paid.html if payment is successful. 
 
+### Profile page tests:
+
+- Check that if you are not logged in, clicking on profile redirects you to the registration page/option to signin if registered
+- If you are logged in, check that profile icon goes to your profile page
+- Check that if your cart is empty, your profile says 'start shopping'
+- Check if cart has items in it, profile says 'continue shopping and 'go to cart'
+- Check side panel displays user email address and username
+
+Result - all tests passed. Profile options change depending on whether you are logged in or not. Side panel displays your email address and username
+
+### Login Page tests:
+
+- Check form doesnt submit if empty or if one field is empty
+- Check for error if password or username are wrong
+- Check form submits correctly and redirects to profile page
+
+Result - all tests passed. Form submits correctly when filled in correctly and pops up errors if password or username is incorrect
+
+### Registration page tests:
+
+### Logout test:
+
+- Check 'logout' logs users out of account. 
+
+Result - test passed. User is logged out and redirected to homepage, profile icon changes to not logged in status
 
 
 
