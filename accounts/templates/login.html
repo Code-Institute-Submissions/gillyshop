@@ -8,17 +8,17 @@
 
 <div class="regcontainer">
      <div class="reg">
-          <h3 class="aboutp">Login to your account</h3>    
-<form method="POST">
+          <h3 class="loginto">Login to your account</h3>    
+<form class="logintoform" method="POST">
      {% csrf_token %}
      {{ login_form | as_bootstrap }}
      <button type="submit" class="btn btn-default">Login</button>
 </form>
 
 
-<p>New to Millennial Pink? Register <a class="bold" href="{% url 'registration' %}">here</a></p>
+<p class="newto">New to Millennial Pink? Register <a class="boldlog" href="{% url 'registration' %}">here</a></p>
 
-<p><a href="{% url 'password_reset' %}">Forgot your password?</a></p>
+<p class="forgotp"><a href="{% url 'password_reset' %}">Forgot your password?</a></p>
 </div>
 </div>
 {% endblock %}
