@@ -189,6 +189,7 @@ Result - all tests passed. All product info is correct. Item quantities can be i
 
 
 PSD mockups.images etc
+use scans/mockups/tests to show stuff
  
 
 Deployment
