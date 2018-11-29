@@ -169,8 +169,26 @@ Result - all tests passed. Form does not submit unless fully filled out, with al
 - Make sure all products have appropriate tags and secondary images in product detail page
 - Make sure add to cart button works for all products
 
+Result - all tests passed. All product info is correct, all tags and secondary images work and add to cart works for all products from product page and product detail page. 
+
+### Cart Page Tests:
+
+- Check that products appear correctly in cart
+- Check that cart items are amendable by quantity - amend up and items increase, amend to 0 and item is removed
+- Check that cart total amends when items are added or removed
+- Check links to return to products and proceed to checkout work correctly
+
+Result - all tests passed. All product info is correct. Item quantities can be increased or decreased to add or remove items from cart. Cart total increases or decreases when items are added or removed. All links working fine. 
+
+### Checkout tests:
+
+- If not logged in, proceeding to checkout forces you to login
+- Check that form will not submit when empty
 
 
+
+
+PSD mockups.images etc
  
 
 Deployment
