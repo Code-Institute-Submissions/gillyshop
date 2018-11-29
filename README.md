@@ -184,6 +184,10 @@ Result - all tests passed. All product info is correct. Item quantities can be i
 
 - If not logged in, proceeding to checkout forces you to login
 - Check that form will not submit when empty
+- Check that the form will propmpt you to fill in all your address details and will not submit unless these are filled in (except for Postcode which is not required)
+- Check that the form gives you an error if you leave the credit card section blank
+- Check that the form will submit when all details are entered correctly
+
 
 
 
