@@ -243,7 +243,13 @@ Result - test passed
 ### Interesting bugs found:
 
 - One issue I found when testing is with the payment form. Although the payment form has the csv/cvv as required, the form still submits when this is not filled in. I did some research and found that Maestro cards don't have CVVs so this may be the reason that Stripe allows it to go through.
-- Another issue I found with testing is that the password reset form allows you to submit emails that aren't registered. If I had time more time, I would see if I could fix this. 
+- Another issue I found with testing is that the password reset form allows you to submit emails that aren't registered. If I had time more time, I would see if I could fix this.
+
+## Testing on different browsers and sizes
+
+I used Chrome developer tools a lot to test how the site would look on different devices of different sizes and I used this to create my media queries and ensure the site responded correctly and looked well. I also regularly checked the site on my work pc, my laptop, my tablet and my phone to make sure it worked and looked how I wanted it to. I used Bootstrap and flexible layouts from the beginning when making the site to ensure that everything would be easier when I wanted it be responsive. 
+
+However, when doing my final testing, I checked on Internet Explore 9 in work and realised my fonts were not loading at all, including Font Awesome. 
 
 
 PSD mockups.images etc
