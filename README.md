@@ -128,23 +128,14 @@ I did a number of tests on the site to ensure all functionality was working prop
 
 ### Homepage tests:
 
-#### Test 1:
-
 - Check the image carousel loads properly and that each image is a link and goes to the right section of the products.
 - Check all links go to the correct place
 - Check the back to top link works. 
-
-Result - all checked and working correctly
-
-#### Test 2: 
-
 - Check the mailing list signup works and doesn't submit if email address is not valid/input is empty, alerts users that form submission was successful. 
 
-Result - test passed. Popup appears if form submit is clicked when form is empty to say 'please fill out this field' and another popup appears if email address is not valid 'Please include @ in address'. Pop up informs users that it was succesfully submitted. 
+Result - test passed. All links and images working correctly. Popup appears if form submit is clicked when form is empty to say 'please fill out this field' and another popup appears if email address is not valid 'Please include @ in address'. Pop up informs users that it was succesfully submitted. 
 
 ### New In/About Us/Shipping/Returns/Stockists page tests:
-
-### Test 1:
 
 - Check all links work correctly and go where they're meant to 
 - Check map loads correctly on Stockists page
@@ -152,8 +143,6 @@ Result - test passed. Popup appears if form submit is clicked when form is empty
 Result - test passed, all links working correctly, map loading correctly. 
 
 ### Contact Page tests:
-
-#### Test 1:
 
 - Check that the form will not submit on clicking submit with empty form
 - Check that the form will not submit when not all fields are filled in
@@ -211,12 +200,35 @@ Result - all tests passed. Form submits correctly when filled in correctly and p
 
 ### Registration page tests:
 
+- Check form doesnt submit if empty or if one field is empty
+- Check for error if email is wrong format or email or username already exist
+- Check for error if passwords don't match
+- Check form submits correctly and redirects to profile page
+
+Result - all tests passed. Form submits when correctly filled out and with no existing username or email address used. 
+
 ### Logout test:
 
 - Check 'logout' logs users out of account. 
+- Check clicking logout redirects users to homepage
 
 Result - test passed. User is logged out and redirected to homepage, profile icon changes to not logged in status
 
+### Password Reset Page test:
+
+- Check form doesnt submit if email field is empty
+- Check form doesnt submit if email address is wrong format
+- Check form submits correctly with email address correctly filled in
+- Check that email actually sends with password reset link
+- Check that password reset link works
+- Check that reset then redirects you to the login page
+- Check that amended password now works when you login
+
+Result - all tests passed. When filled in correctly, email is sent to reset your password. This link allows you to reset password and then you are redirected to login with the new password. 
+
+### Search page test:
+
+- Check searching for a term redirects you to products with that word in their title or description
 
 
 PSD mockups.images etc
