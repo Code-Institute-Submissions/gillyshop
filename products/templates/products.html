@@ -11,35 +11,17 @@
 	</ul>
 </div>
 
-<!--<div class="tags">-->
-   
-   
-<!--   	<h3 class="tag">Tags:</h3>-->
-<!--  				{% for tag in product.tags.all %}-->
-<!--  				<a class="taglink" href="{% url 'tagpage' tag.slug %}">{{ tag.name }}, </a>-->
-<!--  				{% empty %}-->
-<!--  				<p>no tags</p>-->
-<!--  				{% endfor %}-->
-<!--{% for tags in tagname %}-->
-<!--<li>{{tagname}}</li>-->
-<!--{% endfor %}-->
-<!--</div>-->
-
 
 <div class="productcontainer">
     <div class="row row-flex">
-    <!--{% if tag %}-->
-    <!--Posts tagged with "{{tag.name}}"-->
-    <!--{% endif %}-->
+
     {% for product in products %}
         <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4">
             <div class="card">
                 <div class="product" alt="product image" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
           
           <h3><a class="url" href="{% url 'product_detail' product.id %}">{{ product.name }}</a></h3>
-        <!--<h3><a class="url" href="{{product.url}}">{{ product.name }}</a></h3>-->
-        <!--<h3><a href="{{product.url}}"></h3>-->
-        <!--<p class="product-description">{{ product.description }}</p>-->
+
         <p>€{{ product.price }}</p>
  
                     <form method="post" action="{% url 'add_to_cart' product.id %}">

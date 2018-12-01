@@ -22,8 +22,6 @@
                 <div class="product" alt="product image" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
         
          <h3><a class="url" href="{% url 'product_detail' product.id %}">{{ product.name }}</a></h3>
-        <!--<h3><a href="{{product.url}}"></h3>-->
-        <!--<p class="product-description">{{ product.description }}</p>-->
         <p>€{{ product.price }}</p>
      
      <form method="post" action="{% url 'add_to_cart' product.id %}">

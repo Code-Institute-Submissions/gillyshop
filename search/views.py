@@ -2,7 +2,7 @@ from django.shortcuts import render
 from products.models import Product
 from django.core.exceptions import ObjectDoesNotExist
 
-# Create your views here.
+# Code adapted from lessons/added to by me
 
 
 def do_search(request):

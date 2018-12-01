@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import Order, OrderLineItem
 
-# Register your models here.
+# Code taken/adapted from lessons
 
 
 class OrderLineAdminInline(admin.TabularInline):

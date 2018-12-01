@@ -248,89 +248,39 @@ Result - test passed
 ## Testing on different browsers and sizes
 
 I used Chrome developer tools a lot to test how the site would look on different devices of different sizes and I used this to create my media queries and ensure the site responded correctly and looked well. I also regularly checked the site on my work pc, my laptop, my tablet and my phone to make sure it worked and looked how I wanted it to. I used Bootstrap and flexible layouts from the beginning when making the site to ensure that everything would be easier when I wanted it be responsive. 
-
-However, when doing my final testing, I checked on Internet Explore 9 in work and realised my fonts were not loading at all, including Font Awesome. 
-
-
-PSD mockups.images etc
-use scans/mockups/tests to show stuff
  
+## Deployment:
 
-Deployment
-I initially started the Dashboard on Pycharm and after a lot of work, got it working locally. However I eventually ran out of a licence so spoke to Student Care who sorted me out with a new licence. However I was worried this would expire before I finished the dashboard so I spoke to Nakita who recommended I switch to Cloud9. This caused even more head scratching as I had to move everything and figure out how to get it work again from Cloud9 but after a lot of back and forth, I finally got everything working properly on Cloud9. This allowed me to then deploy to Heroku. I used mLab to host the database and again after a lot of confusion, I finally got Heroku to host the page. Looking back, I'm not sure why I struggled so much but when I took my time and read over everything clearly, it all made sense. However since moving to the new LMS for Stream 3, I think having videos of every step is a huge help so maybe that might have helped me at the time. My main struggle was getting the database hosted instead of having it locally which I struggled to really get a grasp on intially but finally got my head around after a while. I also didnt back up my project as much as I should because genuinely I forgot to so although I did eventually back up to Github, it was months after I first started the project and probably only when I moved the project to Cloud9.
-Credits
+I deployed my website to Heroku pretty early on in the process of building it which probably wasn't the best idea as it made the process of making any changes much longer and more complicated. It took me a while to get everything working correctly with the environment variables and getting my AWS account integrated as I had forgotten a lot of the steps but I finally got it all working. I had some issues when making migrations and getting secret key errors which the tutoring support team helped me figure out by commenting out import env in my settings and making migrations then. 
 
-Code used:
-Written by me: about, contact, homepage, returns, stockists, shipping, cart, paid, products urls (mostly me) products views and tag view, static upload, password reset email actually sending (sorta)
+## Code Used: 
 
-Half me/half lessons: profile, checkout forms (to a degree), products model, search view, password reset
+While the website was built entirely by me, there are lots of code snippets that I couldn't have written by myself so I used or adapted code from the lessons which I've marked clearly throughout. I would have loved to have done more myself but I don't feel I've personally learnt enough to be capable of building it myself from scratch. Pages without comments on the source of the code are my work or explained elsewhere.
 
-adapted from lessons: registration/reg form, login/login form, register/login/logout views/user profile view, password reset urls, checkout, cart urls/views, checkout models, checkout views, settings db, aws settings etc. 
+All my work: About page, contact page, home page, returns page, stockists page, shipping page, cart page, paid page, Products urls, Products views, Tag view and tag page (with help from my mentor Victor), profile page, accounts urls, all products pages, product detail page
 
-Content
-all social media links are not owned by me!!!
-All content for this site was created by me. Using numerous Home and Away fan websites, Wikipedia and my own memories, I created a rough database in Excel as the framework for how I would create the database in MongoDB.
-The sites I used were:
-Back to the Bay
-Home and Away Wiki
-Your Gym Wiki
-Wikipedia
-Imagery
-All images were found on Unsplash.com
-Colour scheme
-I used the hex codes for Crayola crayons to create a rainbow colour scheme. I kept the background white and simple and used the official Home and Away font to bring it all together.
-Crayola Hex Codes
-Home and Away font
-Code Snippets
-All code was written by me and/or adapted from the LMS lessons.
-I also received great help on the Tutoring page from Nakita, Haley & Niel
-/solution to tagging problem// https://www.youtube.com/watch?v=srHZoj3ASmk
+Half my work/half adapted from lessons: Checkout forms (mostly adapted from lessons), products model, search view, password reset
+
+Adapted or taken from lessons (with credit given on individual pages): Registration form/parts of registration page, Login form/parts of login page, register/login/logout views, user profile view, password reset urls, checkout page & stripe integration, cart urls/views, checkout models, checkout views, database settings, AWS settings and static files setup, email backend views (from previous Django lessons), app backends. 
+
+## Credits:
+
+#### Imagery & Content:
+
+- All images were found on Unsplash.com
+- Fonts were found online or on Google fonts. 
+- The social media accounts that are linked are not mine, just a name coincidence
+- The wall art mockups were made using a free PSD mockup found [here](https://zippypixels.com/product/mockups/frames-posters/free-beautiful-poster-frame-mockup/)
 
 
+#### Thanks to:
 
-
-
-## Deployment
-
-I initially started the Dashboard on Pycharm and after a lot of work, got it working locally. However I eventually ran out of a licence so spoke to Student Care who sorted me out with a new licence. However I was worried this would expire before I finished the dashboard so I spoke to Nakita who recommended I switch to Cloud9. This caused even more head scratching as I had to move everything and figure out how to get it work again from Cloud9 but after a lot of back and forth, I finally got everything working properly on Cloud9. This allowed me to then deploy to Heroku. I used mLab to host the database and again after a lot of confusion, I finally got Heroku to host the page. Looking back, I'm not sure why I struggled so much but when I took my time and read over everything clearly, it all made sense. However since moving to the new LMS for Stream 3, I think having videos of every step is a huge help so maybe that might have helped me at the time. My main struggle was getting the database hosted instead of having it locally which I struggled to really get a grasp on intially but finally got my head around after a while. I also didnt back up my project as much as I should because genuinely I forgot to so although I did eventually back up to Github, it was months after I first started the project and probably only when I moved the project to Cloud9. 
-
-## Credits
-
-## Content
-- All content for this site was created by me. Using numerous Home and Away fan websites, Wikipedia and my own memories, I created a rough database in Excel as the framework for how I would create the database in MongoDB. 
-
-The sites I used were:
-
-- [Back to the Bay](https://www.backtothebay.net)
-- [Home and Away Wiki](https://homeandaway.fandom.com/wiki/Home_and_Away_Wiki) 
-- [Your Gym Wiki](http://yourgymwiki.blogspot.com/2017/12/summer-bay_16.html)
-- [Wikipedia](https://en.wikipedia.org/wiki/List_of_births,_marriages_and_deaths_in_Home_and_Away)
-
-## Imagery
-
-- I created the HA favicon in Photoshop
-
-## Colour scheme
-
-- I used the hex codes for Crayola crayons to create a rainbow colour scheme. I kept the background white and simple and used the official Home and Away font to bring it all together.
-- [Crayola Hex Codes](http://www.colourlovers.com/web/blog/2008/04/22/all-120-crayon-names-color-codes-and-fun-facts)
-- [Home and Away font](https://www.wfonts.com/font/reporter-two)
-
-## Code Snippets
-
-- All code was written by me and/or adapted from the LMS lessons.
-- I also received great help on the Tutoring page from Nakita, Haley & Niel
-
-
-/solution to tagging problem//
-https://godjango.com/33-tagging-with-django-taggit/
+- My Victor mentor who helped me figure out lots of problems
+- The tutoring team who were really helpful when I needed them
+- The people on the Code Institute Slack who helped out when they could
+- Stack Overflow for always having the answer
 
 
 
 
 
-/solution to tagging problem//
-https://www.youtube.com/watch?v=srHZoj3ASmk
-
-/solution to return nothing for no search items
-https://stackoverflow.com/questions/38006125/how-to-implement-search-function-in-django

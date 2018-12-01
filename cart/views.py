@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, reverse
 
-# Create your views here.
+# Code taken/adapted from lessons
 
 
 def view_cart(request):

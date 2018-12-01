@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User
 
-
+# Code below taken/adapted from lessons
 class CaseInsensitiveAuth:
   
     def authenticate(self, username=None, password=None):

@@ -1,7 +1,7 @@
 from django.db import models
 from taggit.managers import TaggableManager
 
-# Create your models here.
+# Code below half mine/half adapted from lessons
 
 class Product(models.Model):
     name = models.CharField(max_length=254, default='')

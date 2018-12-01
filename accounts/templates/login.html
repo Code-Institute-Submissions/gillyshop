@@ -8,7 +8,9 @@
 
 <div class="regcontainer">
      <div class="reg">
-          <h3 class="loginto">Login to your account</h3>    
+          <h3 class="loginto">Login to your account</h3>   
+          
+<!--Code below taken/adapted from lessons-->
 <form class="logintoform" method="POST">
      {% csrf_token %}
      {{ login_form | as_bootstrap }}

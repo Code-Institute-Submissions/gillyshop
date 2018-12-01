@@ -1,15 +1,12 @@
 from django.test import TestCase#
 from .models import Product
 
-
+# Code taken/adapted from lessons
 
 
 # Create your tests here.
 class ProductTests(TestCase):
-    """
-    here well define the tests that well run against our
-    post models
-    """
+
     
     def test_str(self):
         test_name = Product(name='A product')

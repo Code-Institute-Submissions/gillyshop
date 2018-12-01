@@ -10,6 +10,8 @@
      <div class="reg">
      <h3 class="aboutp">Register below to start shopping!</h3>    
      <p class="aboutp">If you already have an account you can <a class="signin" href="{% url 'login' %}">sign in</a></p>
+     
+<!--Code below taken/adapted from lessons-->
 
      <form class="regform" method="POST">
      {% csrf_token %}

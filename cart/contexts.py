@@ -1,12 +1,10 @@
 from django.shortcuts import get_object_or_404
 from products.models import Product
 
+# Code taken/adapted from lessons
 
 def cart_contents(request):
-    """
-    ensures that the cart contents are abailable when rendering every page
-    """
-    
+
     cart = request.session.get('cart', {})
     
     cart_items = []

@@ -9,7 +9,7 @@ def index(request):
     """Return the index.html file"""
     return render(request, 'index.html')
     
-    
+# Code below taken/adapted from lessons    
 @login_required    
 def logout(request):
     """log the user out"""
@@ -81,7 +81,7 @@ def user_profile(request):
     user = User.objects.get(email=request.user.email)
     return render(request, 'profile.html', {"profile": user})
     
-    
+# my code below    
 def about(request):
     return render(request, 'about.html')    
     
