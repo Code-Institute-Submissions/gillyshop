@@ -2,6 +2,7 @@ from django.shortcuts import render
 from products.models import Product
 from django.core.exceptions import ObjectDoesNotExist
 from django.contrib import messages
+from django.http import HttpResponse
 
 # Code adapted from lessons/added to by me
 
