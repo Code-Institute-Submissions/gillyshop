@@ -18,4 +18,5 @@ def do_search(request):
         if product:
             return render(request, "products.html", {"products":products})
         else:
-            print ("nothing found")
+            messages.error(request, "We were unable to take a payment with that card")
+            return render(request, "products.html", {"products":products})
