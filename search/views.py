@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, render_to_response
 from products.models import Product
 from django.core.exceptions import ObjectDoesNotExist
 
@@ -17,4 +17,4 @@ def do_search(request):
         if product:
             return render(request, "products.html", {"products":products})
         else:
-            return render(request, "shipping.html")
+            return render_to_response(request, "shipping.html")
