@@ -27,6 +27,6 @@ def do_search(request):
         return render(request, "products.html", {"products":products})
     else:
         messages.error(request, "We were unable to take a payment with that card")
-        return render(request, "products.html", {})
+        # return render(request, "products.html", {})
 
 
