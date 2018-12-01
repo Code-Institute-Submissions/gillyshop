@@ -2,7 +2,6 @@ from django.shortcuts import render
 from products.models import Product
 from django.core.exceptions import ObjectDoesNotExist
 from django.contrib import messages
-from django.http import HttpResponse
 
 # Code adapted from lessons/added to by me
 
@@ -13,11 +12,21 @@ from django.http import HttpResponse
 
 
 
+# def do_search(request):
+#     products = Product.objects.filter(name__icontains=request.GET['q']) | Product.objects.filter(description__icontains=request.GET['q'])
+#     for product in products:
+#         if product:
+#             return render(request, "products.html", {"products":products})
+#         else:
+#             messages.error(request, "We were unable to take a payment with that card")
+#             return render(request, "products.html", {"products":products})
+
 def do_search(request):
     products = Product.objects.filter(name__icontains=request.GET['q']) | Product.objects.filter(description__icontains=request.GET['q'])
-    for product in products:
-        if product:
-            return render(request, "products.html", {"products":products})
-        else:
-            messages.error(request, "We were unable to take a payment with that card")
-            return render(request, "products.html", {"products":products})
+    if products:
+        return render(request, "products.html", {"products":products})
+    else:
+        messages.error(request, "We were unable to take a payment with that card")
+        return render(request, "products.html", {})
+
+
