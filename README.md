@@ -89,7 +89,7 @@ This gives users the details needed to contact Millennial Pink as well as a cont
 
 #### Search function
 
-If I had more time, I would have improved the search functionality to return something when it doesnt find anything
+If I had more time, I would have improved the search functionality and added tags to it. 
 
 #### Tag cloud/filter list
 
@@ -229,6 +229,7 @@ Result - all tests passed. When filled in correctly, email is sent to reset your
 ### Search page test:
 
 - Check searching for a term redirects you to products with that word in their title or description
+- Check search terms that don't exist show an alert message
 
 Result - test passed
 

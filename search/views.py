@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 from products.models import Product
 from django.core.exceptions import ObjectDoesNotExist
 from django.contrib import messages
@@ -12,6 +12,6 @@ def do_search(request):
         return render(request, "products.html", {"products":products})
     else:
         messages.error(request, "Sorry, we found nothing. Please try again")
-        return redirect(request, "products.html")
+        return render(request, "index.html")
 
 
