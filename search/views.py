@@ -18,4 +18,4 @@ def do_search(request):
         if product:
             return render(request, "products.html", {"products":products})
         else:
-            print "nothing found"
+            print ("nothing found")
