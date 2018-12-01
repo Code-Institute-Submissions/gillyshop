@@ -18,4 +18,4 @@ def do_search(request):
         if product:
             return render(request, "products.html", {"products":products})
         else:
-            messages.error(request, "Your card was declined")
+            return render(request, "index.html")
