@@ -1,6 +1,7 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 from products.models import Product
 from django.core.exceptions import ObjectDoesNotExist
+from django.contrib import messages
 
 # Code adapted from lessons/added to by me
 
@@ -17,4 +18,4 @@ def do_search(request):
         if product:
             return render(request, "products.html", {"products":products})
         else:
-            return redirect(request, "shipping.html")
+            messages.error(request, "Your card was declined")
