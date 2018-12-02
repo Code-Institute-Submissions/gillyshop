@@ -307,7 +307,7 @@ Adapted or taken from lessons (with credit given on individual pages):
 
 #### Imagery & Content:
 
-- All images were found on Unsplash.com
+- All images were found on [Unsplash.com](https://unsplash.com/)
 - Fonts were found online or on Google fonts. 
 - The social media accounts that are linked are not mine, just a name coincidence
 - The wall art mockups were made using a free PSD mockup found [here](https://zippypixels.com/product/mockups/frames-posters/free-beautiful-poster-frame-mockup/)
