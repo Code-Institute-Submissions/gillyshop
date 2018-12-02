@@ -11,7 +11,7 @@ def do_search(request):
     if products:
         return render(request, "products.html", {"products":products})
     else:
-        messages.error(request, "Sorry, we found nothing. Please try again")
+        messages.error(request, "Sorry, we found nothing. Please try searching again")
         return render(request, "index.html")
 
 
