@@ -246,6 +246,7 @@ Result - test passed
 
 - One issue I found when testing is with the payment form. Although the payment form has the csv/cvv as required, the form still submits when this is not filled in. I did some research and found that Maestro cards don't have CVVs so this may be the reason that Stripe allows it to go through.
 - Another issue I found with testing is that the password reset form allows you to submit emails that aren't registered. If I had time more time, I would see if I could fix this.
+- I tried to integrate lots of different credit card js plugins but could never get to work properly. Either they wouldn't work with Stripe or they wouldn't work from external JS files. I spoke with Niel in tutoring about one of them and even he seemed confused by it and why it wouldn't work so eventually I reverted back to a simple form. 
 
 ## Testing on different browsers and sizes
 
