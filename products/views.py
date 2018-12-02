@@ -5,7 +5,7 @@ from taggit.models import Tag
 # Create your views here.
 
 
-#view written by me/adapted from lessons
+#views written by me
 def products(request):
     products = Product.objects.all()
     return render(request, "products.html", {"products": products})

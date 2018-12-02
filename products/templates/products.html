@@ -23,7 +23,8 @@
           <h3><a class="url" href="{% url 'product_detail' product.id %}">{{ product.name }}</a></h3>
 
         <p>€{{ product.price }}</p>
- 
+        
+             <!--code adapted from lessons-->
                     <form method="post" action="{% url 'add_to_cart' product.id %}">
                     {% csrf_token %}
                         <div class="input-group">
