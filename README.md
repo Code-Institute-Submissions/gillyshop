@@ -264,11 +264,44 @@ It also took a while getting my AWS account integrated. Although I had done all 
 
 While the website was built entirely by me, there are lots of code snippets that I couldn't have written by myself so I used or adapted code from the lessons which I've marked clearly throughout. I would have loved to have done more myself but I don't feel I've personally learnt enough to be capable of building it myself from scratch. Pages without comments on the source of the code are my work or explained elsewhere.
 
-All my work: About page, contact page, home page, returns page, stockists page, shipping page, cart page, paid page, Products urls, Products views, Tag view and tag page (with help from my mentor Victor), profile page, accounts urls, all products pages, product detail page
+All my work: 
+- About page
+- contact page
+- home page
+- returns page
+- stockists page
+- shipping page
+- cart page
+- paid page
+- Products urls
+- Products views
+- Tag view and tag page (with help from my mentor Victor)
+- profile page
+- accounts urls
+- all products pages
+- product detail page
 
-Half my work/half adapted from lessons: Checkout forms (mostly adapted from lessons), products model, search view, password reset
+Half my work/half adapted from lessons: 
 
-Adapted or taken from lessons (with credit given on individual pages): Registration form/parts of registration page, Login form/parts of login page, register/login/logout views, user profile view, password reset urls, checkout page & stripe integration, cart urls/views, checkout models, checkout views, database settings, AWS settings and static files setup, email backend views (from previous Django lessons), app backends. 
+- Checkout forms (mostly adapted from lessons)
+- products model
+- search view
+- password reset
+
+Adapted or taken from lessons (with credit given on individual pages): 
+- Registration form/parts of registration page
+- Login form/parts of login page
+- register/login/logout views
+- user profile view
+- password reset urls
+- checkout page & stripe integration
+- cart urls/views
+- checkout models
+- checkout views
+- database settings
+- AWS settings and static files setup
+- email backend views (from previous Django lessons)
+- app backends
 
 ## Credits:
 
