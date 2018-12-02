@@ -9,9 +9,9 @@ My idea originally began as a vintage clothing store called Starry Starry Night.
 
 Millennial Pink is a one stop shop for Irish shoppers to find everything for the millennials in their life. It is intended to be a destination where people can find very specific items rather than a broader website like Society 6. Millennials are blamed for ruining so many things and this site celebrates their unique interests and looks at what might appeal to them in ironic ways, like avocado toast Christmas ornaments and llamas wearing hats. 
 
-Most of my ideas begin as a visual representation in my head which is how Starry Starry Night began. I could see the exact type of font I wanted and so built the initial homepage around that in my head. When it evolved into Millennial Pink, I kept the visual framework the same and just adjusted the font to something more 'millennial'. My early drawings can be found in the [mockups](https://github.com/oheag2/gillyshop/tree/master/mockups) section. I knew I wanted to keep the site layout clean and simple with a focus on some of the key art pieces to create really nice visual entrance to the site. I made some wireframes to get an idea of how I wanted it to look and then began building the site. Further explanations can be found on my [mockup guide](https://github.com/oheag2/gillyshop/blob/master/mockups/djangomockup.pdf) and in the [mockups folder](https://github.com/oheag2/gillyshop/blob/master/mockups)
+Most of my ideas begin as a visual representation in my head which is how Starry Starry Night began. I could see the exact type of font I wanted and so built the initial homepage around that in my head. When it evolved into Millennial Pink, I kept the visual framework the same and just adjusted the font to something more 'millennial'. My early drawings can be found in the [mockups](https://github.com/oheag2/gillyshop/tree/master/mockups) section. I knew I wanted to keep the site layout clean and simple with a focus on some of the key art pieces to create a really nice visual entrance to the site. I made some wireframes to get an idea of how I wanted it to look and then began building the site. Further explanations can be found on my [mockup guide](https://github.com/oheag2/gillyshop/blob/master/mockups/djangomockup.pdf) and in the [mockups folder](https://github.com/oheag2/gillyshop/blob/master/mockups)
 
-I wanted to somehow make the website pink but also be user friendly and not garish so I found a very light pink that wouldn’t be too overpowering. The font and look of thr website were very important to me so I spent a lot of time choosing correct fonts and eventually found one online for the header as well as picking a Google font for the main body. While I kept the main body a very light pink, I brought in other slightly brighter shades of pink for extra elements like buttons and navigation elements, as well as light grey and white. 
+I wanted to somehow make the website pink but also be user friendly and not garish so I found a very light pink that wouldn’t be too overpowering. The font and look of the website were very important to me so I spent a lot of time choosing correct fonts and eventually found one online for the header as well as picking a Google font for the main body. While I kept the main body a very light pink, I brought in other slightly brighter shades of pink for extra elements like buttons and navigation elements, as well as light grey and white. 
 
 ### User stories:
 #### User A – A student
@@ -19,7 +19,7 @@ I wanted to somehow make the website pink but also be user friendly and not gari
 This student wants to find some artwork to decorate his college room. The homepage allows them a quick overview of some of the pictures available and allows them to click straight through to those sections. The student clicks on the deer picture and is brought to the deer section where he picks a deer picture and adds it to his cart. This redirects him to the cart where he checks out straight away
 #### User B – A mother
 
-This mother wants to buy something for her daughter. She knows she likes pink and shes hoping to find something on the site for her daughter. She’s not much of an internet user so when she goes onto the site she goes to the products tab and sees that the products are arranged into helpful categories, including a pink one. Shes browses the pink products and adds one to the cart. She goes back to look for more and clicks on the pastel tag which brings her to other similarly coloured images. Here she finds something else that might appeal to her daughter also, she adds it to cart and checks out. 
+This mother wants to buy something for her daughter. She knows she likes pink and shes hoping to find something on the site for her daughter. She’s not much of an internet user so when she goes onto the site she goes to the products tab and sees that the products are arranged into helpful categories, including a pink one. Shes browses the pink products and adds one to the cart. She goes back to look for more and clicks on the pastel tag which brings her to other similarly coloured images. Here she finds something else that might appeal to her daughter also, she adds it to the cart and checks out. 
 
 ## Features
 
@@ -34,7 +34,8 @@ This page allows users to immediately see what is new in perhaps since their las
 ### Products page:
 
 The products page displays all the products together so users can shop everything at once.
-Individual product category pages:
+
+#### Individual product category pages:
 The products are then categorised into a few sections to allow shoppers only browse what theyre interested in, ie palm tree, pink products etc.
 
 ### Product detail page:
