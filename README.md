@@ -13,6 +13,8 @@ Most of my ideas begin as a visual representation in my head which is how Starry
 
 I wanted to somehow make the website pink but also be user friendly and not garish so I found a very light pink that wouldn’t be too overpowering. The font and look of the website were very important to me so I spent a lot of time choosing correct fonts and eventually found one online for the header as well as picking a Google font for the main body. While I kept the main body a very light pink, I brought in other slightly brighter shades of pink for extra elements like buttons and navigation elements, as well as light grey and white. 
 
+Overall, I wanted the site to be easy to navigate. Users can view all products at once if they want to see everything for sale if they know what they want, or they can view products sorted into specific categories or look at products by tag. The user experience is very straightforward, you see a product you want and you can immediately add it to your cart, be directed to the cart and checkout easily. 
+
 ### User stories:
 #### User A – A student
 
