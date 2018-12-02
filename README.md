@@ -280,6 +280,10 @@ Adapted or taken from lessons (with credit given on individual pages): Registrat
 - The wall art mockups were made using a free PSD mockup found [here](https://zippypixels.com/product/mockups/frames-posters/free-beautiful-poster-frame-mockup/)
 
 
+#### Code links:
+
+- Tag view solution was found [here](https://godjango.com/33-tagging-with-django-taggit/) 
+
 #### Thanks to:
 
 - My Victor mentor who helped me figure out lots of problems
