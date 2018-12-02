@@ -94,11 +94,11 @@ If I had more time, I would have improved the search functionality and added tag
 
 #### Tag cloud/filter list
 
-I had hoped to add a menu/list to filter by tag but ran out of time
+I had hoped to add a tag cloud/dropdown menu/list to filter by tag but ran out of time.
 
 #### Credit card integration
 
-I tried lots of different credit cart plugins to allow for better formatting of my credit card form but could never get them to work properly/look right so I eventually reverted to my original layout.This is something I would have really like to have integrated.
+I tried lots of different credit cart plugins to allow for better formatting of my credit card form but could never get them to work properly with Stripe so I eventually reverted to my original layout. This is something I would have really like to have integrated as I find the credit card input difficult to use when the number is not formatted with spacing, ie **** **** **** **** 
 
 #### Shipping costs
 
