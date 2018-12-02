@@ -254,7 +254,11 @@ I used Chrome developer tools a lot to test how the site would look on different
  
 ## Deployment:
 
-I deployed my website to Heroku pretty early on in the process of building it which probably wasn't the best idea as it made the process of making any changes much longer and more complicated. It took me a while to get everything working correctly with the environment variables and getting my AWS account integrated as I had forgotten a lot of the steps but I finally got it all working. I had some issues when making migrations and getting secret key errors which the tutoring support team helped me figure out by commenting out import env in my settings and making migrations then. 
+I deployed my website to Heroku pretty early on in the process of building it as I was following all the lessons and this was the final step. In hindsight, doing this so early probably wasn't the best idea as it made the process of making any changes much longer and more complicated. I also would have chosen a different Heroku URL as the one I have doesn't really make any sense to the project but I decided to just leave it as I didnt want to cause anything to stop working! 
+
+It took me a while to get everything working correctly with the environment variables as I had forgotten a lot of the steps but I finally got it all working. Having my secret key on Heroku config vars meant that I then ran into issues making migrations. I spoke to tutoring who explained that I could just comment out 'import env' in my settings and then make my migrations and then uncomment it after which was really helpful.
+
+It also took a while getting my AWS account integrated. Although I had done all the Django lessons, I went back to work on my Stream 1 and 2 projects after finishing them so by the time I returned to do my Stream 3 project, I had already forgotten a lot so it took me a while to get back into Django and how to use it. Integrating AWS then also took a while as I got my head around the static urls and how to get everything working. I had a lot of trouble setting it up first day for the lesson on it so it took a while to get it properly working for my project but once I had it working, I was fine. 
 
 ## Code Used: 
 
@@ -282,8 +286,3 @@ Adapted or taken from lessons (with credit given on individual pages): Registrat
 - The tutoring team who were really helpful when I needed them
 - The people on the Code Institute Slack who helped out when they could
 - Stack Overflow for always having the answer
-
-
-
-
-
